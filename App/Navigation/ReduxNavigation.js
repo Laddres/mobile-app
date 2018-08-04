@@ -2,18 +2,21 @@ import React from 'react'
 import { BackHandler, Platform } from 'react-native'
 import { connect } from 'react-redux'
 import AppNavigation from './AppNavigation'
+import { indexOf } from 'lodash'
 import { reduxifyNavigator } from 'react-navigation-redux-helpers'
+import { DEFAULT_NAVIGATION_CONFIG } from './NavigationConfig'
 
 class ReduxNavigation extends React.Component {
+  shouldCloseApp (routeName) {
+    return indexOf(DEFAULT_NAVIGATION_CONFIG.exitRoutes, routeName) !== -1
+  }
+
   componentWillMount () {
     if (Platform.OS === 'ios') return
     BackHandler.addEventListener('hardwareBackPress', () => {
       const { dispatch, nav } = this.props
-      // change to whatever is your first screen, otherwise unpredictable results may occur
-      if (nav.routes.length === 1 && (nav.routes[0].routeName === 'LaunchScreen')) {
-        return false
-      }
-      // if (shouldCloseApp(nav)) return false
+      console.log(this.shouldCloseApp(nav.routes[0].routeName))
+      if (this.shouldCloseApp(nav.routes[0].routeName)) return false
       dispatch({ type: 'Navigation/BACK' })
       return true
     })
