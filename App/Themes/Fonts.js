@@ -1,8 +1,8 @@
 const type = {
-  base: 'Avenir-Book',
-  bold: 'Avenir-Black',
-  emphasis: 'HelveticaNeue-Italic'
-}
+  base: "Avenir-Book",
+  bold: "Avenir-Black",
+  emphasis: "HelveticaNeue-Italic"
+};
 
 const size = {
   h1: 38,
@@ -16,7 +16,7 @@ const size = {
   medium: 14,
   small: 12,
   tiny: 8.5
-}
+};
 
 const style = {
   h1: {
@@ -24,7 +24,7 @@ const style = {
     fontSize: size.h1
   },
   h2: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: size.h2
   },
   h3: {
@@ -51,10 +51,10 @@ const style = {
     fontFamily: type.base,
     fontSize: size.medium
   }
-}
+};
 
 export default {
   type,
   size,
   style
-}
+};

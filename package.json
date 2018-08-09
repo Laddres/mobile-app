@@ -64,7 +64,9 @@
     "ignite-redux-persist": "^1.1.0",
     "ignite-standard": "^1.0.0",
     "jest": "23.4.2",
+    "lint-staged": "^7.2.0",
     "mockery": "^2.1.0",
+    "prettier": "1.14.2",
     "react-dom": "^16.4.2",
     "react-test-renderer": "^16.4.2",
     "reactotron-react-native": "^2.0.0-alpha.3",
@@ -116,5 +118,18 @@
   ],
   "ignore": [
     "flow-typed/"
-  ]
+  ],
+  "lint-staged": {
+    "concurrent": false,
+    "linters": {
+      "*.{js,json,md}": [
+        "prettier --write --print-width 120 --no-semi --single-quote",
+        "git add"
+      ],
+      "*.js": [
+        "standard --fix",
+        "git add"
+      ]
+    }
+  }
 }
