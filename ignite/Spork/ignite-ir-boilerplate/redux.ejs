@@ -1,0 +1,50 @@
+// @flow
+// noinspection ES6CheckImport
+import { createReducer, createActions } from 'reduxsauce'
+import Immutable from 'seamless-immutable'
+
+/* ------------- Tipos e Criadores de ações ------------- */
+
+const { Types, Creators } = createActions({
+  <%= camelCase(props.name) %>Request: null,
+  <%= camelCase(props.name) %>Success: ['dados'],
+  <%= camelCase(props.name) %>Failure: null
+})
+
+export const <%= props.name %>Types = Types
+export default Creators
+
+/* ------------- Tipos Flow ------------- */
+
+export type <%= props.name %>State = Immutable<{
+  dados: mixed[],
+  carregando: ?boolean,
+  erro: ?boolean
+}>
+
+/* ------------- Estado Inicial ------------- */
+
+export const INITIAL_STATE: <%= props.name %>State = Immutable({
+  dados: [],
+  carregando: null,
+  erro: null
+})
+
+/* ------------- Redutores ------------- */
+
+export const request = (state: <%= props.name %>State) =>
+  state.merge({ carregando: true })
+
+export const success = (state: <%= props.name %>State, { dados }: { dados: mixed[] }) =>
+  state.merge({ carregando: false, erro: null, dados })
+
+export const failure = (state: <%= props.name %>State) =>
+  state.merge({ carregando: false, erro: true })
+
+/* ------------- Conectar redutores aos tipos ------------- */
+
+export const reducer = createReducer(INITIAL_STATE, {
+  [Types.<%= snakeCase(props.name).toUpperCase() %>_REQUEST]: request,
+  [Types.<%= snakeCase(props.name).toUpperCase() %>_SUCCESS]: success,
+  [Types.<%= snakeCase(props.name).toUpperCase() %>_FAILURE]: failure
+})

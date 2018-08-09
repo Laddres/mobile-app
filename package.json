@@ -27,6 +27,7 @@
     "apisauce": "^0.15.1",
     "format-json": "^1.0.3",
     "identity-obj-proxy": "^3.0.0",
+    "ignite-ir-boilerplate": "^2.3.3",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.1",
     "querystringify": "2.0.0",

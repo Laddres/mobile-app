@@ -1,0 +1,21 @@
+// @flow
+import * as React from 'react'
+import { View, Text } from 'react-native'
+import styles from './Styles/<%= props.name %>Style'
+
+type Props = {}
+
+export default class <%= props.name %> extends React.Component<Props> {
+  // // Defaults for props
+  // static defaultProps = {
+  //   someSetting: false
+  // }
+
+  render () {
+    return (
+      <View style={styles.container}>
+        <Text><%= props.name %> Component</Text>
+      </View>
+    )
+  }
+}

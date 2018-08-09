@@ -4631,6 +4631,12 @@ iferr@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
 
+ignite-ir-boilerplate@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/ignite-ir-boilerplate/-/ignite-ir-boilerplate-2.3.3.tgz#1d3d5045e5bfe27734d0b38b8ef6ee0296de4626"
+  dependencies:
+    ramda "^0.23.0"
+
 ignite-redux-persist@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ignite-redux-persist/-/ignite-redux-persist-1.1.0.tgz#c9306266e7672d60e528aa623fe6d6cab834a22b"
@@ -7406,6 +7412,10 @@ raf@^3.4.0:
 railroad-diagrams@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
+
+ramda@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.23.0.tgz#ccd13fff73497a93974e3e86327bfd87bd6e8e2b"
 
 ramda@^0.24.1:
   version "0.24.1"
