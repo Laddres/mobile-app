@@ -23,7 +23,8 @@
     "fixcode": "standard --fix",
     "flow-check": "(flow --show-all-errors || exit 0) | (! grep -E 'Error: (App|Tests)\\/')",
     "flow-stop": "flow stop",
-    "git-hook": "npm run lint -s && npm run test -s"
+    "git-hook": "npm run lint -s && yarn flow-check && npm run test -s",
+    "precommit": "lint-staged && yarn git-hook"
   },
   "dependencies": {
     "apisauce": "^0.15.1",
