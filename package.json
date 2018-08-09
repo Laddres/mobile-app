@@ -21,6 +21,8 @@
     "lint": "standard --verbose | snazzy",
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
     "fixcode": "standard --fix",
+    "flow-check": "(flow --show-all-errors || exit 0) | (! grep -E 'Error: (App|Tests)\\/')",
+    "flow-stop": "flow stop",
     "git-hook": "npm run lint -s && npm run test -s"
   },
   "dependencies": {
@@ -49,11 +51,13 @@
     "@storybook/addons": "^3.4.0",
     "@storybook/channels": "^3.4.0",
     "@storybook/react-native": "^3.4.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-jest": "23.4.2",
     "babel-plugin-ignite-ignore-reactotron": "^0.3.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "^5",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
@@ -106,5 +110,11 @@
       "FormData",
       "React$Element"
     ]
-  }
+  },
+  "plugin": [
+    "flowtype"
+  ],
+  "ignore": [
+    "flow-typed/"
+  ]
 }
