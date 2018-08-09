@@ -5,4 +5,4 @@ export default {
   reduxLogging: __DEV__,
   includeExamples: __DEV__,
   useReactotron: __DEV__
-}
+};

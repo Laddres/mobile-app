@@ -1,6 +1,6 @@
-import Fonts from './Fonts'
-import Metrics from './Metrics'
-import Colors from './Colors'
+import Fonts from "./Fonts";
+import Metrics from "./Metrics";
+import Colors from "./Colors";
 
 // This file is for a reusable grouping of Theme items.
 // Similar to an XML fragment layout in Android
@@ -12,7 +12,7 @@ const ApplicationStyles = {
       backgroundColor: Colors.transparent
     },
     backgroundImage: {
-      position: 'absolute',
+      position: "absolute",
       top: 0,
       left: 0,
       bottom: 0,
@@ -32,7 +32,7 @@ const ApplicationStyles = {
       paddingVertical: Metrics.doubleBaseMargin,
       color: Colors.snow,
       marginVertical: Metrics.smallMargin,
-      textAlign: 'center'
+      textAlign: "center"
     },
     subtitle: {
       color: Colors.snow,
@@ -59,9 +59,9 @@ const ApplicationStyles = {
   },
   groupContainer: {
     margin: Metrics.smallMargin,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center"
   },
   sectionTitle: {
     ...Fonts.style.h4,
@@ -72,9 +72,9 @@ const ApplicationStyles = {
     marginHorizontal: Metrics.baseMargin,
     borderWidth: 1,
     borderColor: Colors.ember,
-    alignItems: 'center',
-    textAlign: 'center'
+    alignItems: "center",
+    textAlign: "center"
   }
-}
+};
 
-export default ApplicationStyles
+export default ApplicationStyles;
