@@ -27,13 +27,13 @@ class MainScreen extends Component<Props> {
   developmentAlert = () => Alert.alert('Em desenvolvimento', 'Funcionalidade em desenvolvimento')
 
   renderCandidatePreviewCard = candidate => {
-    const { idCandidato, nome, partido, numero, img, onPress } = candidate
+    const { idCandidato, nome, partido, numero, img } = candidate
     return (
       <CandidatePreviewCard
         name={nome}
         imgSrc={img}
         key={idCandidato}
-        onPress={onPress}
+        onPress={this.developmentAlert}
         party={`${partido} ${numero}`}
       />
     )
