@@ -7,6 +7,7 @@ export default StyleSheet.create({
     backgroundColor: Colors.background
   },
   content: {
+    minHeight: '100%',
     paddingBottom: Metrics.section
   },
   header: {
@@ -26,5 +27,9 @@ export default StyleSheet.create({
     width: 1,
     marginVertical: Metrics.smallMargin,
     backgroundColor: Colors.separator
+  },
+  fetchingContainer: {
+    flex: 1,
+    justifyContent: 'center'
   }
 })
