@@ -9,7 +9,7 @@ export default StyleSheet.create({
   title: {
     fontWeight: 'bold',
     fontSize: Fonts.size.h1,
-    color: Colors.title
+    color: Colors.sectionTitle
   },
   itens: {
     flexDirection: 'row',

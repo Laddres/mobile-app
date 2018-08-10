@@ -43,7 +43,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#e6e7eb",
+          "backgroundColor": "#ECEEF1",
           "borderBottomLeftRadius": 10,
           "borderBottomRightRadius": 10,
           "flex": 0.25,
@@ -55,7 +55,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       <Text
         style={
           Object {
-            "color": "#386B88",
+            "color": "#79A2AF",
           }
         }
       >
@@ -64,7 +64,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       <Text
         style={
           Object {
-            "color": "#386B88",
+            "color": "#25647C",
             "fontWeight": "bold",
           }
         }
@@ -152,7 +152,7 @@ exports[`Storyshots Section Default 1`] = `
     <Text
       style={
         Object {
-          "color": "#DDDEE0",
+          "color": "rgba(153,153,153,0.3)",
           "fontSize": 38,
           "fontWeight": "bold",
         }

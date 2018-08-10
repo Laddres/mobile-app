@@ -27,7 +27,7 @@ export default StyleSheet.create({
     color: Colors.text
   },
   textName: {
-    color: Colors.text,
+    color: Colors.subtitle,
     fontWeight: 'bold'
   }
 })
