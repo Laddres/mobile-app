@@ -29,6 +29,7 @@
   "dependencies": {
     "apisauce": "^0.15.1",
     "format-json": "^1.0.3",
+    "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "ignite-ir-boilerplate": "^2.3.3",
     "lodash": "^4.17.4",
@@ -63,6 +64,7 @@
     "babel-preset-react-native": "^5",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "flow-bin": "^0.78.0",
     "ignite-redux-persist": "^1.1.0",
     "ignite-standard": "^1.0.0",
     "jest": "23.4.2",

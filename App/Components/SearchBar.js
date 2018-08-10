@@ -9,11 +9,7 @@ type Props = {
 
 class SearchBar extends Component<Props> {
   render () {
-    return (
-      <TextInput
-        placeholder={this.props.placeholder}
-        style={styles.input} />
-    )
+    return <TextInput placeholder={this.props.placeholder} style={styles.input} />
   }
 }
 
