@@ -1,0 +1,1776 @@
+{
+  "presidente": [
+    {
+      "idCandidatura": 1317042,
+      "idCandidato": 402793,
+      "nome": "Eymael",
+      "numero": 27,
+      "partido": "PSDC"
+    },
+    {
+      "idCandidatura": 1317045,
+      "idCandidato": 402796,
+      "nome": "Rui Costa Pimenta",
+      "numero": 29,
+      "partido": "PCO"
+    },
+    {
+      "idCandidatura": 1317046,
+      "idCandidato": 647380,
+      "nome": "Dilma",
+      "numero": 13,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1317050,
+      "idCandidato": 958783,
+      "nome": "Eduardo Jorge",
+      "numero": 43,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1317052,
+      "idCandidato": 405347,
+      "nome": "Aécio Neves",
+      "numero": 45,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1317053,
+      "idCandidato": 647381,
+      "nome": "Zé Maria",
+      "numero": 16,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1317054,
+      "idCandidato": 647380,
+      "nome": "Dilma",
+      "numero": 13,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1317055,
+      "idCandidato": 411348,
+      "nome": "Luciana Genro",
+      "numero": 50,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1317060,
+      "idCandidato": 405347,
+      "nome": "Aécio Neves",
+      "numero": 45,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1317061,
+      "idCandidato": 653383,
+      "nome": "Pastor Everaldo",
+      "numero": 20,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1317065,
+      "idCandidato": 412205,
+      "nome": "Mauro Iasi",
+      "numero": 21,
+      "partido": "PCB"
+    },
+    {
+      "idCandidatura": 1317068,
+      "idCandidato": 385738,
+      "nome": "Levy Fidelix",
+      "numero": 28,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1317069,
+      "idCandidato": 647382,
+      "nome": "Marina Silva",
+      "numero": 40,
+      "partido": "PSB"
+    }
+  ],
+  "governador": [
+    {
+      "idCandidatura": 1335454,
+      "idCandidato": 326514,
+      "nome": "Betinho",
+      "numero": 19,
+      "partido": "PTN"
+    },
+    {
+      "idCandidatura": 1335518,
+      "idCandidato": 966581,
+      "nome": "Airton da Cgtb",
+      "numero": 54,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335525,
+      "idCandidato": 412026,
+      "nome": "Eduardo Amorim",
+      "numero": 20,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335569,
+      "idCandidato": 412032,
+      "nome": "Jackson Barreto",
+      "numero": 15,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335672,
+      "idCandidato": 966632,
+      "nome": "Prof. Sônia Meire",
+      "numero": 50,
+      "partido": "PSOL"
+    }
+  ],
+  "senador": [
+    {
+      "idCandidatura": 1335459,
+      "idCandidato": 326612,
+      "nome": "Bila",
+      "numero": 543,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335570,
+      "idCandidato": 412160,
+      "nome": "Rogério",
+      "numero": 131,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335575,
+      "idCandidato": 654674,
+      "nome": "Professor Marques",
+      "numero": 212,
+      "partido": "PCB"
+    },
+    {
+      "idCandidatura": 1335579,
+      "idCandidato": 412016,
+      "nome": "Maria do Carmo",
+      "numero": 251,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335682,
+      "idCandidato": 322214,
+      "nome": "Leandro",
+      "numero": 161,
+      "partido": "PSTU"
+    }
+  ],
+  "deputadoFederal": [
+    {
+      "idCandidatura": 1335415,
+      "idCandidato": 322292,
+      "nome": "Pastor Jony",
+      "numero": 1010,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335416,
+      "idCandidato": 966542,
+      "nome": "Josefina",
+      "numero": 5456,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335418,
+      "idCandidato": 325919,
+      "nome": "Lúcia de Vado",
+      "numero": 9013,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335422,
+      "idCandidato": 897118,
+      "nome": "Laurêncio do Psol",
+      "numero": 5051,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335424,
+      "idCandidato": 897136,
+      "nome": "Robson Jarrão da Saúde",
+      "numero": 2888,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335430,
+      "idCandidato": 966548,
+      "nome": "Neguinha",
+      "numero": 1211,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335432,
+      "idCandidato": 323437,
+      "nome": "Titó",
+      "numero": 1212,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335433,
+      "idCandidato": 412088,
+      "nome": "Dr Emerson",
+      "numero": 1330,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335435,
+      "idCandidato": 601282,
+      "nome": "Sgt. Andre Nascimento",
+      "numero": 3345,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335437,
+      "idCandidato": 899237,
+      "nome": "Estevison",
+      "numero": 3356,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335438,
+      "idCandidato": 322184,
+      "nome": "Samarone",
+      "numero": 2311,
+      "partido": "PPS"
+    },
+    {
+      "idCandidatura": 1335445,
+      "idCandidato": 966550,
+      "nome": "Antonio Luiz",
+      "numero": 3333,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335446,
+      "idCandidato": 966551,
+      "nome": "Erica",
+      "numero": 3370,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335450,
+      "idCandidato": 966554,
+      "nome": "Marcos Luiz",
+      "numero": 5412,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335455,
+      "idCandidato": 326606,
+      "nome": "Fátima Andrea",
+      "numero": 1369,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335456,
+      "idCandidato": 326501,
+      "nome": "Betão do Povo",
+      "numero": 5566,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335457,
+      "idCandidato": 966556,
+      "nome": "Maria Lúcia",
+      "numero": 4344,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335460,
+      "idCandidato": 896961,
+      "nome": "Aparecida da Saúde",
+      "numero": 5000,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335463,
+      "idCandidato": 966557,
+      "nome": "Allana Santos",
+      "numero": 2121,
+      "partido": "PCB"
+    },
+    {
+      "idCandidatura": 1335472,
+      "idCandidato": 322360,
+      "nome": "Luiz Carteiro",
+      "numero": 2815,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335475,
+      "idCandidato": 966560,
+      "nome": "Joinha",
+      "numero": 5110,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335486,
+      "idCandidato": 654745,
+      "nome": "Adierson Monteiro",
+      "numero": 4545,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335493,
+      "idCandidato": 897143,
+      "nome": "Rita da Saúde",
+      "numero": 2800,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335494,
+      "idCandidato": 654700,
+      "nome": "Márcio Macêdo",
+      "numero": 1313,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335497,
+      "idCandidato": 654673,
+      "nome": "Tonho Leite",
+      "numero": 4343,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335504,
+      "idCandidato": 599707,
+      "nome": "Arací Nascimento",
+      "numero": 1122,
+      "partido": "PP"
+    },
+    {
+      "idCandidatura": 1335510,
+      "idCandidato": 654693,
+      "nome": "Bosco Costa",
+      "numero": 9090,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335513,
+      "idCandidato": 897141,
+      "nome": "Sydney Marinho",
+      "numero": 2844,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335520,
+      "idCandidato": 654689,
+      "nome": "Fábio Reis",
+      "numero": 1515,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335521,
+      "idCandidato": 654725,
+      "nome": "João Daniel",
+      "numero": 1311,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335522,
+      "idCandidato": 322328,
+      "nome": "Iran Barbosa",
+      "numero": 1390,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335526,
+      "idCandidato": 966584,
+      "nome": "Odair",
+      "numero": 5001,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335529,
+      "idCandidato": 966585,
+      "nome": "Pastora Graça",
+      "numero": 5177,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335530,
+      "idCandidato": 322151,
+      "nome": "Vera Lúcia",
+      "numero": 1616,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335535,
+      "idCandidato": 899623,
+      "nome": "Erico Menezes",
+      "numero": 4500,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335538,
+      "idCandidato": 412024,
+      "nome": "Professor Lapada",
+      "numero": 3311,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335541,
+      "idCandidato": 897138,
+      "nome": "Sandra Glacy",
+      "numero": 2868,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335543,
+      "idCandidato": 412045,
+      "nome": "Laércio Oliveira",
+      "numero": 7777,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335544,
+      "idCandidato": 322190,
+      "nome": "Professora Avilete",
+      "numero": 3131,
+      "partido": "PHS"
+    },
+    {
+      "idCandidatura": 1335559,
+      "idCandidato": 412041,
+      "nome": "Mendonça Prado",
+      "numero": 2510,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335566,
+      "idCandidato": 322154,
+      "nome": "Edvaldo Nogueira",
+      "numero": 6510,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335572,
+      "idCandidato": 966598,
+      "nome": "Pereira",
+      "numero": 5060,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335585,
+      "idCandidato": 412064,
+      "nome": "Andre Moura",
+      "numero": 2000,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335586,
+      "idCandidato": 325084,
+      "nome": "Adelson Barreto",
+      "numero": 1414,
+      "partido": "PTB"
+    },
+    {
+      "idCandidatura": 1335588,
+      "idCandidato": 966605,
+      "nome": "Grace Franco",
+      "numero": 4555,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335592,
+      "idCandidato": 966606,
+      "nome": "Vanessa Gomes",
+      "numero": 6599,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335607,
+      "idCandidato": 324420,
+      "nome": "Zé Nelson Pirulito",
+      "numero": 1100,
+      "partido": "PP"
+    },
+    {
+      "idCandidatura": 1335608,
+      "idCandidato": 966611,
+      "nome": "Dr.samuel Carvalho",
+      "numero": 4567,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335609,
+      "idCandidato": 966612,
+      "nome": "Flaviano",
+      "numero": 5090,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335610,
+      "idCandidato": 322465,
+      "nome": "Chico Monteiro",
+      "numero": 2111,
+      "partido": "PCB"
+    },
+    {
+      "idCandidatura": 1335611,
+      "idCandidato": 966613,
+      "nome": "Valdenicio do Sertão",
+      "numero": 5454,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335620,
+      "idCandidato": 599722,
+      "nome": "Daniela Fortes",
+      "numero": 2233,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335621,
+      "idCandidato": 898567,
+      "nome": "Americo Barreto",
+      "numero": 7700,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335622,
+      "idCandidato": 412050,
+      "nome": "Nilson Lima",
+      "numero": 2323,
+      "partido": "PPS"
+    },
+    {
+      "idCandidatura": 1335635,
+      "idCandidato": 899166,
+      "nome": "Larissa",
+      "numero": 1579,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335636,
+      "idCandidato": 599733,
+      "nome": "Fábio Mitidieri",
+      "numero": 5555,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335637,
+      "idCandidato": 966618,
+      "nome": "Tó Estrela",
+      "numero": 5515,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335638,
+      "idCandidato": 897146,
+      "nome": "Duila Oliveira",
+      "numero": 2822,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335641,
+      "idCandidato": 325654,
+      "nome": "Emanoel Messias",
+      "numero": 5005,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335646,
+      "idCandidato": 324096,
+      "nome": "Lara Moura",
+      "numero": 2200,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335649,
+      "idCandidato": 966622,
+      "nome": "Coronel Júlio Cesar",
+      "numero": 1555,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335650,
+      "idCandidato": 966623,
+      "nome": "Joana Darc",
+      "numero": 1011,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335651,
+      "idCandidato": 412021,
+      "nome": "Valadares Filho",
+      "numero": 4040,
+      "partido": "PSB"
+    },
+    {
+      "idCandidatura": 1335652,
+      "idCandidato": 966624,
+      "nome": "Michelle",
+      "numero": 3355,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335660,
+      "idCandidato": 966628,
+      "nome": "Dôra Santana",
+      "numero": 2500,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335662,
+      "idCandidato": 897206,
+      "nome": "Jorge Luiz",
+      "numero": 2151,
+      "partido": "PCB"
+    },
+    {
+      "idCandidatura": 1335681,
+      "idCandidato": 600871,
+      "nome": "Uclesio Barreto",
+      "numero": 1234,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335689,
+      "idCandidato": 966639,
+      "nome": "Monashine",
+      "numero": 5030,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335690,
+      "idCandidato": 966640,
+      "nome": "Isaias Silva",
+      "numero": 5050,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335698,
+      "idCandidato": 897139,
+      "nome": "Deco de Jota Santos",
+      "numero": 2802,
+      "partido": "PRTB"
+    },
+    {
+      "idCandidatura": 1335699,
+      "idCandidato": 966644,
+      "nome": "Kelly de Zé de Dona",
+      "numero": 1717,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335700,
+      "idCandidato": 322411,
+      "nome": "Beto Teixeira",
+      "numero": 3300,
+      "partido": "PMN"
+    }
+  ],
+  "deputadoEstadual": [
+    {
+      "idCandidatura": 1335417,
+      "idCandidato": 966543,
+      "nome": "Luceli",
+      "numero": 50001,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335419,
+      "idCandidato": 966544,
+      "nome": "Alvani",
+      "numero": 12123,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335420,
+      "idCandidato": 323469,
+      "nome": "Jorge da Cidade Nova",
+      "numero": 50000,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335423,
+      "idCandidato": 966545,
+      "nome": "Rafael Barbosa",
+      "numero": 50500,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335426,
+      "idCandidato": 966546,
+      "nome": "Ismael",
+      "numero": 90777,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335427,
+      "idCandidato": 323833,
+      "nome": "Maria Mendonça",
+      "numero": 11222,
+      "partido": "PP"
+    },
+    {
+      "idCandidatura": 1335428,
+      "idCandidato": 322734,
+      "nome": "Beto Calumbi",
+      "numero": 31111,
+      "partido": "PHS"
+    },
+    {
+      "idCandidatura": 1335429,
+      "idCandidato": 966547,
+      "nome": "Edezuita",
+      "numero": 15013,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335431,
+      "idCandidato": 323074,
+      "nome": "Vado Engraxate",
+      "numero": 33666,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335434,
+      "idCandidato": 600857,
+      "nome": "Gustinho Ribeiro",
+      "numero": 55123,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335436,
+      "idCandidato": 966549,
+      "nome": "Seu Bira",
+      "numero": 54123,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335440,
+      "idCandidato": 412069,
+      "nome": "Augusto Bezerra",
+      "numero": 25555,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335441,
+      "idCandidato": 412154,
+      "nome": "Paulinho da Varzinhas Filho",
+      "numero": 70555,
+      "partido": "PT DO B"
+    },
+    {
+      "idCandidatura": 1335442,
+      "idCandidato": 412077,
+      "nome": "Claudia Rodrigues",
+      "numero": 43333,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335443,
+      "idCandidato": 412126,
+      "nome": "Zé Milton de Zé de Dona",
+      "numero": 17777,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335444,
+      "idCandidato": 899840,
+      "nome": "Leleu",
+      "numero": 22789,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335448,
+      "idCandidato": 966553,
+      "nome": "Roberto de Gil",
+      "numero": 90000,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335451,
+      "idCandidato": 599687,
+      "nome": "Almeida Lima",
+      "numero": 15123,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335452,
+      "idCandidato": 654724,
+      "nome": "Jeferson Andrade",
+      "numero": 55250,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335453,
+      "idCandidato": 966555,
+      "nome": "Giovanna do Rosa do Sol",
+      "numero": 54131,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335458,
+      "idCandidato": 324175,
+      "nome": "Ronaldo Rocha",
+      "numero": 50014,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335461,
+      "idCandidato": 654681,
+      "nome": "Cristina Fontes",
+      "numero": 20567,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335464,
+      "idCandidato": 966558,
+      "nome": "Lizandra",
+      "numero": 20200,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335465,
+      "idCandidato": 897123,
+      "nome": "Luis Américo",
+      "numero": 10123,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335467,
+      "idCandidato": 897036,
+      "nome": "Grilo",
+      "numero": 43888,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335469,
+      "idCandidato": 966559,
+      "nome": "Apóstolo Augusto Magalhães",
+      "numero": 10222,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335470,
+      "idCandidato": 897043,
+      "nome": "Marcelo Almeida",
+      "numero": 51234,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335474,
+      "idCandidato": 899515,
+      "nome": "Alex",
+      "numero": 90222,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335476,
+      "idCandidato": 322316,
+      "nome": "Nitinho",
+      "numero": 25123,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335477,
+      "idCandidato": 966561,
+      "nome": "Meirinha Mota",
+      "numero": 25789,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335478,
+      "idCandidato": 324951,
+      "nome": "Jorgivaldo",
+      "numero": 36999,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335479,
+      "idCandidato": 966562,
+      "nome": "Lobo",
+      "numero": 36363,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335480,
+      "idCandidato": 601716,
+      "nome": "Georgeo Passos",
+      "numero": 36777,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335481,
+      "idCandidato": 899409,
+      "nome": "Cristiano do Santa Maria",
+      "numero": 45633,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335482,
+      "idCandidato": 897396,
+      "nome": "Jailson Coelhinho",
+      "numero": 17100,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335483,
+      "idCandidato": 966563,
+      "nome": "Edivan Amorim",
+      "numero": 22500,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335484,
+      "idCandidato": 966564,
+      "nome": "Major Adriano Reis",
+      "numero": 51190,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335487,
+      "idCandidato": 966565,
+      "nome": "Mônica Mangueira",
+      "numero": 15180,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335488,
+      "idCandidato": 966566,
+      "nome": "Sandra Carvalho",
+      "numero": 15678,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335489,
+      "idCandidato": 322380,
+      "nome": "Conceição Vieira",
+      "numero": 13600,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335490,
+      "idCandidato": 322217,
+      "nome": "Dr. Edney",
+      "numero": 40333,
+      "partido": "PSB"
+    },
+    {
+      "idCandidatura": 1335491,
+      "idCandidato": 599738,
+      "nome": "Diogo da Graça",
+      "numero": 55700,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335492,
+      "idCandidato": 897789,
+      "nome": "Felipe de Rocha",
+      "numero": 55222,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335495,
+      "idCandidato": 966567,
+      "nome": "Babi",
+      "numero": 50123,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335496,
+      "idCandidato": 966568,
+      "nome": "Valeria Lezziane",
+      "numero": 16900,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335499,
+      "idCandidato": 966570,
+      "nome": "Neusa",
+      "numero": 50050,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335500,
+      "idCandidato": 897390,
+      "nome": "Adelson Barreto Filho",
+      "numero": 17456,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335501,
+      "idCandidato": 966571,
+      "nome": "Givaldo Silva",
+      "numero": 14111,
+      "partido": "PTB"
+    },
+    {
+      "idCandidatura": 1335502,
+      "idCandidato": 966572,
+      "nome": "Irmã Jacira",
+      "numero": 20111,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335503,
+      "idCandidato": 966573,
+      "nome": "Gilmar Doido",
+      "numero": 51000,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335505,
+      "idCandidato": 322330,
+      "nome": "Zeca",
+      "numero": 20456,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335506,
+      "idCandidato": 966574,
+      "nome": "Prof Sérgio Ricardo",
+      "numero": 20222,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335507,
+      "idCandidato": 966575,
+      "nome": "Blackmalê",
+      "numero": 77776,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335508,
+      "idCandidato": 897578,
+      "nome": "Padre Inaldo",
+      "numero": 65555,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335511,
+      "idCandidato": 966577,
+      "nome": "Valter Jubiabá",
+      "numero": 54333,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335514,
+      "idCandidato": 599889,
+      "nome": "Baiano",
+      "numero": 17567,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335516,
+      "idCandidato": 322402,
+      "nome": "Matos",
+      "numero": 90123,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335524,
+      "idCandidato": 966583,
+      "nome": "Fabio da Feira",
+      "numero": 51457,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335527,
+      "idCandidato": 896958,
+      "nome": "Chicão",
+      "numero": 50555,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335531,
+      "idCandidato": 654695,
+      "nome": "Zeca Oliveira",
+      "numero": 16123,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335533,
+      "idCandidato": 899403,
+      "nome": "Professora Maria Jose",
+      "numero": 33789,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335536,
+      "idCandidato": 966586,
+      "nome": "Klecius",
+      "numero": 33123,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335537,
+      "idCandidato": 966587,
+      "nome": "Elizabete",
+      "numero": 33220,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335540,
+      "idCandidato": 966589,
+      "nome": "Rozangela de Zé Américo",
+      "numero": 17700,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335542,
+      "idCandidato": 324292,
+      "nome": "Valmir Monteiro",
+      "numero": 20000,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335545,
+      "idCandidato": 323779,
+      "nome": "Adinaldo",
+      "numero": 65123,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335546,
+      "idCandidato": 897382,
+      "nome": "Airecê Hozana",
+      "numero": 22456,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335547,
+      "idCandidato": 412065,
+      "nome": "Pr Antonio",
+      "numero": 20123,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335549,
+      "idCandidato": 966590,
+      "nome": "Wisia",
+      "numero": 14200,
+      "partido": "PTB"
+    },
+    {
+      "idCandidatura": 1335551,
+      "idCandidato": 322413,
+      "nome": "Pedro Firmino",
+      "numero": 45123,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335553,
+      "idCandidato": 412073,
+      "nome": "César Mandarino",
+      "numero": 36000,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335555,
+      "idCandidato": 654734,
+      "nome": "Marcos Negao",
+      "numero": 51333,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335556,
+      "idCandidato": 966593,
+      "nome": "Ediana",
+      "numero": 51890,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335560,
+      "idCandidato": 323479,
+      "nome": "Dominguinhos",
+      "numero": 13000,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335561,
+      "idCandidato": 599689,
+      "nome": "Silvio Santos",
+      "numero": 13111,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335562,
+      "idCandidato": 412094,
+      "nome": "Francisco Gualberto",
+      "numero": 13300,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335563,
+      "idCandidato": 966594,
+      "nome": "Tamires Maiara",
+      "numero": 55000,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335564,
+      "idCandidato": 966595,
+      "nome": "Meire",
+      "numero": 40555,
+      "partido": "PSB"
+    },
+    {
+      "idCandidatura": 1335565,
+      "idCandidato": 966596,
+      "nome": "Berta",
+      "numero": 15500,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335567,
+      "idCandidato": 322375,
+      "nome": "Marcos Monza",
+      "numero": 10300,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335573,
+      "idCandidato": 322155,
+      "nome": "Elinos Sabino",
+      "numero": 16600,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335574,
+      "idCandidato": 966599,
+      "nome": "Erilio Bispo",
+      "numero": 16000,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335581,
+      "idCandidato": 412171,
+      "nome": "Venâncio Fonseca",
+      "numero": 11111,
+      "partido": "PP"
+    },
+    {
+      "idCandidatura": 1335583,
+      "idCandidato": 966603,
+      "nome": "Judity",
+      "numero": 33100,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335584,
+      "idCandidato": 966604,
+      "nome": "Orlando de Riachao",
+      "numero": 33222,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335590,
+      "idCandidato": 600112,
+      "nome": "Astrogildo da Farmácia",
+      "numero": 25111,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335591,
+      "idCandidato": 897631,
+      "nome": "Danilo Astral",
+      "numero": 14000,
+      "partido": "PTB"
+    },
+    {
+      "idCandidatura": 1335593,
+      "idCandidato": 897836,
+      "nome": "Hello!",
+      "numero": 25200,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335594,
+      "idCandidato": 897032,
+      "nome": "Dr Fernando Medau",
+      "numero": 45444,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335595,
+      "idCandidato": 966607,
+      "nome": "Papai Noel",
+      "numero": 22444,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335596,
+      "idCandidato": 602047,
+      "nome": "Ti e Timóteo",
+      "numero": 45200,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335597,
+      "idCandidato": 899585,
+      "nome": "Vanete Santos",
+      "numero": 45717,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335598,
+      "idCandidato": 326053,
+      "nome": "Vanda de Bosco",
+      "numero": 90345,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335599,
+      "idCandidato": 966608,
+      "nome": "Marcos Santana",
+      "numero": 15111,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335600,
+      "idCandidato": 412104,
+      "nome": "Ilo Aguiar",
+      "numero": 51111,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335603,
+      "idCandidato": 322422,
+      "nome": "Robson Viana",
+      "numero": 15456,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335612,
+      "idCandidato": 323914,
+      "nome": "Mundinho da Comase",
+      "numero": 17000,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335614,
+      "idCandidato": 599815,
+      "nome": "Dr Roberto Guimarães",
+      "numero": 17555,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335615,
+      "idCandidato": 601266,
+      "nome": "Cabeça",
+      "numero": 51555,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335616,
+      "idCandidato": 897525,
+      "nome": "Indio",
+      "numero": 10121,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335617,
+      "idCandidato": 412163,
+      "nome": "Capitão Samuel",
+      "numero": 17123,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335618,
+      "idCandidato": 412068,
+      "nome": "Arnaldo Bispo",
+      "numero": 25000,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335619,
+      "idCandidato": 602074,
+      "nome": "Bispo do Gesso",
+      "numero": 23123,
+      "partido": "PPS"
+    },
+    {
+      "idCandidatura": 1335623,
+      "idCandidato": 966615,
+      "nome": "Chico de França",
+      "numero": 25540,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335625,
+      "idCandidato": 322206,
+      "nome": "Daniel Fortes",
+      "numero": 36770,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335626,
+      "idCandidato": 899575,
+      "nome": "Suzana Walois",
+      "numero": 45555,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335627,
+      "idCandidato": 897701,
+      "nome": "Elmo Paixão",
+      "numero": 22222,
+      "partido": "PR"
+    },
+    {
+      "idCandidatura": 1335628,
+      "idCandidato": 600537,
+      "nome": "Luciano Bispo",
+      "numero": 15015,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335629,
+      "idCandidato": 898007,
+      "nome": "Emprequete",
+      "numero": 43777,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335630,
+      "idCandidato": 966616,
+      "nome": "Maria do Bairro",
+      "numero": 33120,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335633,
+      "idCandidato": 898960,
+      "nome": "Joseane Maciel",
+      "numero": 65079,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335634,
+      "idCandidato": 412136,
+      "nome": "Luiz Mitidieri",
+      "numero": 55555,
+      "partido": "PSD"
+    },
+    {
+      "idCandidatura": 1335642,
+      "idCandidato": 966621,
+      "nome": "Dois Anjos",
+      "numero": 51123,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335643,
+      "idCandidato": 600822,
+      "nome": "Edmilson do Pastel",
+      "numero": 50111,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335644,
+      "idCandidato": 898885,
+      "nome": "Professor Juarez",
+      "numero": 50005,
+      "partido": "PSOL"
+    },
+    {
+      "idCandidatura": 1335645,
+      "idCandidato": 322897,
+      "nome": "Marivalda",
+      "numero": 12000,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335647,
+      "idCandidato": 600564,
+      "nome": "Dr Olivier",
+      "numero": 13999,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335648,
+      "idCandidato": 897524,
+      "nome": "Tiririca de Aracaju",
+      "numero": 10007,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335653,
+      "idCandidato": 412054,
+      "nome": "Reynaldo Nunes",
+      "numero": 43123,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335655,
+      "idCandidato": 966625,
+      "nome": "Danierica",
+      "numero": 77000,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335656,
+      "idCandidato": 324948,
+      "nome": "Jairo de Glória",
+      "numero": 10000,
+      "partido": "PRB"
+    },
+    {
+      "idCandidatura": 1335657,
+      "idCandidato": 966626,
+      "nome": "Cabo Placido",
+      "numero": 12190,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335658,
+      "idCandidato": 966627,
+      "nome": "Jorge Antonio",
+      "numero": 54444,
+      "partido": "PPL"
+    },
+    {
+      "idCandidatura": 1335659,
+      "idCandidato": 412035,
+      "nome": "Zezinho Guimarães",
+      "numero": 15555,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335663,
+      "idCandidato": 324238,
+      "nome": "Dr Vanderbal",
+      "numero": 36111,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335664,
+      "idCandidato": 896953,
+      "nome": "Popai Eventos",
+      "numero": 77777,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335665,
+      "idCandidato": 324852,
+      "nome": "Jully",
+      "numero": 12111,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335666,
+      "idCandidato": 966629,
+      "nome": "Silvia Fontes",
+      "numero": 12345,
+      "partido": "PDT"
+    },
+    {
+      "idCandidatura": 1335668,
+      "idCandidato": 966630,
+      "nome": "Rejane Melo",
+      "numero": 14500,
+      "partido": "PTB"
+    },
+    {
+      "idCandidatura": 1335669,
+      "idCandidato": 966631,
+      "nome": "Ana de Zé de Dona",
+      "numero": 17111,
+      "partido": "PSL"
+    },
+    {
+      "idCandidatura": 1335670,
+      "idCandidato": 412099,
+      "nome": "Gilmar Carvalho",
+      "numero": 77123,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335673,
+      "idCandidato": 899516,
+      "nome": "Dentinho",
+      "numero": 90252,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335675,
+      "idCandidato": 412083,
+      "nome": "Diógenes Almeida",
+      "numero": 44444,
+      "partido": "PRP"
+    },
+    {
+      "idCandidatura": 1335678,
+      "idCandidato": 412062,
+      "nome": "Ana Lúcia",
+      "numero": 13900,
+      "partido": "PT"
+    },
+    {
+      "idCandidatura": 1335679,
+      "idCandidato": 966634,
+      "nome": "Fabiana",
+      "numero": 40000,
+      "partido": "PSB"
+    },
+    {
+      "idCandidatura": 1335680,
+      "idCandidato": 966635,
+      "nome": "Luciano Pimentel",
+      "numero": 40123,
+      "partido": "PSB"
+    },
+    {
+      "idCandidatura": 1335684,
+      "idCandidato": 323716,
+      "nome": "Zacão do Povo",
+      "numero": 25678,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335685,
+      "idCandidato": 966637,
+      "nome": "Cicera",
+      "numero": 33300,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335686,
+      "idCandidato": 323831,
+      "nome": "Carlinhos da Atlética",
+      "numero": 15789,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335691,
+      "idCandidato": 966641,
+      "nome": "Mery Gatto",
+      "numero": 16016,
+      "partido": "PSTU"
+    },
+    {
+      "idCandidatura": 1335692,
+      "idCandidato": 322265,
+      "nome": "Isa Froes",
+      "numero": 90111,
+      "partido": "PROS"
+    },
+    {
+      "idCandidatura": 1335693,
+      "idCandidato": 966642,
+      "nome": "Joao Rodrigues",
+      "numero": 33444,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335694,
+      "idCandidato": 899229,
+      "nome": "Meire da Creche",
+      "numero": 65456,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335695,
+      "idCandidato": 966643,
+      "nome": "Sargento Edgard",
+      "numero": 33333,
+      "partido": "PMN"
+    },
+    {
+      "idCandidatura": 1335697,
+      "idCandidato": 322263,
+      "nome": "Professora Ilza",
+      "numero": 15156,
+      "partido": "PMDB"
+    },
+    {
+      "idCandidatura": 1335701,
+      "idCandidato": 966645,
+      "nome": "Maria do Carmo",
+      "numero": 77222,
+      "partido": "SD"
+    },
+    {
+      "idCandidatura": 1335702,
+      "idCandidato": 966646,
+      "nome": "Coronel Barros",
+      "numero": 36333,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335703,
+      "idCandidato": 966647,
+      "nome": "Silvio Pereira",
+      "numero": 43567,
+      "partido": "PV"
+    },
+    {
+      "idCandidatura": 1335704,
+      "idCandidato": 601429,
+      "nome": "Gouveia",
+      "numero": 65500,
+      "partido": "PC DO B"
+    },
+    {
+      "idCandidatura": 1335705,
+      "idCandidato": 412135,
+      "nome": "Goretti Reis",
+      "numero": 25333,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335706,
+      "idCandidato": 323416,
+      "nome": "Dr Gilson Andrade",
+      "numero": 36123,
+      "partido": "PTC"
+    },
+    {
+      "idCandidatura": 1335707,
+      "idCandidato": 600815,
+      "nome": "Bruno Vieira",
+      "numero": 45777,
+      "partido": "PSDB"
+    },
+    {
+      "idCandidatura": 1335708,
+      "idCandidato": 412048,
+      "nome": "Rolinha",
+      "numero": 20333,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335711,
+      "idCandidato": 322341,
+      "nome": "Joao Tarantella",
+      "numero": 51101,
+      "partido": "PEN"
+    },
+    {
+      "idCandidatura": 1335713,
+      "idCandidato": 966648,
+      "nome": "Waldemar Carvalho",
+      "numero": 25025,
+      "partido": "DEM"
+    },
+    {
+      "idCandidatura": 1335716,
+      "idCandidato": 966651,
+      "nome": "Reinaldo Moura",
+      "numero": 20101,
+      "partido": "PSC"
+    },
+    {
+      "idCandidatura": 1335717,
+      "idCandidato": 412137,
+      "nome": "Garibalde Mendonça",
+      "numero": 15000,
+      "partido": "PMDB"
+    }
+  ]
+}
