@@ -7,6 +7,7 @@ import ReduxPersist from '../Config/ReduxPersist'
 
 // Styles
 import styles from './Styles/RootContainerStyles'
+import { Colors } from '../Themes'
 
 class RootContainer extends Component {
   componentDidMount () {
@@ -19,7 +20,7 @@ class RootContainer extends Component {
   render () {
     return (
       <View style={styles.applicationView}>
-        <StatusBar barStyle='light-content' />
+        <StatusBar barStyle='dark-content' backgroundColor={Colors.background} />
         <ReduxNavigation />
       </View>
     )
@@ -27,8 +28,11 @@ class RootContainer extends Component {
 }
 
 // wraps dispatch to create nicer functions to call within our component
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   startup: () => dispatch(StartupActions.startup())
 })
 
-export default connect(null, mapDispatchToProps)(RootContainer)
+export default connect(
+  null,
+  mapDispatchToProps
+)(RootContainer)

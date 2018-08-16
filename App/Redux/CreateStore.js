@@ -14,10 +14,7 @@ export default (rootReducer, rootSaga) => {
   const enhancers = []
 
   /* ------------- Navigation Middleware ------------ */
-  const navigationMiddleware = createReactNavigationReduxMiddleware(
-    'root',
-    state => state.nav
-  )
+  const navigationMiddleware = createReactNavigationReduxMiddleware('root', state => state.nav)
   middleware.push(navigationMiddleware)
 
   /* ------------- Analytics Middleware ------------- */

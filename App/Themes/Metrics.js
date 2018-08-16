@@ -1,20 +1,22 @@
-import {Dimensions, Platform} from 'react-native'
+import { Dimensions, Platform } from 'react-native'
 
 const { width, height } = Dimensions.get('window')
 
 // Used via Metrics.baseMargin
 const metrics = {
   marginHorizontal: 10,
+  doubleMarginHorizontal: 25,
   marginVertical: 10,
-  section: 25,
-  baseMargin: 10,
+  section: 30,
+  baseMargin: 20,
   doubleBaseMargin: 20,
   smallMargin: 5,
   doubleSection: 50,
   horizontalLineHeight: 1,
+  borderRadius: 10,
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
-  navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
+  navBarHeight: Platform.OS === 'ios' ? 64 : 54,
   buttonRadius: 4,
   icons: {
     tiny: 15,
@@ -25,7 +27,7 @@ const metrics = {
   },
   images: {
     small: 20,
-    medium: 40,
+    medium: 50,
     large: 60,
     logo: 200
   }

@@ -6,11 +6,19 @@ import DebugConfig from '../Config/DebugConfig'
 let globalComponentExamplesRegistry = []
 let globalPluginExamplesRegistry = []
 
-export const addComponentExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) globalComponentExamplesRegistry.push({title, usage}) } // eslint-disable-line
+export const addComponentExample = (title, usage = () => {}) => {
+  if (DebugConfig.includeExamples) {
+    globalComponentExamplesRegistry.push({ title, usage })
+  }
+} // eslint-disable-line
 
-export const addPluginExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) globalPluginExamplesRegistry.push({title, usage}) } // eslint-disable-line
+export const addPluginExample = (title, usage = () => {}) => {
+  if (DebugConfig.includeExamples) {
+    globalPluginExamplesRegistry.push({ title, usage })
+  }
+} // eslint-disable-line
 
-const renderComponentExample = (example) => {
+const renderComponentExample = example => {
   return (
     <View key={example.title}>
       <View style={ApplicationStyles.darkLabelContainer}>
@@ -21,7 +29,7 @@ const renderComponentExample = (example) => {
   )
 }
 
-const renderPluginExample = (example) => {
+const renderPluginExample = example => {
   return (
     <View key={example.title}>
       <View style={ApplicationStyles.darkLabelContainer}>
