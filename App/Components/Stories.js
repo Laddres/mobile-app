@@ -1,4 +1,4 @@
-import './AlertMessage.story'
-import './DrawerButton.story'
-import './FullButton.story'
-import './RoundedButton.story'
+import './CandidatePreviewCard.story'
+import './ImageButton.story'
+import './SearchBar.story'
+import './Section.story'

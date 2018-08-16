@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CandidatePreviewCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "green",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderRadius": 10,
+        "height": 200,
+        "marginLeft": 25,
+        "marginVertical": 10,
+        "opacity": 1,
+        "width": 200,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "white",
+          "borderTopLeftRadius": 10,
+          "borderTopRightRadius": 10,
+          "flex": 0.75,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#ECEEF1",
+          "borderBottomLeftRadius": 10,
+          "borderBottomRightRadius": 10,
+          "flex": 0.25,
+          "justifyContent": "center",
+          "paddingLeft": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+          }
+        }
+      >
+        PT 13
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#25647C",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Lula da Silva
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots ImageButton Default 1`] = `
+<View
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 0,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+    }
+  }
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={1}
+  />
+</View>
+`;
+
+exports[`Storyshots SearchBar Default 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "green",
+      "height": 50,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      autoCorrect={false}
+      editable={true}
+      placeholder="Você conhece o seu candidato?"
+      placeholderTextColor="rgba(66, 66, 66, 0.45)"
+      style={
+        Array [
+          Object {
+            "color": "#424242",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 15,
+            "height": 46,
+            "paddingLeft": 41,
+            "paddingRight": 14,
+          },
+          undefined,
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots Section Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginLeft": 10,
+        "marginTop": 30,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgba(153,153,153,0.3)",
+          "fontSize": 38,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      DEFAULTSECTION
+    </Text>
+    <RCTScrollView
+      bounces={true}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginTop": 10,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "red",
+              "height": 200,
+              "marginLeft": 5,
+              "width": 200,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "backgroundColor": "red",
+              "height": 200,
+              "marginLeft": 5,
+              "width": 200,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "backgroundColor": "red",
+              "height": 200,
+              "marginLeft": 5,
+              "width": 200,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "backgroundColor": "red",
+              "height": 200,
+              "marginLeft": 5,
+              "width": 200,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
