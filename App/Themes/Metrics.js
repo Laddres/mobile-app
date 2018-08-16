@@ -30,6 +30,11 @@ const metrics = {
     medium: 50,
     large: 60,
     logo: 200
+  },
+  cards: {
+    padding: 15,
+    borderRadius: 12,
+    minHeight: 200
   }
 }
 

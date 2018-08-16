@@ -76,6 +76,70 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots CardContainer Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 15,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+        }
+      }
+    >
+      Hello!
+    </Text>
+    <View
+      style={
+        Object {
+          "backgroundColor": "red",
+          "borderRadius": 20,
+          "height": 40,
+          "width": 40,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "height": 10,
+            "width": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots ImageButton Default 1`] = `
 <View
   accessible={true}
