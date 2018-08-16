@@ -118,17 +118,38 @@ exports[`Storyshots SearchBar Default 1`] = `
     }
   }
 >
-  <TextInput
-    allowFontScaling={true}
-    placeholder="Você conhece o seu candidato?"
+  <View
     style={
-      Object {
-        "flex": 1,
-        "paddingLeft": 10,
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
     }
-    underlineColorAndroid="transparent"
-  />
+  >
+    <TextInput
+      allowFontScaling={true}
+      autoCorrect={false}
+      editable={true}
+      placeholder="Você conhece o seu candidato?"
+      placeholderTextColor="rgba(66, 66, 66, 0.45)"
+      style={
+        Array [
+          Object {
+            "color": "#424242",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 15,
+            "height": 46,
+            "paddingLeft": 41,
+            "paddingRight": 14,
+          },
+          undefined,
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
 </View>
 `;
 

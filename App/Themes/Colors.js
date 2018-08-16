@@ -9,7 +9,9 @@ const colors = {
   title: '#014E68',
   subtitle: '#25647C',
   text: '#79A2AF',
-  separator: '#F3F6F7'
+  separator: '#F3F6F7',
+  disabled: 'rgba(66, 66, 66, 0.45)',
+  border: 'rgba(92,128,136,0.2)'
 }
 
 export default colors

@@ -7,15 +7,20 @@ import Section from '../Components/Section'
 import ImageButton from '../Components/ImageButton'
 import CandidatePreviewCard from '../Components/CandidatePreviewCard'
 import _ from 'lodash'
+import { SearchBarSelectors, CandidatesSelectors } from '../Selectors'
+import SearchBarActions from '../Redux/SearchBarRedux'
 
 // Styles
 import styles from './Styles/MainScreenStyle'
 import { Images, Colors } from '../Themes'
-import { CandidatosType } from '../Redux/CandidatosRedux'
+import type { CandidatesType, CandidateType } from '../Redux/CandidatosRedux'
 
 type Props = {
   fetching: boolean,
-  candidates: CandidatosType
+  candidates: CandidatesType,
+  searchQuery: string,
+  searchBarSuggestions: Array<CandidateType>,
+  onChangeSearchQuery: string => mixed
 }
 
 class MainScreen extends Component<Props> {
@@ -26,27 +31,21 @@ class MainScreen extends Component<Props> {
 
   developmentAlert = () => Alert.alert('Em desenvolvimento', 'Funcionalidade em desenvolvimento')
 
-  renderCandidatePreviewCard = candidate => {
-    const { idCandidato, nome, partido, numero, img } = candidate
-    return (
-      <CandidatePreviewCard
-        name={nome}
-        imgSrc={img}
-        key={idCandidato}
-        onPress={this.developmentAlert}
-        party={`${partido} ${numero}`}
-      />
-    )
-  }
-
   render () {
-    const { fetching, candidates } = this.props
+    const { fetching, candidates, searchQuery, searchBarSuggestions, onChangeSearchQuery } = this.props
     return (
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.header}>
           <ImageButton source={Images.menu} style={styles.filtersButton} onPress={this.developmentAlert} />
           <View style={styles.verticalSeparator} />
-          <SearchBar placeholder={'Você conhece o seu candidato?'} />
+          <SearchBar
+            query={searchQuery}
+            showSuggestions={false}
+            onChange={onChangeSearchQuery}
+            onChoose={idCandidato => Alert.alert('kiu', idCandidato)}
+            suggestions={searchBarSuggestions}
+            placeholder={'Você conhece o seu candidato?'}
+          />
         </View>
         {fetching ? (
           <View style={styles.fetchingContainer}>
@@ -56,7 +55,15 @@ class MainScreen extends Component<Props> {
           candidates &&
           Object.keys(candidates).map(role => (
             <Section title={_.startCase(role)} key={role}>
-              {candidates[role].map(candidate => this.renderCandidatePreviewCard(candidate))}
+              {candidates[role].map(candidate => (
+                <CandidatePreviewCard
+                  name={candidate.nome}
+                  imgSrc={candidate.img}
+                  key={candidate.idCandidato}
+                  onPress={this.developmentAlert}
+                  party={`${candidate.partido} ${candidate.numero}`}
+                />
+              ))}
             </Section>
           ))
         )}
@@ -67,13 +74,17 @@ class MainScreen extends Component<Props> {
 
 const mapStateToProps = state => {
   return {
-    candidates: state.candidatos.data,
-    fetching: state.candidatos.fetching
+    candidates: CandidatesSelectors.filterResults(state),
+    fetching: state.candidatos.fetching,
+    searchQuery: state.searchBar.query,
+    searchBarSuggestions: SearchBarSelectors.fetchSuggestions(state)
   }
 }
 
 const mapDispatchToProps = dispatch => {
-  return {}
+  return {
+    onChangeSearchQuery: query => dispatch(SearchBarActions.searchBarChange(query))
+  }
 }
 
 export default connect(

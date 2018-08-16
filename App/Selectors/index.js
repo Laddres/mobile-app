@@ -1,10 +1,4 @@
-// noinspection ES6CheckImport
-// import { createSelector } from 'reselect'
-// import _ from 'lodash'
+import { CandidatesSelectors } from './CandidatesSelectors'
+import { SearchBarSelectors } from './SearchBarSelectors'
 
-/* ---- input selectors ---- */
-// const usersSelector = state => state.users.list
-
-/* ---- memoized selectors ---- */
-
-// export const sortedUsersSelector = createSelector(usersSelector, users => _.sortBy(users, 'name'))
+export { CandidatesSelectors, SearchBarSelectors }

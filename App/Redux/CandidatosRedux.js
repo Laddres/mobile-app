@@ -1,5 +1,4 @@
 // @flow
-// noinspection ES6CheckImport
 import { createReducer, createActions } from 'reduxsauce'
 import Immutable from 'seamless-immutable'
 
@@ -16,25 +15,27 @@ export default Creators
 
 /* ------------- Tipos Flow ------------- */
 
-export type CandidatosType = {
-  string: Array<{
-    idCandidatura: number,
-    idCandidato: number,
-    nome: string,
-    numero: number,
-    partido: string
-  }>
+export type CandidateType = {
+  idCandidatura: number,
+  idCandidato: number,
+  nome: string,
+  numero: number,
+  partido: string
 }
 
-export type CandidatosState = Immutable<{
-  data: CandidatosType,
+export type CandidatesType = {
+  string: Array<CandidateType>
+}
+
+export type CandidatesState = Immutable<{
+  data: CandidatesType,
   fetching: ?boolean,
   error: ?boolean
 }>
 
 /* ------------- Estado Inicial ------------- */
 
-export const INITIAL_STATE: CandidatosState = Immutable({
+export const INITIAL_STATE: CandidatesState = Immutable({
   data: {},
   fetching: null,
   error: null
@@ -42,12 +43,12 @@ export const INITIAL_STATE: CandidatosState = Immutable({
 
 /* ------------- Redutores ------------- */
 
-export const request = (state: CandidatosState) => state.merge({ fetching: true })
+export const request = (state: CandidatesState) => state.merge({ fetching: true })
 
-export const success = (state: CandidatosState, { data }: { data: CandidatosType }) =>
+export const success = (state: CandidatesState, { data }: { data: CandidatesType }) =>
   state.merge({ fetching: false, error: null, data })
 
-export const failure = (state: CandidatosState) => state.merge({ fetching: false, error: true })
+export const failure = (state: CandidatesState) => state.merge({ fetching: false, error: true })
 
 /* ------------- Conectar redutores aos tipos ------------- */
 
