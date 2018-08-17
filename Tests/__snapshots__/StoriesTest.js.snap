@@ -20,13 +20,13 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         "marginBottom": 30,
         "marginTop": 10,
         "minHeight": 200,
-        "padding": 15,
-        "shadowColor": "#000000",
+        "padding": 10,
+        "shadowColor": "#79A2AF",
         "shadowOffset": Object {
-          "height": 1,
+          "height": 4,
           "width": 0,
         },
-        "shadowOpacity": 0.5,
+        "shadowOpacity": 0.1,
         "width": "100%",
       }
     }
@@ -341,13 +341,13 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         "marginBottom": 30,
         "marginTop": 10,
         "minHeight": 200,
-        "padding": 15,
-        "shadowColor": "#000000",
+        "padding": 10,
+        "shadowColor": "#79A2AF",
         "shadowOffset": Object {
-          "height": 1,
+          "height": 4,
           "width": 0,
         },
-        "shadowOpacity": 0.5,
+        "shadowOpacity": 0.1,
         "width": "100%",
       }
     }
@@ -688,12 +688,12 @@ exports[`Storyshots CardContainer Default 1`] = `
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
-        "shadowColor": "#000000",
+        "shadowColor": "#79A2AF",
         "shadowOffset": Object {
-          "height": 1,
+          "height": 4,
           "width": 0,
         },
-        "shadowOpacity": 0.5,
+        "shadowOpacity": 0.1,
         "width": "100%",
       }
     }
@@ -825,12 +825,12 @@ exports[`Storyshots ProfileCard Default 1`] = `
           "marginTop": 10,
           "minHeight": 200,
           "padding": 10,
-          "shadowColor": "#000000",
+          "shadowColor": "#79A2AF",
           "shadowOffset": Object {
-            "height": 1,
+            "height": 4,
             "width": 0,
           },
-          "shadowOpacity": 0.5,
+          "shadowOpacity": 0.1,
           "width": "100%",
         }
       }
