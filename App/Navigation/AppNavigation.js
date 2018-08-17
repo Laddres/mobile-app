@@ -6,9 +6,9 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator(
-  (ResumeScreen: { screen: ResumeScreen }),
   {
-    MainScreen: { screen: MainScreen }
+    MainScreen: { screen: MainScreen },
+    ResumeScreen: { screen: ResumeScreen }
   },
   {
     // Default config for all screens
