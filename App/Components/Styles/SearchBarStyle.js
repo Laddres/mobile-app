@@ -9,7 +9,6 @@ export default StyleSheet.create({
   textInput: {
     height: 46,
     color: '#424242',
-    fontFamily: 'Roboto-Regular',
     fontSize: 15,
     paddingLeft: 41,
     paddingRight: 14
@@ -45,7 +44,6 @@ export default StyleSheet.create({
   },
   suggestion: {
     color: '#424242',
-    fontFamily: 'Roboto-Regular',
     fontSize: 15
   }
 })

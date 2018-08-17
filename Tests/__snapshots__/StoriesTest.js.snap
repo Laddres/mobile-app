@@ -177,8 +177,8 @@ exports[`Storyshots SearchBar Default 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "green",
-      "height": 50,
+      "backgroundColor": "white",
+      "height": 200,
     }
   }
 >
@@ -202,7 +202,6 @@ exports[`Storyshots SearchBar Default 1`] = `
         Array [
           Object {
             "color": "#424242",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 15,
             "height": 46,
             "paddingLeft": 41,
@@ -213,6 +212,136 @@ exports[`Storyshots SearchBar Default 1`] = `
       }
       underlineColorAndroid="transparent"
     />
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "idCandidato": 1,
+            "idCandidatura": 1,
+            "nome": "teste candidato 1",
+            "numero": 22,
+            "partido": "xx",
+          },
+          Object {
+            "idCandidato": 2,
+            "idCandidatura": 2,
+            "nome": "teste candidato 2",
+            "numero": 35,
+            "partido": "yy",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      keyboardShouldPersistTaps="always"
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "rgba(92,128,136,0.2)",
+          "borderRadius": 3,
+          "borderWidth": 1,
+          "left": 0,
+          "maxHeight": 115,
+          "position": "absolute",
+          "right": 0,
+          "top": 45,
+        }
+      }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "rgba(92,128,136,0.2)",
+                "height": 46,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 14,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#424242",
+                  "fontSize": 15,
+                }
+              }
+            >
+              teste candidato 1
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "rgba(92,128,136,0.2)",
+                "height": 46,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 14,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#424242",
+                  "fontSize": 15,
+                }
+              }
+            >
+              teste candidato 2
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
   </View>
 </View>
 `;
