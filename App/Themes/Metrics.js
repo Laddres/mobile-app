@@ -2,7 +2,6 @@ import { Dimensions, Platform } from 'react-native'
 
 const { width, height } = Dimensions.get('window')
 
-// Used via Metrics.baseMargin
 const metrics = {
   marginHorizontal: 10,
   doubleMarginHorizontal: 25,
@@ -32,9 +31,12 @@ const metrics = {
     logo: 200
   },
   cards: {
-    padding: 15,
+    padding: 10,
     borderRadius: 12,
-    minHeight: 200
+    minHeight: 200,
+    marginVerticalSeparator: 7.5,
+    pictureSpaceMargin: 80,
+    candidatePictureOverflow: -35
   }
 }
 
