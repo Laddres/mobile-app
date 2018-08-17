@@ -20,5 +20,16 @@ export default {
           }),
         500
       )
+    ),
+  getCandidacy: () =>
+    new Promise(resolve =>
+      setTimeout(
+        () =>
+          resolve({
+            ok: true,
+            data: require('../Fixtures/getCandidacy.json')
+          }),
+        500
+      )
     )
 }
