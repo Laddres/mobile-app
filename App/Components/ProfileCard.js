@@ -7,10 +7,11 @@ import Separator from './Separator'
 import ImageButton from './ImageButton'
 import { developmentAlert } from '../Lib/Utils'
 import { Images } from '../Themes'
+import type { CandidateProfileType } from '../Redux/CandidateRedux'
 
 type Props = {
   picture: { uri: string } | number,
-  candidate: any // @todo adicionar tipo correto aqui
+  candidate: CandidateProfileType
 }
 
 export default class ProfileCard extends React.Component<Props> {
