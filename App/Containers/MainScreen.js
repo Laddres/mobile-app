@@ -9,6 +9,7 @@ import CandidatePreviewCard from '../Components/CandidatePreviewCard'
 import _ from 'lodash'
 import { SearchBarSelectors, CandidatesSelectors } from '../Selectors'
 import SearchBarActions from '../Redux/SearchBarRedux'
+import { developmentAlert } from '../Lib/Utils'
 
 // Styles
 import styles from './Styles/MainScreenStyle'
@@ -29,14 +30,12 @@ class MainScreen extends Component<Props> {
   //   this.state = {}
   // }
 
-  developmentAlert = () => Alert.alert('Em desenvolvimento', 'Funcionalidade em desenvolvimento')
-
   render () {
     const { fetching, candidates, searchQuery, searchBarSuggestions, onChangeSearchQuery } = this.props
     return (
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         <View style={styles.header}>
-          <ImageButton source={Images.menu} style={styles.filtersButton} onPress={this.developmentAlert} />
+          <ImageButton source={Images.menu} style={styles.filtersButton} onPress={developmentAlert} />
           <View style={styles.verticalSeparator} />
           <SearchBar
             query={searchQuery}
@@ -60,7 +59,7 @@ class MainScreen extends Component<Props> {
                   name={candidate.nome}
                   imgSrc={candidate.img}
                   key={candidate.idCandidato}
-                  onPress={this.developmentAlert}
+                  onPress={developmentAlert}
                   party={`${candidate.partido} ${candidate.numero}`}
                 />
               ))}

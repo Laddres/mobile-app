@@ -1,3 +1,5 @@
+import { Alert } from 'react-native'
+
 export const getImageHitSlop = (width, height) => {
   const clamp = (base, min, max) => Math.max(Math.min(base, max), min)
   const minWidthByMaterialDesign = 40
@@ -14,3 +16,5 @@ export const getImageHitSlop = (width, height) => {
     bottom: verticalMargin
   }
 }
+
+export const developmentAlert = () => Alert.alert('Em desenvolvimento', 'Funcionalidade em desenvolvimento')
