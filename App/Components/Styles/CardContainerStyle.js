@@ -10,9 +10,9 @@ export default StyleSheet.create({
     backgroundColor: Colors.white,
     ...Platform.select({
       ios: {
-        shadowOffset: { width: 0, height: 1 },
-        shadowColor: Colors.black,
-        shadowOpacity: 0.5
+        shadowOffset: { width: 0, height: 4 },
+        shadowColor: Colors.text,
+        shadowOpacity: 0.1
       },
       android: {
         elevation: 2
