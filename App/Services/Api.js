@@ -11,9 +11,11 @@ const create = (baseURL = 'https://api.caueira.com.br/') => {
   })
 
   const getCandidatos = () => api.get('/candidatos/')
+  const getCandidateProfile = id => api.get(`/candidatos/${id}`)
 
   return {
-    getCandidatos
+    getCandidatos,
+    getCandidateProfile
   }
 }
 

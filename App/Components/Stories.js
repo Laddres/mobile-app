@@ -1,3 +1,4 @@
+import './ProfileCard.story'
 import './CardContainer.story'
 import './CandidacyCard.story'
 import './CandidatePreviewCard.story'
