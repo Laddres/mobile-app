@@ -2,17 +2,21 @@
 import React, { Component } from 'react'
 import { ScrollView, View, Image, Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
-import { CandidateSelectors } from '../Selectors'
+import { CandidateSelectors, CandidacySelectors } from '../Selectors'
 import ProfileCard from '../Components/ProfileCard'
 import { Images } from '../Themes'
 
 // Styles
 import styles from './Styles/ResumeScreenStyle'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
+import type { CandidacyType } from '../Redux/CandidacyRedux'
 
 type Props = {
   navigation: any,
-  candidateProfile: CandidateProfileType
+  fetchingCandidate: ?boolean,
+  candidateProfile: CandidateProfileType,
+  fetchingCandidacies: ?boolean,
+  candidacties: CandidacyType
 }
 
 class ResumeScreen extends Component<Props> {
@@ -43,7 +47,10 @@ class ResumeScreen extends Component<Props> {
 
 const mapStateToProps = state => {
   return {
-    candidateProfile: CandidateSelectors.getSelectedCandidate(state)
+    fetchingCandidate: CandidateSelectors.fetchingCandidate(state),
+    candidateProfile: CandidateSelectors.getSelectedCandidate(state),
+    fetchingCandidacies: CandidacySelectors.fetchingCandidacies(state),
+    candidacies: CandidacySelectors.getCandidacies(state)
   }
 }
 
