@@ -1,5 +1,596 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots CandidacyCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 15,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0.65,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            CARGO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            Deputado Federal
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.35,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PARTIDO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PV
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F3F6F7",
+            "height": 2,
+            "marginBottom": 10,
+          }
+        }
+      />
+      <View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            ELEIÇÕES GERAIS 2014
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            2010
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            LOCAL
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            COLIGAÇÃO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre Agora e Sempre
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            PV / PCB / PMDB
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            RESULTADO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Eleito
+          </Text>
+        </View>
+      </View>
+      <View
+        style={Object {}}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F3F6F7",
+              "height": 2,
+              "marginTop": 10,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginTop": 10,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontWeight": "700",
+                },
+                Object {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            ATUAÇÃO
+          </Text>
+          <Image
+            source={1}
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CandidacyCard Senador 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 15,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0.65,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            CARGO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            Senador
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.35,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PARTIDO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            REDE
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F3F6F7",
+            "height": 2,
+            "marginBottom": 10,
+          }
+        }
+      />
+      <View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            ELEIÇÕES GERAIS 2014
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            2014
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            LOCAL
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            COLIGAÇÃO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Frente Popular de Acrelândia
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            PT / PMN / PSB / PV / PC do B
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 10,
+              }
+            }
+          >
+            RESULTADO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Não Eleito
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots CandidatePreviewCard Default 1`] = `
 <View
   style={
