@@ -9,7 +9,8 @@ export const reducers = combineReducers({
   nav: require('./NavigationRedux').reducer,
   searchBar: require('./SearchBarRedux').reducer,
   candidatos: require('./CandidatosRedux').reducer,
-  candidate: require('./CandidateRedux').reducer
+  candidate: require('./CandidateRedux').reducer,
+  candidacy: require('./CandidacyRedux').reducer
 })
 
 export default () => {
