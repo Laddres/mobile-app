@@ -129,11 +129,20 @@ exports[`Storyshots CandidacyCard Default 1`] = `
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "#F3F6F7",
-            "height": 2,
-            "marginBottom": 10,
-          }
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+              "height": 2,
+              "marginBottom": 10,
+            },
+          ]
         }
       />
       <View>
@@ -270,11 +279,20 @@ exports[`Storyshots CandidacyCard Default 1`] = `
       >
         <View
           style={
-            Object {
-              "backgroundColor": "#F3F6F7",
-              "height": 2,
-              "marginTop": 10,
-            }
+            Array [
+              Object {
+                "height": 1,
+                "width": "100%",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+                "height": 2,
+                "marginTop": 10,
+              },
+            ]
           }
         />
         <View
@@ -450,11 +468,20 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "#F3F6F7",
-            "height": 2,
-            "marginBottom": 10,
-          }
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+              "height": 2,
+              "marginBottom": 10,
+            },
+          ]
         }
       />
       <View>
@@ -727,6 +754,66 @@ exports[`Storyshots CardContainer Default 1`] = `
         }
       />
     </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CardContainer Fetching 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#79A2AF",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "position": "absolute",
+        }
+      }
+    >
+      <ActivityIndicator
+        animating={true}
+        color="#79A2AF"
+        hidesWhenStopped={true}
+        size="large"
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+        }
+      }
+    >
+      Hello!
+    </Text>
   </View>
 </View>
 `;

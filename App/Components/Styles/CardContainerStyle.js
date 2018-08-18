@@ -4,9 +4,9 @@ import { Colors, Metrics } from '../../Themes'
 export default StyleSheet.create({
   container: {
     width: '100%',
-    minHeight: Metrics.cards.minHeight,
     alignItems: 'center',
     justifyContent: 'center',
+    minHeight: Metrics.cards.minHeight,
     backgroundColor: Colors.white,
     ...Platform.select({
       ios: {
@@ -22,5 +22,10 @@ export default StyleSheet.create({
     marginTop: Metrics.marginVertical,
     marginBottom: Metrics.section,
     borderRadius: Metrics.cards.borderRadius
+  },
+  fetchingContainer: {
+    position: 'absolute',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })

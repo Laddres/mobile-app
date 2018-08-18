@@ -29,7 +29,8 @@ class ResumeScreen extends Component<Props> {
   render () {
     const {
       candidateProfile,
-      navigation: { navigate }
+      navigation: { navigate },
+      fetchingCandidacies
     } = this.props
     return (
       <ScrollView style={styles.container}>
@@ -42,7 +43,11 @@ class ResumeScreen extends Component<Props> {
         </View>
         <ProfileCard candidate={candidateProfile} source={''} />
         {this.props.candidacies.map(candidacy => (
-          <CandidacyCard candidacy={candidacy} />
+          <CandidacyCard
+            candidacy={candidacy}
+            key={`${candidacy.id}-${candidacy.idCandidato}`}
+            fetching={fetchingCandidacies}
+          />
         ))}
       </ScrollView>
     )

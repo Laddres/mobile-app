@@ -17,3 +17,8 @@ storiesOf('CardContainer', module)
       </View>
     </CardContainer>
   ))
+  .add('Fetching', () => (
+    <CardContainer fetching>
+      <Text style={{ fontSize: 32 }}>Hello!</Text>
+    </CardContainer>
+  ))

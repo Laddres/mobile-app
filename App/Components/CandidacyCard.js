@@ -4,8 +4,11 @@ import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { Images } from '../Themes'
 import CardContainer from './CardContainer'
 import styles from './Styles/CandidacyCardStyle'
+import Separator from './Separator'
+import { developmentAlert } from '../Lib/Utils'
 
 type Props = {
+  fetching?: boolean,
   candidacy: {
     cargo: string,
     partido: string,
@@ -22,9 +25,9 @@ type Props = {
 
 class CandidacyCard extends Component<Props> {
   render () {
-    const { candidacy, onPress } = this.props
+    const { candidacy, fetching } = this.props
     return (
-      <CardContainer>
+      <CardContainer fetching={fetching}>
         <View style={styles.container}>
           <View style={styles.header}>
             <View style={styles.role}>
@@ -36,7 +39,7 @@ class CandidacyCard extends Component<Props> {
               <Text style={[styles.headerText, styles.textRight]}>{candidacy.partido}</Text>
             </View>
           </View>
-          <View style={styles.headerSeparator} />
+          <Separator style={styles.headerSeparator} />
           <View style={styles.body}>
             <View style={styles.info}>
               <Text style={styles.title}>{candidacy.descricaoEleicao}</Text>
@@ -64,8 +67,8 @@ class CandidacyCard extends Component<Props> {
           </View>
           {candidacy.resultado === 'Eleito' && (
             <View style={styles.performance}>
-              <View style={styles.performanceSeparator} />
-              <TouchableOpacity style={styles.performanceButton} onPress={onPress}>
+              <Separator style={styles.performanceSeparator} />
+              <TouchableOpacity style={styles.performanceButton} onPress={developmentAlert}>
                 <Text style={[styles.performanceText, styles.textCenter]}>ATUAÇÃO</Text>
                 <Image source={Images.chevronDown} />
               </TouchableOpacity>
