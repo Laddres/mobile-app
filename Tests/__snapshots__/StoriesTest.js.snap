@@ -55,7 +55,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       <Text
         style={
           Object {
-            "color": "#79A2AF",
+            "color": "#014E68",
           }
         }
       >
