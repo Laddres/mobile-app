@@ -27,15 +27,11 @@ class ResumeScreen extends Component<Props> {
   // }
 
   render () {
-    const {
-      candidateProfile,
-      navigation: { navigate },
-      fetchingCandidacies
-    } = this.props
+    const { candidateProfile, navigation, fetchingCandidacies } = this.props
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigate('MainScreen')} style={styles.backButton}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
             <Image source={Images.arrowLeft} resizeMode={'contain'} style={styles.backImage} />
             <Text style={styles.backText}>Candidatos</Text>
           </TouchableOpacity>
