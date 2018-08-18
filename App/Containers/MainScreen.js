@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react'
-import { ActivityIndicator, ScrollView, View, Alert } from 'react-native'
+import { ActivityIndicator, ScrollView, View } from 'react-native'
 import { connect } from 'react-redux'
 import SearchBar from '../Components/SearchBar'
 import Section from '../Components/Section'
@@ -50,7 +50,7 @@ class MainScreen extends Component<Props> {
             query={searchQuery}
             showSuggestions={false}
             onChange={onChangeSearchQuery}
-            onChoose={idCandidato => Alert.alert('kiu', idCandidato)}
+            onChoose={developmentAlert}
             suggestions={searchBarSuggestions}
             placeholder={'Você conhece o seu candidato?'}
           />
