@@ -4,6 +4,7 @@ import { ScrollView, View, Image, Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 import { CandidateSelectors, CandidacySelectors } from '../Selectors'
 import ProfileCard from '../Components/ProfileCard'
+import CandidacyCard from '../Components/CandidacyCard'
 import { Images } from '../Themes'
 
 // Styles
@@ -40,6 +41,9 @@ class ResumeScreen extends Component<Props> {
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
         <ProfileCard candidate={candidateProfile} source={''} />
+        {this.props.candidacies.map(candidacy => (
+          <CandidacyCard candidacy={candidacy} />
+        ))}
       </ScrollView>
     )
   }

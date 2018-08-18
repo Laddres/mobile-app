@@ -11,29 +11,31 @@ const enhancementStyle = { alignItems: 'center', padding: Metrics.baseMargin, ba
 
 storiesOf('CandidacyCard', module)
   .addDecorator(storyFn => <View style={enhancementStyle}>{storyFn()}</View>)
-  .add('Default', () => (
-    <CandidacyCard
-      role='Deputado Federal'
-      party='PV'
-      electionName='ELEIÇÕES GERAIS 2014'
-      electionYear='2010'
-      city=''
-      state='Acre'
-      allianceName='Acre Agora e Sempre'
-      allianceParties='PV / PCB / PMDB'
-      result='Eleito'
-    />
-  ))
-  .add('Senador', () => (
-    <CandidacyCard
-      role='Senador'
-      party='REDE'
-      electionName='ELEIÇÕES GERAIS 2014'
-      electionYear='2014'
-      city=''
-      state='Acre'
-      allianceName='Frente Popular de Acrelândia'
-      allianceParties='PT / PMN / PSB / PV / PC do B'
-      result='Não Eleito'
-    />
-  ))
+  .add('Default', () => {
+    const candidacy = {
+      cargo: 'Deputado Federal',
+      partido: 'PV',
+      descricaoEleicao: 'ELEIÇÕES GERAIS 2014',
+      anoEleicao: '2010',
+      cidade: '',
+      estado: 'Acre',
+      nomeLegenda: 'Acre Agora e Sempre',
+      composicaoLegenda: 'PV / PCB / PMDB',
+      resultado: 'Eleito'
+    }
+    return <CandidacyCard candidacy={candidacy} />
+  })
+  .add('Senador', () => {
+    const candidacy = {
+      cargo: 'Senador',
+      partido: 'REDE',
+      descricaoEleicao: 'ELEIÇÕES GERAIS 2014',
+      anoEleicao: '2014',
+      cidade: '',
+      estado: 'Acre',
+      nomeLegenda: 'Frente Popular de Acrelândia',
+      composicaoLegenda: 'PT / PMN / PSB / PV / PC do B',
+      resultado: 'Não Eleitoo'
+    }
+    return <CandidacyCard candidacy={candidacy} />
+  })
