@@ -36,12 +36,12 @@ export default StyleSheet.create({
     borderRadius: Metrics.images.logo / 2
   },
   name: {
-    color: Colors.title,
+    color: Colors.text,
     fontSize: Fonts.size.h3,
     fontWeight: 'bold'
   },
   text: {
-    color: Colors.text,
+    color: Colors.title,
     fontSize: Fonts.size.regular
   },
   bold: {

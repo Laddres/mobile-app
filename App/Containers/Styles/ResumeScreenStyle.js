@@ -24,7 +24,7 @@ export default StyleSheet.create({
   },
   backText: {
     fontSize: Fonts.size.h6,
-    color: Colors.title,
+    color: Colors.text,
     fontWeight: 'bold'
   },
   logo: {

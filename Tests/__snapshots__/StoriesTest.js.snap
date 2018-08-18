@@ -21,7 +21,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
-        "shadowColor": "#79A2AF",
+        "shadowColor": "#014E68",
         "shadowOffset": Object {
           "height": 4,
           "width": 0,
@@ -59,7 +59,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#79A2AF",
+                  "color": "#014E68",
                   "fontSize": 10,
                 },
                 Object {
@@ -98,7 +98,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#79A2AF",
+                  "color": "#014E68",
                   "fontSize": 10,
                 },
                 Object {
@@ -156,7 +156,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -185,7 +185,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -214,7 +214,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -254,7 +254,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -360,7 +360,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
-        "shadowColor": "#79A2AF",
+        "shadowColor": "#014E68",
         "shadowOffset": Object {
           "height": 4,
           "width": 0,
@@ -398,7 +398,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#79A2AF",
+                  "color": "#014E68",
                   "fontSize": 10,
                 },
                 Object {
@@ -437,7 +437,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#79A2AF",
+                  "color": "#014E68",
                   "fontSize": 10,
                 },
                 Object {
@@ -495,7 +495,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -524,7 +524,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -553,7 +553,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -593,7 +593,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 10,
               }
             }
@@ -673,7 +673,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       <Text
         style={
           Object {
-            "color": "#79A2AF",
+            "color": "#014E68",
           }
         }
       >
@@ -715,7 +715,7 @@ exports[`Storyshots CardContainer Default 1`] = `
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
-        "shadowColor": "#79A2AF",
+        "shadowColor": "#014E68",
         "shadowOffset": Object {
           "height": 4,
           "width": 0,
@@ -779,7 +779,7 @@ exports[`Storyshots CardContainer Fetching 1`] = `
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
-        "shadowColor": "#79A2AF",
+        "shadowColor": "#014E68",
         "shadowOffset": Object {
           "height": 4,
           "width": 0,
@@ -800,7 +800,7 @@ exports[`Storyshots CardContainer Fetching 1`] = `
     >
       <ActivityIndicator
         animating={true}
-        color="#79A2AF"
+        color="#014E68"
         hidesWhenStopped={true}
         size="large"
       />
@@ -912,7 +912,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
           "marginTop": 10,
           "minHeight": 200,
           "padding": 10,
-          "shadowColor": "#79A2AF",
+          "shadowColor": "#014E68",
           "shadowOffset": Object {
             "height": 4,
             "width": 0,
@@ -1072,7 +1072,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#79A2AF",
+                "color": "#014E68",
                 "fontSize": 12,
               }
             }

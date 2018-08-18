@@ -25,7 +25,7 @@ export default StyleSheet.create({
     fontSize: Fonts.size.title
   },
   headerText: {
-    color: Colors.title,
+    color: Colors.text,
     fontSize: Fonts.size.regular,
     fontWeight: Fonts.weight.bold
   },
@@ -38,7 +38,7 @@ export default StyleSheet.create({
     marginVertical: Metrics.marginVertical
   },
   bodyText: {
-    color: Colors.title,
+    color: Colors.text,
     fontSize: Fonts.size.medium,
     fontWeight: Fonts.weight.medium
   },
@@ -50,7 +50,7 @@ export default StyleSheet.create({
     marginTop: Metrics.marginVertical
   },
   performanceText: {
-    color: Colors.title,
+    color: Colors.text,
     fontWeight: Fonts.weight.bold
   },
   performanceSeparator: {

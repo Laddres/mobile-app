@@ -42,7 +42,7 @@ class CandidacyCard extends Component<Props> {
           <Separator style={styles.headerSeparator} />
           <View style={styles.body}>
             <View style={styles.info}>
-              <Text style={styles.title}>{candidacy.descricaoEleicao}</Text>
+              <Text style={styles.title}>{candidacy.descricaoEleicao.toUpperCase()}</Text>
               <Text style={styles.bodyText}>{candidacy.anoEleicao}</Text>
             </View>
             <View style={styles.info}>
