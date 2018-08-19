@@ -1,4 +1,4 @@
-import { Alert } from 'react-native'
+import { Alert, Linking } from 'react-native'
 
 export const getImageHitSlop = (width, height) => {
   const clamp = (base, min, max) => Math.max(Math.min(base, max), min)
@@ -18,3 +18,13 @@ export const getImageHitSlop = (width, height) => {
 }
 
 export const developmentAlert = () => Alert.alert('Em desenvolvimento', 'Funcionalidade em desenvolvimento')
+
+export const openExternalApp = (url: string) => {
+  Linking.canOpenURL(url).then(supported => {
+    if (supported) {
+      Linking.openURL(url)
+    } else {
+      console.log("Don't know how to open URI: " + url)
+    }
+  })
+}
