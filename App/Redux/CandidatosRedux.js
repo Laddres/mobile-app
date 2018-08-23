@@ -16,9 +16,9 @@ export default Creators
 /* ------------- Tipos Flow ------------- */
 
 export type CandidateType = {
-  idCandidatura: number,
-  idCandidato: number,
+  id: number,
   nome: string,
+  foto: string,
   numero: number,
   partido: string
 }
