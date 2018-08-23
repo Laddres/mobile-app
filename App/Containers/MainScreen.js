@@ -66,7 +66,7 @@ class MainScreen extends Component<Props> {
               {candidates[role].map(candidate => (
                 <CandidatePreviewCard
                   name={candidate.nome}
-                  imgSrc={candidate.img}
+                  imgSrc={{ uri: candidate.foto }}
                   key={`${candidate.id}-${candidate.numero}`}
                   onPress={() => getCandidateProfile(candidate.id)}
                   party={`${candidate.partido} ${candidate.numero}`}

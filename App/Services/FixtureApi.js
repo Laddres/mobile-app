@@ -31,5 +31,16 @@ export default {
           }),
         500
       )
+    ),
+  getProjectProposal: () =>
+    new Promise(resolve =>
+      setTimeout(
+        () =>
+          resolve({
+            ok: true,
+            data: require('../Fixtures/getProjectPropostal.json')
+          }),
+        500
+      )
     )
 }

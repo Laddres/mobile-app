@@ -6,6 +6,8 @@ import CardContainer from './CardContainer'
 import styles from './Styles/CandidacyCardStyle'
 import Separator from './Separator'
 import { developmentAlert } from '../Lib/Utils'
+import ProjectProposals from './ProjectProposals'
+import type { ProjectsType } from '../Redux/ProjectProposalRedux'
 
 type Props = {
   fetching?: boolean,
@@ -20,12 +22,39 @@ type Props = {
     composicaoLegenda: string,
     resultado: string
   },
-  onPress: () => void
+  onPress: () => void,
+  projectProposals: ProjectsType
 }
 
-class CandidacyCard extends Component<Props> {
+type State = {
+  expanded?: boolean
+}
+
+class CandidacyCard extends Component<Props, State> {
+  constructor (props: Props) {
+    super(props)
+    this.state = { expanded: false }
+  }
+
+  get showPerformance (): boolean {
+    const {
+      projectProposals: projects,
+      candidacy: { resultado: result }
+    } = this.props
+    const electedCandidacy = result.toUpperCase() === 'ELEITO' || result.toUpperCase() === 'ELEITO POR QP'
+    return electedCandidacy && projects && projects.totalProjetos && projects.totalProposicoes
+  }
+
+  expandReduceCard = () => {
+    if (this.props.candidacy.cargo.toUpperCase() === 'DEPUTADO FEDERAL') {
+      this.setState(prevState => ({ expanded: !prevState.expanded }))
+    } else {
+      developmentAlert()
+    }
+  }
+
   render () {
-    const { candidacy, fetching } = this.props
+    const { candidacy, fetching, projectProposals } = this.props
     return (
       <CardContainer fetching={fetching}>
         <View style={styles.container}>
@@ -65,12 +94,13 @@ class CandidacyCard extends Component<Props> {
               <Text style={styles.bodyText}>{candidacy.resultado}</Text>
             </View>
           </View>
-          {candidacy.resultado === 'Eleito' && (
+          {this.state.expanded && <ProjectProposals data={projectProposals} />}
+          {this.showPerformance && (
             <View style={styles.performance}>
               <Separator style={styles.performanceSeparator} />
-              <TouchableOpacity style={styles.performanceButton} onPress={developmentAlert}>
+              <TouchableOpacity style={styles.performanceButton} onPress={this.expandReduceCard}>
                 <Text style={[styles.performanceText, styles.textCenter]}>ATUAÇÃO</Text>
-                <Image source={Images.chevronDown} />
+                <Image source={this.state.expanded ? Images.chevronUp : Images.chevronDown} />
               </TouchableOpacity>
             </View>
           )}

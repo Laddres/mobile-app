@@ -28,3 +28,5 @@ export const openExternalApp = (url: string) => {
     }
   })
 }
+
+export const generateProjectProposalKey = (id, year, role) => `${id}.${year}.${role}`

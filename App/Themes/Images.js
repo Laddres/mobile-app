@@ -7,7 +7,8 @@ const images = {
   filledHeart: require('../Images/icons/heart.png'),
   outlineHeart: require('../Images/icons/heart-outline.png'),
   menu: require('../Images/icons/menu.png'),
-  share: require('../Images/icons/share.png')
+  share: require('../Images/icons/share.png'),
+  search: require('../Images/icons/search.png')
 }
 
 export default images

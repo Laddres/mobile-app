@@ -18,6 +18,7 @@ export default Creators
 export type CandidateType = {
   id: number,
   nome: string,
+  foto: string,
   numero: number,
   partido: string
 }

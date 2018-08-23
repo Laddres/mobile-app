@@ -10,7 +10,6 @@ import { Images } from '../Themes'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
 
 type Props = {
-  picture: { uri: string } | number,
   candidate: CandidateProfileType
 }
 
@@ -21,11 +20,11 @@ export default class ProfileCard extends React.Component<Props> {
   // }
 
   render () {
-    const { candidate, picture } = this.props
+    const { candidate } = this.props
     return (
       <View style={styles.container}>
         <View style={styles.picContainer}>
-          <Image source={picture} resizeMode={'contain'} style={styles.picture} />
+          <Image source={{ uri: candidate.foto }} resizeMode={'contain'} style={styles.picture} />
         </View>
         <CardContainer>
           <View style={styles.pictureSpaceMargin} />

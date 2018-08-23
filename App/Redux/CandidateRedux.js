@@ -19,6 +19,7 @@ export default Creators
 export type CandidateProfileType = {
   id: number,
   nome: string,
+  foto: string,
   nomeUrna: string,
   dataNascimento: string,
   idade: string,

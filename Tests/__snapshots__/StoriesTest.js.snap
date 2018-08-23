@@ -274,66 +274,6 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           </Text>
         </View>
       </View>
-      <View
-        style={Object {}}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "height": 1,
-                "width": "100%",
-              },
-              Object {
-                "backgroundColor": "#F3F6F7",
-              },
-              Object {
-                "backgroundColor": "#F3F6F7",
-                "height": 2,
-                "marginTop": 10,
-              },
-            ]
-          }
-        />
-        <View
-          accessible={true}
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "marginTop": 10,
-              "opacity": 1,
-            }
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#014E68",
-                  "fontWeight": "700",
-                },
-                Object {
-                  "textAlign": "center",
-                },
-              ]
-            }
-          >
-            ATUAÇÃO
-          </Text>
-          <Image
-            source={1}
-          />
-        </View>
-      </View>
     </View>
   </View>
 </View>
@@ -641,6 +581,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       Object {
         "borderRadius": 10,
         "height": 200,
+        "justifyContent": "flex-end",
         "marginLeft": 25,
         "marginVertical": 10,
         "opacity": 1,
@@ -649,11 +590,10 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
     }
   >
     <View
+      resizeMode="contain"
       style={
         Object {
-          "backgroundColor": "white",
-          "borderTopLeftRadius": 10,
-          "borderTopRightRadius": 10,
+          "borderRadius": 10,
           "flex": 0.75,
         }
       }
@@ -1126,7 +1066,11 @@ exports[`Storyshots ProfileCard Default 1`] = `
     >
       <Image
         resizeMode="contain"
-        source=""
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
         style={
           Object {
             "borderRadius": 100,
@@ -1347,6 +1291,359 @@ exports[`Storyshots ProfileCard Default 1`] = `
           </View>
         </View>
       </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots ProjectProposals Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": "100%",
+          },
+          Object {
+            "backgroundColor": "#F3F6F7",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#F3F6F7",
+            "borderRadius": 0.5,
+            "borderStyle": "dashed",
+            "borderWidth": 1,
+            "marginBottom": 30,
+            "marginTop": 10,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#79A2AF",
+          "fontSize": 14,
+        }
+      }
+    >
+      Autoria de projetos
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginRight": 50,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 34,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          5
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 14,
+            }
+          }
+        >
+          Projetos
+        </Text>
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 34,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          6
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 14,
+            }
+          }
+        >
+          Proposições
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
     </View>
   </View>
 </View>
