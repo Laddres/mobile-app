@@ -589,8 +589,13 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       }
     }
   >
-    <View
-      resizeMode="contain"
+    <Image
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000625869/foto_1534363925445.jpg",
+        }
+      }
       style={
         Object {
           "borderRadius": 10,
@@ -1065,10 +1070,10 @@ exports[`Storyshots ProfileCard Default 1`] = `
       }
     >
       <Image
-        resizeMode="contain"
+        resizeMode="cover"
         source={
           Object {
-            "uri": undefined,
+            "uri": "http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171/foto_1534295591196.jpg",
           }
         }
         style={
