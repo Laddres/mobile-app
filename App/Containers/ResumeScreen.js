@@ -30,7 +30,7 @@ class ResumeScreen extends Component<Props> {
   // }
 
   render () {
-    const { candidateProfile, navigation, fetchingCandidacies, getProposals } = this.props
+    const { candidacies, candidateProfile, navigation, fetchingCandidacies, getProposals } = this.props
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
@@ -41,9 +41,9 @@ class ResumeScreen extends Component<Props> {
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
         <ProfileCard candidate={candidateProfile} />
-        {this.props.candidacies && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
-        {this.props.candidacies &&
-          this.props.candidacies.map(candidacy => {
+        {candidacies && candidacies.length && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
+        {candidacies &&
+          candidacies.map(candidacy => {
             const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
             return (
               <CandidacyCard
