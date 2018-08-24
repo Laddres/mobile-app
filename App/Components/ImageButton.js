@@ -5,10 +5,12 @@ import styles from './Styles/ImageButtonStyle'
 import { getImageHitSlop } from '../Lib/Utils'
 import _ from 'lodash'
 
+import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes'
+
 type Props = {
   source: number | { uri: string },
   onPress?: () => void,
-  style?: {},
+  style?: StyleObj,
   imageStyle?: {}
 }
 

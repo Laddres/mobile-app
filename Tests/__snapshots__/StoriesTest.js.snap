@@ -1,5 +1,563 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots CandidacyCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0.65,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            CARGO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            Deputado Federal
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.35,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PARTIDO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PV
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+              "height": 2,
+              "marginBottom": 10,
+            },
+          ]
+        }
+      />
+      <View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            ELEIÇÕES GERAIS 2014
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            2010
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            LOCAL
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            COLIGAÇÃO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre Agora e Sempre
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            PV / PCB / PMDB
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            RESULTADO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Eleito
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CandidacyCard Senador 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0.65,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            CARGO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "color": "#E1B224",
+                },
+              ]
+            }
+          >
+            Senador
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 0.35,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            PARTIDO
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 17,
+                  "fontWeight": "700",
+                },
+                Object {
+                  "textAlign": "right",
+                },
+              ]
+            }
+          >
+            REDE
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+              "height": 2,
+              "marginBottom": 10,
+            },
+          ]
+        }
+      />
+      <View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            ELEIÇÕES GERAIS 2014
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            2014
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            LOCAL
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Acre
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            COLIGAÇÃO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Frente Popular de Acrelândia
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            PT / PMN / PSB / PV / PC do B
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "marginVertical": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 10,
+              }
+            }
+          >
+            RESULTADO
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Não Eleitoo
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots CandidatePreviewCard Default 1`] = `
 <View
   style={
@@ -23,6 +581,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       Object {
         "borderRadius": 10,
         "height": 200,
+        "justifyContent": "flex-end",
         "marginLeft": 25,
         "marginVertical": 10,
         "opacity": 1,
@@ -31,11 +590,10 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
     }
   >
     <View
+      resizeMode="contain"
       style={
         Object {
-          "backgroundColor": "white",
-          "borderTopLeftRadius": 10,
-          "borderTopRightRadius": 10,
+          "borderRadius": 10,
           "flex": 0.75,
         }
       }
@@ -76,6 +634,130 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots CardContainer Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+        }
+      }
+    >
+      Hello!
+    </Text>
+    <View
+      style={
+        Object {
+          "backgroundColor": "red",
+          "borderRadius": 20,
+          "height": 40,
+          "width": 40,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "white",
+            "height": 10,
+            "width": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CardContainer Fetching 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "position": "absolute",
+        }
+      }
+    >
+      <ActivityIndicator
+        animating={true}
+        color="#014E68"
+        hidesWhenStopped={true}
+        size="large"
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "fontSize": 32,
+        }
+      }
+    >
+      Hello!
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`Storyshots ImageButton Default 1`] = `
 <View
   accessible={true}
@@ -109,12 +791,870 @@ exports[`Storyshots ImageButton Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots PerformanceItem Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+            "fontSize": 14,
+          }
+        }
+      >
+        PL 7739/2010
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#014E68",
+          "fontSize": 14,
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Altera a Lei nº 8.989, de 24 de fevereiro de 1995, para isentar a aquisição de veículos destinados ao transporte coletivo de escolares do Imposto sobre Produtos Industrializados (IPI) 
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PerformanceItem w/ icon 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+            "fontSize": 14,
+          }
+        }
+      >
+        PL 7739/2010
+      </Text>
+      <View
+        accessible={true}
+        hitSlop={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+          }
+        }
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+        />
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#014E68",
+          "fontSize": 14,
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Altera a Lei nº 8.989, de 24 de fevereiro de 1995, para isentar a aquisição de veículos destinados ao transporte coletivo de escolares do Imposto sobre Produtos Industrializados (IPI) 
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+            "fontSize": 14,
+          }
+        }
+      >
+        PL 7739/2010
+      </Text>
+      <View
+        accessible={true}
+        hitSlop={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+          }
+        }
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+        />
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#014E68",
+          "fontSize": 14,
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Altera a Lei nº 8.989, de 24 de fevereiro de 1995, para isentar a aquisição de veículos destinados ao transporte coletivo de escolares do Imposto sobre Produtos Industrializados (IPI) 
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": "100%",
+          },
+          Object {
+            "backgroundColor": "#F3F6F7",
+          },
+          Object {
+            "marginVertical": 5,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots ProfileCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginTop": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 100,
+          "height": 200,
+          "marginBottom": 30,
+          "position": "absolute",
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.3,
+          "top": -35,
+          "width": 200,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 100,
+            "height": 200,
+            "width": 200,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "justifyContent": "center",
+          "marginBottom": 30,
+          "marginTop": 10,
+          "minHeight": 200,
+          "padding": 10,
+          "shadowColor": "#014E68",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "height": 1,
+            "marginVertical": 80,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 30,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Marina Silva
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+            "fontSize": 17,
+          }
+        }
+      >
+        Maria Osmarina Marina da Silva Vaz de Lima
+      </Text>
+      <View
+        style={
+          Object {
+            "height": 1,
+            "marginVertical": 7.5,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#79A2AF",
+            "fontSize": 17,
+          }
+        }
+      >
+        60 ANOS • SUPERIOR COMPLETO
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 17,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }
+      >
+        Rio Branco, Acre
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#E1B224",
+            "fontSize": 44,
+            "fontWeight": "bold",
+            "marginTop": 30,
+          }
+        }
+      >
+        18
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#E1B224",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "marginBottom": 20,
+          }
+        }
+      >
+        PRESIDENTE
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 12,
+              }
+            }
+          >
+            0
+          </Text>
+          <View
+            accessible={true}
+            hitSlop={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0,
+              }
+            }
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "opacity": 1,
+                "padding": 20,
+                "paddingLeft": 5,
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={1}
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots ProjectProposals Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 1,
+            "width": "100%",
+          },
+          Object {
+            "backgroundColor": "#F3F6F7",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderColor": "#F3F6F7",
+            "borderRadius": 0.5,
+            "borderStyle": "dashed",
+            "borderWidth": 1,
+            "marginBottom": 30,
+            "marginTop": 10,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#79A2AF",
+          "fontSize": 14,
+        }
+      }
+    >
+      Autoria de projetos
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginRight": 50,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 34,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          5
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 14,
+            }
+          }
+        >
+          Projetos
+        </Text>
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 34,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          6
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 14,
+            }
+          }
+        >
+          Proposições
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 5,
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+            }
+          }
+        >
+          PL 1223/2007
+        </Text>
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 14,
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Altera dispositivos da Lei nº 6.494, de 7 de dezembro de 1977, a fim de dispor sobre a seleção de estagiários por órgãos públicos, bem como sobre a jornada no contrato de estágio. 
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots SearchBar Default 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "green",
-      "height": 50,
+      "backgroundColor": "white",
+      "height": 200,
     }
   }
 >
@@ -138,7 +1678,6 @@ exports[`Storyshots SearchBar Default 1`] = `
         Array [
           Object {
             "color": "#424242",
-            "fontFamily": "Roboto-Regular",
             "fontSize": 15,
             "height": 46,
             "paddingLeft": 41,
@@ -149,6 +1688,136 @@ exports[`Storyshots SearchBar Default 1`] = `
       }
       underlineColorAndroid="transparent"
     />
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "idCandidato": 1,
+            "idCandidatura": 1,
+            "nome": "teste candidato 1",
+            "numero": 22,
+            "partido": "xx",
+          },
+          Object {
+            "idCandidato": 2,
+            "idCandidatura": 2,
+            "nome": "teste candidato 2",
+            "numero": 35,
+            "partido": "yy",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      keyboardShouldPersistTaps="always"
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "rgba(92,128,136,0.2)",
+          "borderRadius": 3,
+          "borderWidth": 1,
+          "left": 0,
+          "maxHeight": 115,
+          "position": "absolute",
+          "right": 0,
+          "top": 45,
+        }
+      }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "rgba(92,128,136,0.2)",
+                "height": 46,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 14,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#424242",
+                  "fontSize": 15,
+                }
+              }
+            >
+              teste candidato 1
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "rgba(92,128,136,0.2)",
+                "height": 46,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 14,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#424242",
+                  "fontSize": 15,
+                }
+              }
+            >
+              teste candidato 2
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
   </View>
 </View>
 `;
@@ -174,7 +1843,7 @@ exports[`Storyshots Section Default 1`] = `
       style={
         Object {
           "color": "rgba(153,153,153,0.3)",
-          "fontSize": 38,
+          "fontSize": 44,
           "fontWeight": "bold",
         }
       }
@@ -183,57 +1852,36 @@ exports[`Storyshots Section Default 1`] = `
     </Text>
     <RCTScrollView
       bounces={true}
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
       horizontal={true}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
       showsHorizontalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
       style={
         Object {
           "flexDirection": "row",
           "marginTop": 10,
         }
       }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
     >
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-      </View>
+      <View />
     </RCTScrollView>
   </View>
 </View>

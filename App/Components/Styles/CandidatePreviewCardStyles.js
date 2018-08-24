@@ -6,14 +6,13 @@ export default StyleSheet.create({
     width: Metrics.images.logo,
     height: Metrics.images.logo,
     borderRadius: 10,
+    justifyContent: 'flex-end',
     marginLeft: Metrics.doubleMarginHorizontal,
     marginVertical: Metrics.marginVertical
   },
   photo: {
     flex: 0.75,
-    backgroundColor: 'white',
-    borderTopLeftRadius: Metrics.borderRadius,
-    borderTopRightRadius: Metrics.borderRadius
+    borderRadius: Metrics.borderRadius
   },
   info: {
     justifyContent: 'center',

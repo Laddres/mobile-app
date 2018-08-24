@@ -5,7 +5,7 @@ const type = {
 }
 
 const size = {
-  h1: 38,
+  h1: 44,
   h2: 34,
   h3: 30,
   h4: 26,
@@ -15,7 +15,8 @@ const size = {
   regular: 17,
   medium: 14,
   small: 12,
-  tiny: 8.5
+  tiny: 8.5,
+  title: 10
 }
 
 const style = {
@@ -53,8 +54,17 @@ const style = {
   }
 }
 
+const weight = {
+  light: '100',
+  regular: '400',
+  medium: '500',
+  bold: '700',
+  black: '900'
+}
+
 export default {
   type,
   size,
-  style
+  style,
+  weight
 }
