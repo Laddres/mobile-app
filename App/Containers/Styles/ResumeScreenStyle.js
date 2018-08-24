@@ -30,5 +30,11 @@ export default StyleSheet.create({
   logo: {
     width: Metrics.images.medium,
     height: Metrics.images.medium
+  },
+  sectionTitle: {
+    fontWeight: 'bold',
+    fontSize: Fonts.size.h1,
+    color: Colors.sectionTitle,
+    marginVertical: Metrics.smallMargin
   }
 })
