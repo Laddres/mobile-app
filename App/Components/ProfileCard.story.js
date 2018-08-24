@@ -10,6 +10,8 @@ const candidate = {
   id: 0,
   nome: 'Maria Osmarina Marina da Silva Vaz de Lima',
   nomeUrna: 'Marina Silva',
+  foto:
+    'http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171/foto_1534295591196.jpg',
   dataNascimento: '08/02/1958',
   idade: '60 anos',
   cidadeNatal: 'Rio Branco',

@@ -14,7 +14,7 @@ class CandidatePreviewCard extends Component<Props> {
     const Photo = this.props.imgSrc ? Image : View
     return (
       <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
-        <Photo source={this.props.imgSrc} resizeMode={'contain'} style={styles.photo} />
+        <Photo source={this.props.imgSrc} resizeMode={'cover'} style={styles.photo} />
         <View style={styles.info}>
           <Text style={styles.textParty}>{this.props.party}</Text>
           <Text style={styles.textName}>{this.props.name}</Text>

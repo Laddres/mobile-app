@@ -24,7 +24,7 @@ export default class ProfileCard extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <View style={styles.picContainer}>
-          <Image source={{ uri: candidate.foto }} resizeMode={'contain'} style={styles.picture} />
+          <Image source={{ uri: candidate.foto }} resizeMode={'cover'} style={styles.picture} />
         </View>
         <CardContainer>
           <View style={styles.pictureSpaceMargin} />
