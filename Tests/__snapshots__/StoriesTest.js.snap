@@ -1852,57 +1852,36 @@ exports[`Storyshots Section Default 1`] = `
     </Text>
     <RCTScrollView
       bounces={true}
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
       horizontal={true}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
       showsHorizontalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
       style={
         Object {
           "flexDirection": "row",
           "marginTop": 10,
         }
       }
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
     >
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "backgroundColor": "red",
-              "height": 200,
-              "marginLeft": 5,
-              "width": 200,
-            }
-          }
-        />
-      </View>
+      <View />
     </RCTScrollView>
   </View>
 </View>

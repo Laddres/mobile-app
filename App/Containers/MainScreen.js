@@ -1,11 +1,10 @@
 // @flow
 import React, { Component } from 'react'
-import { ActivityIndicator, ScrollView, View } from 'react-native'
+import { ActivityIndicator, FlatList, View } from 'react-native'
 import { connect } from 'react-redux'
 import SearchBar from '../Components/SearchBar'
 import Section from '../Components/Section'
 import ImageButton from '../Components/ImageButton'
-import CandidatePreviewCard from '../Components/CandidatePreviewCard'
 import _ from 'lodash'
 import { SearchBarSelectors, CandidatesSelectors } from '../Selectors'
 import SearchBarActions from '../Redux/SearchBarRedux'
@@ -42,7 +41,7 @@ class MainScreen extends Component<Props> {
       getCandidateProfile
     } = this.props
     return (
-      <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <View style={styles.container}>
         <View style={styles.header}>
           <ImageButton source={Images.menu} style={styles.filtersButton} onPress={developmentAlert} />
           <View style={styles.verticalSeparator} />
@@ -55,27 +54,23 @@ class MainScreen extends Component<Props> {
             placeholder={'Você conhece o seu candidato?'}
           />
         </View>
-        {fetching ? (
+        {fetching || !candidates ? (
           <View style={styles.fetchingContainer}>
             <ActivityIndicator color={Colors.text} size={'large'} />
           </View>
         ) : (
-          candidates &&
-          Object.keys(candidates).map(role => (
-            <Section title={_.startCase(role)} key={role}>
-              {candidates[role].map(candidate => (
-                <CandidatePreviewCard
-                  name={candidate.nome}
-                  imgSrc={{ uri: candidate.foto }}
-                  key={`${candidate.id}-${candidate.numero}`}
-                  onPress={() => getCandidateProfile(candidate.id)}
-                  party={`${candidate.partido} ${candidate.numero}`}
-                />
-              ))}
-            </Section>
-          ))
+          <FlatList
+            bounces
+            contentContainerStyle={styles.content}
+            data={Object.keys(candidates)}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={role => `${role}`}
+            renderItem={({ item: role }: { item: CandidateType }) => (
+              <Section data={candidates[role]} title={_.startCase(role)} onPressCandidate={getCandidateProfile} />
+            )}
+          />
         )}
-      </ScrollView>
+      </View>
     )
   }
 }

@@ -1,11 +1,15 @@
 // @flow
 import * as React from 'react'
-import { ScrollView, View, Text } from 'react-native'
+import { FlatList, View, Text } from 'react-native'
 import styles from './Styles/SectionStyle'
+import type { CandidatesType } from '../Redux/CandidatosRedux'
+import { CandidateType } from '../Redux/CandidatosRedux'
+import CandidatePreviewCard from './CandidatePreviewCard'
 
 type Props = {
   title: string,
-  children: React.Node | React.Node[]
+  data: CandidatesType,
+  onPressCandidate: number => mixed
 }
 
 export default class Section extends React.Component<Props> {
@@ -18,9 +22,22 @@ export default class Section extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{this.props.title.toUpperCase()}</Text>
-        <ScrollView horizontal bounces showsHorizontalScrollIndicator={false} style={styles.itens}>
-          {this.props.children}
-        </ScrollView>
+        <FlatList
+          bounces
+          horizontal
+          style={styles.itens}
+          data={this.props.data}
+          showsHorizontalScrollIndicator={false}
+          keyExtractor={candidate => `${candidate.id}.${candidate.numero}.${Math.random()}`}
+          renderItem={({ item }: { item: CandidateType }) => (
+            <CandidatePreviewCard
+              name={item.nome}
+              imgSrc={{ uri: item.foto }}
+              onPress={() => this.props.onPressCandidate(item.id)}
+              party={`${item.partido} ${item.numero}`}
+            />
+          )}
+        />
       </View>
     )
   }
