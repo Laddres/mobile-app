@@ -1,5 +1,6 @@
 import { call, put } from 'redux-saga/effects'
 import CandidacyActions from '../Redux/CandidacyRedux'
+import { CandidacyTransfoms } from '../Transforms'
 import ProjectProposalActions from '../Redux/ProjectProposalRedux'
 
 export function * getCandidacy (api, { id }) {
@@ -7,7 +8,7 @@ export function * getCandidacy (api, { id }) {
 
   if (response.ok) {
     yield fetchProposalsFromElectedCandidaciesInRoleDeputadoFederal(response.data)
-    yield put(CandidacyActions.candidacySuccess(id, response.data || []))
+    yield put(CandidacyActions.candidacySuccess(id, CandidacyTransfoms.responseTransform(response.data)))
   } else {
     yield put(CandidacyActions.candidacyFailure(id))
   }
