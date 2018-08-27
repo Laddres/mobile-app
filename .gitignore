@@ -60,3 +60,5 @@ buck-out/
 .env
 
 *.apk
+
+android/LaddresKeyStore\.jks
