@@ -3,7 +3,7 @@ import { Colors, Fonts, Metrics } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
-    paddingHorizontal: 0.5 * Metrics.marginHorizontal,
+    paddingHorizontal: Metrics.smallMargin,
     width: '100%'
   },
   header: {

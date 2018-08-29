@@ -36,9 +36,9 @@ export type SummaryState = Immutable<{
 /* ------------- Estado Inicial ------------- */
 
 export const INITIAL_STATE: SummaryState = Immutable({
-  dados: {},
-  carregando: {},
-  erro: {}
+  data: {},
+  fetching: {},
+  error: {}
 })
 
 /* ------------- Redutores ------------- */
@@ -46,12 +46,12 @@ export const INITIAL_STATE: SummaryState = Immutable({
 export const request = (state: SummaryState, { idCandidate }: { idCandidate: number }) =>
   state.merge({ fetching: { [idCandidate]: true } }, { deep: true })
 
-export const success = (state: SummaryState, { data, idCandidate }: { data: SummaryType, idCandidate: number }) =>
+export const success = (state: SummaryState, { data }: { data: SummaryType }) =>
   state.merge(
     {
-      data: { [idCandidate]: data },
-      error: { [idCandidate]: false },
-      fetching: { [idCandidate]: false }
+      data: { [data.idCandidato]: data },
+      error: { [data.idCandidato]: false },
+      fetching: { [data.idCandidato]: false }
     },
     { deep: true }
   )
