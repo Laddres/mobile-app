@@ -10,6 +10,7 @@ export default StyleSheet.create({
   },
   picContainer: {
     position: 'absolute',
+    zIndex: 1,
     top: Metrics.cards.candidatePictureOverflow,
     marginBottom: Metrics.section,
     height: Metrics.images.logo,
@@ -17,12 +18,12 @@ export default StyleSheet.create({
     borderRadius: Metrics.images.logo / 2,
     ...Platform.select({
       ios: {
-        shadowOffset: { width: 0, height: 1 },
-        shadowColor: Colors.black,
-        shadowOpacity: 0.3
+        shadowOffset: { width: 0, height: 4 },
+        shadowColor: Colors.text,
+        shadowOpacity: 0.1
       },
       android: {
-        elevation: 2.1
+        elevation: 2
       }
     })
   },
@@ -37,12 +38,21 @@ export default StyleSheet.create({
   },
   name: {
     color: Colors.text,
-    fontSize: Fonts.size.h3,
+    fontSize: Fonts.size.h5,
     fontWeight: 'bold'
   },
   text: {
+    color: Colors.text,
+    fontSize: Fonts.size.medium
+  },
+  age: {
     color: Colors.title,
-    fontSize: Fonts.size.regular
+    fontSize: Fonts.size.small
+  },
+  location: {
+    color: Colors.subtitle,
+    fontSize: Fonts.size.small,
+    fontWeight: Fonts.weight.medium
   },
   bold: {
     fontWeight: 'bold'
@@ -53,15 +63,15 @@ export default StyleSheet.create({
   },
   number: {
     marginTop: Metrics.section,
-    fontSize: Fonts.size.h1,
+    fontSize: Fonts.size.h2,
     color: Colors.yellow,
     fontWeight: 'bold'
   },
   role: {
     marginBottom: Metrics.doubleBaseMargin,
-    fontSize: Fonts.size.input,
+    fontSize: Fonts.size.medium,
     color: Colors.yellow,
-    fontWeight: 'bold'
+    fontWeight: Fonts.weight.regular
   },
   buttonsContainer: {
     width: '100%',

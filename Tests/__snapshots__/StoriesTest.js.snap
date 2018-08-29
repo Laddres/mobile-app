@@ -1058,14 +1058,15 @@ exports[`Storyshots ProfileCard Default 1`] = `
           "height": 200,
           "marginBottom": 30,
           "position": "absolute",
-          "shadowColor": "#000000",
+          "shadowColor": "#014E68",
           "shadowOffset": Object {
-            "height": 1,
+            "height": 4,
             "width": 0,
           },
-          "shadowOpacity": 0.3,
+          "shadowOpacity": 0.1,
           "top": -35,
           "width": 200,
+          "zIndex": 1,
         }
       }
     >
@@ -1118,7 +1119,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 30,
+            "fontSize": 20,
             "fontWeight": "bold",
           }
         }
@@ -1128,8 +1129,8 @@ exports[`Storyshots ProfileCard Default 1`] = `
       <Text
         style={
           Object {
-            "color": "#79A2AF",
-            "fontSize": 17,
+            "color": "#014E68",
+            "fontSize": 14,
           }
         }
       >
@@ -1147,7 +1148,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
         style={
           Object {
             "color": "#79A2AF",
-            "fontSize": 17,
+            "fontSize": 12,
           }
         }
       >
@@ -1155,15 +1156,11 @@ exports[`Storyshots ProfileCard Default 1`] = `
       </Text>
       <Text
         style={
-          Array [
-            Object {
-              "color": "#79A2AF",
-              "fontSize": 17,
-            },
-            Object {
-              "fontWeight": "bold",
-            },
-          ]
+          Object {
+            "color": "#25647C",
+            "fontSize": 12,
+            "fontWeight": "500",
+          }
         }
       >
         Rio Branco, Acre
@@ -1172,7 +1169,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
         style={
           Object {
             "color": "#E1B224",
-            "fontSize": 44,
+            "fontSize": 34,
             "fontWeight": "bold",
             "marginTop": 30,
           }
@@ -1184,8 +1181,8 @@ exports[`Storyshots ProfileCard Default 1`] = `
         style={
           Object {
             "color": "#E1B224",
-            "fontSize": 18,
-            "fontWeight": "bold",
+            "fontSize": 14,
+            "fontWeight": "400",
             "marginBottom": 20,
           }
         }
