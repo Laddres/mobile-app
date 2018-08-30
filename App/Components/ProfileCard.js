@@ -31,10 +31,10 @@ export default class ProfileCard extends React.Component<Props> {
           <Text style={styles.name}>{candidate.nomeUrna}</Text>
           <Text style={styles.text}>{candidate.nome}</Text>
           <View style={styles.marginVerticalSeparator} />
-          <Text style={styles.text}>
+          <Text style={styles.age}>
             {`${candidate.idade.toUpperCase()} • ${candidate.grauInstrucao.toUpperCase()}`}
           </Text>
-          <Text style={[styles.text, styles.bold]}>{`${candidate.cidadeNatal}, ${candidate.estadoNatal}`}</Text>
+          <Text style={styles.location}>{`${candidate.cidadeNatal}, ${candidate.estadoNatal}`}</Text>
           <Text style={styles.number}>{candidate.numero}</Text>
           <Text style={styles.role}>{candidate.cargo.toUpperCase()}</Text>
           <Separator />
