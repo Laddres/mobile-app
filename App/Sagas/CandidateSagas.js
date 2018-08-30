@@ -13,6 +13,7 @@ export function * getCandidateProfile (api, { id }) {
     yield put(CandidateActions.candidateSuccess(response.data))
     yield requestResumeSections(id)
     yield put(NavigationActions.navigate(DEFAULT_NAVIGATION_CONFIG.candidateResumeRouteName))
+    yield requestResumeSections(id)
   } else {
     yield put(CandidateActions.candidateFailure(id))
   }

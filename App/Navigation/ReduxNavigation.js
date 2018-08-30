@@ -5,6 +5,7 @@ import AppNavigation from './AppNavigation'
 import { indexOf } from 'lodash'
 import { reduxifyNavigator } from 'react-navigation-redux-helpers'
 import { DEFAULT_NAVIGATION_CONFIG } from './NavigationConfig'
+import { resetAction } from './NavigationActions'
 
 class ReduxNavigation extends React.Component {
   shouldCloseApp (routeName) {
@@ -14,10 +15,12 @@ class ReduxNavigation extends React.Component {
   componentWillMount () {
     if (Platform.OS === 'ios') return
     BackHandler.addEventListener('hardwareBackPress', () => {
-      const { dispatch, nav } = this.props
-      console.log(this.shouldCloseApp(nav.routes[0].routeName))
-      if (this.shouldCloseApp(nav.routes[0].routeName)) return false
-      dispatch({ type: 'Navigation/BACK' })
+      const {
+        dispatch,
+        nav: { routes }
+      } = this.props
+      if (this.shouldCloseApp(routes[routes.length - 1].routeName)) return false
+      dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName))
       return true
     })
   }
