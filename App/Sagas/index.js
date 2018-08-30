@@ -10,6 +10,7 @@ import { CandidatosTypes } from '../Redux/CandidatosRedux'
 import { CandidateTypes } from '../Redux/CandidateRedux'
 import { CandidacyTypes } from '../Redux/CandidacyRedux'
 import { ProjectProposalTypes } from '../Redux/ProjectProposalRedux'
+import { SummaryTypes } from '../Redux/SummaryRedux'
 
 /* ------------- Sagas ------------- */
 
@@ -18,6 +19,7 @@ import { getCandidatos } from './CandidatosSagas'
 import { getCandidateProfile } from './CandidateSagas'
 import { getCandidacy } from './CandidacySagas'
 import { getProjectProposal } from './ProjectProposalSagas'
+import { getSummary } from './SummarySagas'
 
 /* ------------- API ------------- */
 
@@ -29,6 +31,7 @@ export default function * root () {
   yield all([
     takeLatest(StartupTypes.STARTUP, startup),
     takeLatest(CandidatosTypes.CANDIDATOS_REQUEST, getCandidatos, api),
+    takeLatest(SummaryTypes.SUMMARY_REQUEST, getSummary, api),
     takeLatest(CandidateTypes.CANDIDATE_REQUEST, getCandidateProfile, api),
     takeEvery(CandidacyTypes.CANDIDACY_REQUEST, getCandidacy, api),
     takeEvery(ProjectProposalTypes.PROJECT_PROPOSAL_REQUEST, getProjectProposal, api)

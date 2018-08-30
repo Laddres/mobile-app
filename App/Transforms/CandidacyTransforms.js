@@ -1,5 +1,5 @@
 // @flow
-import { CandidacyType } from '../Redux/CandidacyRedux'
+import type { CandidacyType } from '../Redux/CandidacyRedux'
 
 export default {
   responseTransform: (rawData: Array<any>): Array<CandidacyType> =>

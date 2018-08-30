@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { ScrollView, View, Image, Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
-import { CandidateSelectors, CandidacySelectors, ProjectProposalsSelectors } from '../Selectors'
+import { CandidateSelectors, CandidacySelectors, ProjectProposalsSelectors, SummarySelectors } from '../Selectors'
 import ProfileCard from '../Components/ProfileCard'
 import CandidacyCard from '../Components/CandidacyCard'
 import { Images } from '../Themes'
@@ -13,6 +13,8 @@ import type { CandidateProfileType } from '../Redux/CandidateRedux'
 import type { CandidacyType } from '../Redux/CandidacyRedux'
 import { ProjectsType } from '../Redux/ProjectProposalRedux'
 import { generateProjectProposalKey } from '../Lib/Utils'
+import SummaryCard from '../Components/SummaryCard'
+import type { SummaryType } from '../Redux/SummaryRedux'
 
 type Props = {
   navigation: any,
@@ -20,7 +22,9 @@ type Props = {
   candidateProfile: CandidateProfileType,
   fetchingCandidacies: ?boolean,
   candidacties: CandidacyType,
-  getProposals: string => ProjectsType
+  getProposals: string => ProjectsType,
+  summary: SummaryType,
+  fetchingSummary: ?boolean
 }
 
 class ResumeScreen extends Component<Props> {
@@ -30,7 +34,15 @@ class ResumeScreen extends Component<Props> {
   // }
 
   render () {
-    const { candidacies, candidateProfile, navigation, fetchingCandidacies, getProposals } = this.props
+    const {
+      candidacies,
+      candidateProfile,
+      navigation,
+      fetchingCandidacies,
+      getProposals,
+      summary,
+      fetchingSummary
+    } = this.props
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
@@ -41,6 +53,10 @@ class ResumeScreen extends Component<Props> {
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
         <ProfileCard candidate={candidateProfile} />
+
+        {summary && <Text style={styles.sectionTitle}>RESUMO</Text>}
+        {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+
         {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
         {candidacies &&
           candidacies.map(candidacy => {
@@ -65,7 +81,9 @@ const mapStateToProps = state => {
     candidateProfile: CandidateSelectors.getSelectedCandidate(state),
     fetchingCandidacies: CandidacySelectors.fetchingCandidacies(state),
     candidacies: CandidacySelectors.getCandidacies(state),
-    getProposals: key => ProjectProposalsSelectors.getProposals(state, key)
+    getProposals: key => ProjectProposalsSelectors.getProposals(state, key),
+    summary: SummarySelectors.getSummary(state),
+    fetchingSummary: SummarySelectors.fetching(state)
   }
 }
 
