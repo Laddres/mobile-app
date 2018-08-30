@@ -41,7 +41,7 @@ class ResumeScreen extends Component<Props> {
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
         <ProfileCard candidate={candidateProfile} />
-        {candidacies && candidacies.length && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
+        {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
         {candidacies &&
           candidacies.map(candidacy => {
             const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
