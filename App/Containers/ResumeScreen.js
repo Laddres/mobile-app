@@ -3,21 +3,23 @@ import React, { Component } from 'react'
 import { ScrollView, View, Image, Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 import { CandidateSelectors, CandidacySelectors, ProjectProposalsSelectors, SummarySelectors } from '../Selectors'
+import SummaryCard from '../Components/SummaryCard'
 import ProfileCard from '../Components/ProfileCard'
 import CandidacyCard from '../Components/CandidacyCard'
 import { Images } from '../Themes'
+import { resetAction } from '../Navigation/NavigationActions'
+import { DEFAULT_NAVIGATION_CONFIG } from '../Navigation/NavigationConfig'
+import { generateProjectProposalKey } from '../Lib/Utils'
 
 // Styles
 import styles from './Styles/ResumeScreenStyle'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
 import type { CandidacyType } from '../Redux/CandidacyRedux'
-import { ProjectsType } from '../Redux/ProjectProposalRedux'
-import { generateProjectProposalKey } from '../Lib/Utils'
-import SummaryCard from '../Components/SummaryCard'
+import type { ProjectsType } from '../Redux/ProjectProposalRedux'
 import type { SummaryType } from '../Redux/SummaryRedux'
 
 type Props = {
-  navigation: any,
+  goBack: () => mixed,
   fetchingCandidate: ?boolean,
   candidateProfile: CandidateProfileType,
   fetchingCandidacies: ?boolean,
@@ -34,19 +36,11 @@ class ResumeScreen extends Component<Props> {
   // }
 
   render () {
-    const {
-      candidacies,
-      candidateProfile,
-      navigation,
-      fetchingCandidacies,
-      getProposals,
-      summary,
-      fetchingSummary
-    } = this.props
+    const { candidacies, candidateProfile, fetchingCandidacies, getProposals, summary, fetchingSummary } = this.props
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+          <TouchableOpacity onPress={this.props.goBack} style={styles.backButton}>
             <Image source={Images.arrowLeft} resizeMode={'contain'} style={styles.backImage} />
             <Text style={styles.backText}>Candidatos</Text>
           </TouchableOpacity>
@@ -88,7 +82,9 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return {}
+  return {
+    goBack: () => dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName))
+  }
 }
 
 export default connect(
