@@ -11,7 +11,8 @@ export const reducers = combineReducers({
   candidatos: require('./CandidatosRedux').reducer,
   candidate: require('./CandidateRedux').reducer,
   candidacy: require('./CandidacyRedux').reducer,
-  projectProposal: require('./ProjectProposalRedux').reducer
+  projectProposal: require('./ProjectProposalRedux').reducer,
+  summary: require('./SummaryRedux').reducer
 })
 
 export default () => {
