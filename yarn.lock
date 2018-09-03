@@ -7915,9 +7915,9 @@ react-native-compat@^1.0.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-config@^0.11.5:
+"react-native-config@https://github.com/Qeepsake/react-native-config.git#master":
   version "0.11.5"
-  resolved "https://registry.yarnpkg.com/react-native-config/-/react-native-config-0.11.5.tgz#516cb7b6ec437c7739236ca075971db3aabdcb95"
+  resolved "https://github.com/Qeepsake/react-native-config.git#80fa115b10b7f53113ec9b3c639aa9f9b14b95a3"
 
 react-native-device-info@^0.22.5:
   version "0.22.5"
