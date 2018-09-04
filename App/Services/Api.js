@@ -17,22 +17,22 @@ const create = (baseURL = 'https://api.caueira.com.br/') => {
   const getCandidacy = id => api.get(`/candidatos/${id}/candidaturas`)
   const getProjectProposal = (id, year, role) => api.get(`/candidatos/${id}/mandatos?anoEleicao=${year}&cargo=${role}`)
   const getLikes = (idCandidate, idDevice) =>
-    api.get(
-      Config.ENDPOINT_LIKE_UNLIKE_CANDIDATE || '',
+    api.post(
+      Config.ENDPOINT_GET_LIKES,
       { idCandidato: idCandidate, idDispositivo: idDevice },
-      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN || '' } }
+      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN } }
     )
   const like = (idCandidate, idDevice) =>
     api.post(
-      Config.ENDPOINT_LIKE_CANDIDATE || '',
+      Config.ENDPOINT_LIKE_CANDIDATE,
       { idCandidato: idCandidate, idDispositivo: idDevice },
-      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN || '' } }
+      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN } }
     )
   const unLike = (idCandidate, idDevice) =>
     api.post(
-      Config.ENDPOINT_UNLIKE_CANDIDATE || '',
+      Config.ENDPOINT_DISLIKE_CANDIDATE,
       { idCandidato: idCandidate, idDispositivo: idDevice },
-      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN || '' } }
+      { headers: { 'Access-Token': Config.API_ACCESS_TOKEN } }
     )
 
   return {
