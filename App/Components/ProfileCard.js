@@ -8,9 +8,13 @@ import ImageButton from './ImageButton'
 import { developmentAlert } from '../Lib/Utils'
 import { Images } from '../Themes'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
+import _ from 'lodash'
 
 type Props = {
-  candidate: CandidateProfileType
+  candidate: CandidateProfileType,
+  hasLiked: ?boolean,
+  numberOfLikes: number,
+  onLikeOrUnlike: string => mixed
 }
 
 export default class ProfileCard extends React.Component<Props> {
@@ -20,7 +24,7 @@ export default class ProfileCard extends React.Component<Props> {
   // }
 
   render () {
-    const { candidate } = this.props
+    const { candidate, hasLiked, onLikeOrUnlike, numberOfLikes } = this.props
     return (
       <View style={styles.container}>
         <View style={styles.picContainer}>
@@ -41,8 +45,12 @@ export default class ProfileCard extends React.Component<Props> {
           <View style={styles.buttonsContainer}>
             <ImageButton source={Images.share} onPress={developmentAlert} />
             <View style={styles.likeContainer}>
-              <Text style={styles.numberLikes}>0</Text>
-              <ImageButton source={Images.outlineHeart} onPress={developmentAlert} style={styles.imageButton} />
+              <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) || '--'}</Text>
+              <ImageButton
+                onPress={() => onLikeOrUnlike(candidate.id)}
+                style={styles.imageButton}
+                source={hasLiked ? Images.filledHeart : Images.outlineHeart}
+              />
             </View>
           </View>
         </CardContainer>
