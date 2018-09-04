@@ -95,7 +95,7 @@ class CandidacyCard extends Component<Props, State> {
             </View>
           </View>
           {this.state.expanded && <ProjectProposals data={projectProposals} />}
-          {this.showPerformance && (
+          {this.showPerformance ? (
             <View style={styles.performance}>
               <Separator style={styles.performanceSeparator} />
               <TouchableOpacity style={styles.performanceButton} onPress={this.expandReduceCard}>
@@ -103,7 +103,7 @@ class CandidacyCard extends Component<Props, State> {
                 <Image source={this.state.expanded ? Images.chevronUp : Images.chevronDown} />
               </TouchableOpacity>
             </View>
-          )}
+          ) : null}
         </View>
       </CardContainer>
     )
