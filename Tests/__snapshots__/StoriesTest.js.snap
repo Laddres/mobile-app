@@ -823,16 +823,19 @@ exports[`Storyshots PerformanceItem Default 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
     </View>
     <Text
       style={
@@ -876,16 +879,19 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
       <View
         accessible={true}
         hitSlop={
@@ -959,16 +965,19 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
       <View
         accessible={true}
         hitSlop={
@@ -1027,6 +1036,103 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
         ]
       }
     />
+  </View>
+</View>
+`;
+
+exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
+          }
+        >
+          Ação ṇ° 4694 / 0016317-57.2018.1.00.0000
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 17,
+              "maxWidth": "100%",
+            }
+          }
+        >
+          Inquérito • STF
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        hitSlop={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+          }
+        }
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+        />
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#014E68",
+          "fontSize": 14,
+          "fontStyle": "italic",
+        }
+      }
+    >
+      É alvo de denúncia da Procuradoria Geral da República, por crime de racismo (Lei 7.716/89). A denúncia se baseia em declarações feitas pelo parlamentar durante palestra realizada no dia 3 de abril ...
+    </Text>
   </View>
 </View>
 `;
