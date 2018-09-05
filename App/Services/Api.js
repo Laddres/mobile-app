@@ -15,13 +15,15 @@ const create = (baseURL = 'https://api.caueira.com.br/') => {
   const getCandidateProfile = id => api.get(`/candidatos/${id}`)
   const getCandidacy = id => api.get(`/candidatos/${id}/candidaturas`)
   const getProjectProposal = (id, year, role) => api.get(`/candidatos/${id}/mandatos?anoEleicao=${year}&cargo=${role}`)
+  const getLawsuits = id => api.get(`/candidatos/${id}/processos`)
 
   return {
     getCandidatos,
     getSummary,
     getCandidateProfile,
     getCandidacy,
-    getProjectProposal
+    getProjectProposal,
+    getLawsuits
   }
 }
 
