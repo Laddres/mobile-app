@@ -31,10 +31,22 @@ export default StyleSheet.create({
     width: Metrics.images.medium,
     height: Metrics.images.medium
   },
+  sectionTitleContainer: {
+    marginVertical: Metrics.smallMargin
+  },
   sectionTitle: {
     fontWeight: 'bold',
     fontSize: Fonts.size.h1,
-    color: Colors.sectionTitle,
-    marginVertical: Metrics.smallMargin
+    color: Colors.sectionTitle
+  },
+  SectionSubtitleContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: Metrics.doubleBaseMargin
+  },
+  sectionSubtitle: {
+    fontWeight: 'bold',
+    fontSize: Fonts.size.h4,
+    color: Colors.sectionTitle
   }
 })
