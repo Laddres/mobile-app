@@ -2,7 +2,13 @@
 import React, { Component } from 'react'
 import { ScrollView, View, Image, Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
-import { CandidateSelectors, CandidacySelectors, ProjectProposalsSelectors, SummarySelectors } from '../Selectors'
+import {
+  CandidateSelectors,
+  CandidacySelectors,
+  ProjectProposalsSelectors,
+  SummarySelectors,
+  LikeSelectors
+} from '../Selectors'
 import SummaryCard from '../Components/SummaryCard'
 import ProfileCard from '../Components/ProfileCard'
 import CandidacyCard from '../Components/CandidacyCard'
@@ -10,6 +16,7 @@ import { Images } from '../Themes'
 import { resetAction } from '../Navigation/NavigationActions'
 import { DEFAULT_NAVIGATION_CONFIG } from '../Navigation/NavigationConfig'
 import { generateProjectProposalKey } from '../Lib/Utils'
+import LikeActions from '../Redux/LikeRedux'
 
 // Styles
 import styles from './Styles/ResumeScreenStyle'
@@ -26,17 +33,25 @@ type Props = {
   candidacties: CandidacyType,
   getProposals: string => ProjectsType,
   summary: SummaryType,
-  fetchingSummary: ?boolean
+  fetchingSummary: ?boolean,
+  numberOfLikes: number,
+  hasLikedCandidate: ?boolean,
+  likeOrUnlike: string => mixed
 }
 
 class ResumeScreen extends Component<Props> {
-  // constructor (props) {
-  //   super(props)
-  //   this.state = {}
-  // }
-
   render () {
-    const { candidacies, candidateProfile, fetchingCandidacies, getProposals, summary, fetchingSummary } = this.props
+    const {
+      candidacies,
+      candidateProfile,
+      fetchingCandidacies,
+      getProposals,
+      summary,
+      fetchingSummary,
+      hasLikedCandidate,
+      likeOrUnlike,
+      numberOfLikes
+    } = this.props
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
@@ -46,7 +61,12 @@ class ResumeScreen extends Component<Props> {
           </TouchableOpacity>
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
-        <ProfileCard candidate={candidateProfile} />
+        <ProfileCard
+          candidate={candidateProfile}
+          hasLiked={hasLikedCandidate}
+          numberOfLikes={numberOfLikes}
+          onLikeOrUnlike={likeOrUnlike}
+        />
 
         {summary && <Text style={styles.sectionTitle}>RESUMO</Text>}
         {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
@@ -77,13 +97,16 @@ const mapStateToProps = state => {
     candidacies: CandidacySelectors.getCandidacies(state),
     getProposals: key => ProjectProposalsSelectors.getProposals(state, key),
     summary: SummarySelectors.getSummary(state),
-    fetchingSummary: SummarySelectors.fetching(state)
+    fetchingSummary: SummarySelectors.fetching(state),
+    hasLikedCandidate: LikeSelectors.hasLiked(state),
+    numberOfLikes: LikeSelectors.hasLiked(state)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    goBack: () => dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName))
+    goBack: () => dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName)),
+    likeOrUnlike: idCandidate => dispatch(LikeActions.likeOrUnlikeCandidate(idCandidate))
   }
 }
 
