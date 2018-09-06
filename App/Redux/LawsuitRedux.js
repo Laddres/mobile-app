@@ -16,7 +16,7 @@ export default Creators
 /* ------------- Tipos Flow ------------- */
 
 export type LawsuitType = {
-  idLawsuit: number,
+  idProcesso: number,
   numero: string,
   tipo: string,
   tribunal: string,

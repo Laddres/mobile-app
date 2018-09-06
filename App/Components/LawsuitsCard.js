@@ -48,7 +48,7 @@ export default class LawsuitsCard extends React.Component<Props> {
               {lawsuits.processos.map((lawsuit, key) => (
                 <PerformanceItem
                   separator={key !== lawsuits.processos.length - 1}
-                  key={`${lawsuit.idLawsuit}`}
+                  key={`${lawsuit.idProcesso}`}
                   title={`Ação ṇ° ${lawsuit.numero}`}
                   subtitle={`${lawsuit.tipo} • ${lawsuit.tribunal}`}
                   icon={Images.search}

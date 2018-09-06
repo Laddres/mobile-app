@@ -54,7 +54,7 @@ storiesOf('PerformanceItem', module)
   ))
   .add('w/ subtitle', () => (
     <PerformanceItem
-      key={`${lawsuit.idLawsuit}`}
+      key={`${lawsuit.idProcesso}`}
       title={`Ação ṇ° ${lawsuit.numero}`}
       subtitle={`${lawsuit.tipo} • ${lawsuit.tribunal}`}
       icon={Images.search}
