@@ -39,7 +39,7 @@ export default class ProfileCard extends React.Component<Props> {
           <Text style={styles.role}>{candidate.cargo.toUpperCase()}</Text>
           <Separator />
           <View style={styles.buttonsContainer}>
-            <ImageButton source={Images.share} onPress={developmentAlert} />
+            <ImageButton source={Images.share} onPress={developmentAlert} style={styles.imageButton} />
             <View style={styles.likeContainer}>
               <Text style={styles.numberLikes}>0</Text>
               <ImageButton source={Images.outlineHeart} onPress={developmentAlert} style={styles.imageButton} />

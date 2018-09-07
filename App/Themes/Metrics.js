@@ -36,7 +36,7 @@ const metrics = {
     minHeight: 200,
     marginVerticalSeparator: 7.5,
     pictureSpaceMargin: 80,
-    candidatePictureOverflow: -35
+    candidatePictureOverflow: -20
   }
 }
 
