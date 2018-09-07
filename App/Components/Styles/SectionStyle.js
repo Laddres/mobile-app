@@ -3,7 +3,7 @@ import { Colors, Fonts, Metrics } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
-    marginVertical: Metrics.section / 2
+    marginVertical: Metrics.doubleBaseMargin
   },
   title: {
     fontWeight: 'bold',
