@@ -4,7 +4,12 @@ import { Colors, Metrics, Fonts } from '../../Themes/'
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.background,
+    backgroundColor: Colors.background
+  },
+  largeContainer: {
+    paddingHorizontal: Metrics.marginHorizontal + Metrics.smallMargin
+  },
+  shortContainer: {
     paddingHorizontal: Metrics.doubleMarginHorizontal
   },
   header: {
@@ -36,8 +41,11 @@ export default StyleSheet.create({
   },
   sectionTitle: {
     fontWeight: 'bold',
-    fontSize: Fonts.size.h1,
-    color: Colors.sectionTitle
+    fontSize: Fonts.size.h2,
+    color: Colors.sectionTitle,
+    paddingHorizontal: Metrics.marginHorizontal,
+    marginTop: Metrics.doubleSection,
+    marginBottom: Metrics.smallMargin
   },
   SectionSubtitleContainer: {
     flexDirection: 'row',

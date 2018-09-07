@@ -58,7 +58,7 @@ class ResumeScreen extends Component<Props> {
     } = this.props
     return (
       <ScrollView style={styles.container}>
-        <View style={styles.header}>
+        <View style={[styles.largeContainer, styles.header]}>
           <TouchableOpacity onPress={this.props.goBack} style={styles.backButton}>
             <Image source={Images.arrowLeft} resizeMode={'contain'} style={styles.backImage} />
             <Text style={styles.backText}>Candidatos</Text>
@@ -66,10 +66,14 @@ class ResumeScreen extends Component<Props> {
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
 
-        <ProfileCard candidate={candidateProfile} />
+        <View style={styles.largeContainer}>
+          <ProfileCard candidate={candidateProfile} />
+        </View>
 
         {summary && <Text style={styles.sectionTitle}>RESUMO</Text>}
-        {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+        <View style={styles.shortContainer}>
+          {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+        </View>
 
         {lawsuits && (
           <View style={styles.sectionTitleContainer}>
@@ -80,21 +84,26 @@ class ResumeScreen extends Component<Props> {
             </View>
           </View>
         )}
-        {lawsuits && <LawsuitsCard lawsuits={lawsuits} fetching={fetchingLawsuits} />}
+        <View style={styles.largeContainer}>
+          {lawsuits && <LawsuitsCard lawsuits={lawsuits} fetching={fetchingLawsuits} />}
+        </View>
 
         {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
-        {candidacies &&
-          candidacies.map(candidacy => {
-            const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
-            return (
-              <CandidacyCard
-                candidacy={candidacy}
-                projectProposals={getProposals(key)}
-                key={key}
-                fetching={fetchingCandidacies}
-              />
-            )
-          })}
+        {candidacies && (
+          <View style={styles.shortContainer}>
+            {candidacies.map(candidacy => {
+              const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
+              return (
+                <CandidacyCard
+                  candidacy={candidacy}
+                  projectProposals={getProposals(key)}
+                  key={key}
+                  fetching={fetchingCandidacies}
+                />
+              )
+            })}
+          </View>
+        )}
       </ScrollView>
     )
   }
