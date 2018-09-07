@@ -57,7 +57,7 @@ class ResumeScreen extends Component<Props> {
       fetchingLawsuits
     } = this.props
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         <View style={[styles.largeContainer, styles.header]}>
           <TouchableOpacity onPress={this.props.goBack} style={styles.backButton}>
             <Image source={Images.arrowLeft} resizeMode={'contain'} style={styles.backImage} />

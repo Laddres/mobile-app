@@ -6,6 +6,9 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.background
   },
+  contentContainer: {
+    paddingBottom: Metrics.section
+  },
   largeContainer: {
     paddingHorizontal: Metrics.marginHorizontal + Metrics.smallMargin
   },
