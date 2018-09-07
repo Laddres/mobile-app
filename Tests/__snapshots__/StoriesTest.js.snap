@@ -17,7 +17,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -296,7 +296,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -580,12 +580,11 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
     style={
       Object {
         "borderRadius": 10,
-        "height": 200,
-        "justifyContent": "flex-end",
-        "marginLeft": 25,
-        "marginVertical": 10,
+        "height": 210,
+        "marginHorizontal": 11.25,
         "opacity": 1,
-        "width": 200,
+        "overflow": "hidden",
+        "width": 125,
       }
     }
   >
@@ -598,8 +597,7 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       }
       style={
         Object {
-          "borderRadius": 10,
-          "flex": 0.75,
+          "flex": 0.7,
         }
       }
     />
@@ -607,18 +605,17 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
       style={
         Object {
           "backgroundColor": "#ECEEF1",
-          "borderBottomLeftRadius": 10,
-          "borderBottomRightRadius": 10,
-          "flex": 0.25,
+          "flex": 0.3,
           "justifyContent": "center",
-          "paddingLeft": 10,
+          "paddingHorizontal": 10,
         }
       }
     >
       <Text
         style={
           Object {
-            "color": "#014E68",
+            "color": "#79A2AF",
+            "fontSize": 12,
           }
         }
       >
@@ -628,7 +625,8 @@ exports[`Storyshots CandidatePreviewCard Default 1`] = `
         style={
           Object {
             "color": "#25647C",
-            "fontWeight": "bold",
+            "fontSize": 12,
+            "fontWeight": "500",
           }
         }
       >
@@ -656,7 +654,7 @@ exports[`Storyshots CardContainer Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -720,7 +718,7 @@ exports[`Storyshots CardContainer Fetching 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -814,7 +812,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -859,7 +857,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 44,
+              "fontSize": 38,
               "fontWeight": "bold",
             }
           }
@@ -1088,7 +1086,7 @@ exports[`Storyshots LawsuitsCard without data 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -1161,7 +1159,7 @@ exports[`Storyshots LawsuitsCard without lawsuits 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
@@ -1582,7 +1580,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
         Object {
           "borderRadius": 100,
           "height": 200,
-          "marginBottom": 30,
+          "marginBottom": 40,
           "position": "absolute",
           "shadowColor": "#014E68",
           "shadowOffset": Object {
@@ -1619,7 +1617,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
           "backgroundColor": "#FFFFFF",
           "borderRadius": 12,
           "justifyContent": "center",
-          "marginBottom": 30,
+          "marginBottom": 40,
           "marginTop": 10,
           "minHeight": 200,
           "padding": 10,
@@ -1697,7 +1695,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
             "color": "#E1B224",
             "fontSize": 34,
             "fontWeight": "bold",
-            "marginTop": 30,
+            "marginTop": 40,
           }
         }
       >
@@ -1856,7 +1854,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             "borderRadius": 0.5,
             "borderStyle": "dashed",
             "borderWidth": 1,
-            "marginBottom": 30,
+            "marginBottom": 40,
             "marginTop": 10,
           },
         ]
@@ -2371,8 +2369,7 @@ exports[`Storyshots Section Default 1`] = `
   <View
     style={
       Object {
-        "marginLeft": 10,
-        "marginTop": 30,
+        "marginVertical": 20,
       }
     }
   >
@@ -2380,8 +2377,10 @@ exports[`Storyshots Section Default 1`] = `
       style={
         Object {
           "color": "rgba(153,153,153,0.3)",
-          "fontSize": 44,
+          "fontSize": 38,
           "fontWeight": "bold",
+          "lineHeight": 38,
+          "marginHorizontal": 10,
         }
       }
     >
@@ -2389,6 +2388,11 @@ exports[`Storyshots Section Default 1`] = `
     </Text>
     <RCTScrollView
       bounces={true}
+      contentContainerStyle={
+        Object {
+          "paddingHorizontal": 10,
+        }
+      }
       disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
@@ -2440,7 +2444,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
+        "marginBottom": 40,
         "marginTop": 10,
         "minHeight": 200,
         "padding": 10,
