@@ -6,7 +6,7 @@ const metrics = {
   marginHorizontal: 10,
   doubleMarginHorizontal: 25,
   marginVertical: 10,
-  section: 30,
+  section: 40,
   baseMargin: 20,
   doubleBaseMargin: 20,
   smallMargin: 5,
