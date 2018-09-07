@@ -2367,7 +2367,7 @@ exports[`Storyshots Section Default 1`] = `
   <View
     style={
       Object {
-        "marginVertical": 15,
+        "marginVertical": 20,
       }
     }
   >
