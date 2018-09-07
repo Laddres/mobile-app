@@ -17,8 +17,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -59,7 +58,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#014E68",
+                  "color": "#79A2AF",
                   "fontSize": 10,
                 },
                 Object {
@@ -98,7 +97,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#014E68",
+                  "color": "#79A2AF",
                   "fontSize": 10,
                 },
                 Object {
@@ -156,7 +155,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -185,7 +184,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -214,7 +213,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -254,7 +253,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -296,8 +295,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -338,7 +336,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#014E68",
+                  "color": "#79A2AF",
                   "fontSize": 10,
                 },
                 Object {
@@ -377,7 +375,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#014E68",
+                  "color": "#79A2AF",
                   "fontSize": 10,
                 },
                 Object {
@@ -435,7 +433,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -464,7 +462,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -493,7 +491,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -533,7 +531,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           <Text
             style={
               Object {
-                "color": "#014E68",
+                "color": "#79A2AF",
                 "fontSize": 10,
               }
             }
@@ -654,8 +652,7 @@ exports[`Storyshots CardContainer Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -718,8 +715,7 @@ exports[`Storyshots CardContainer Fetching 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -812,8 +808,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -879,8 +874,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
         <View
           style={
             Object {
-              "marginTop": 5,
-              "paddingHorizontal": 10,
+              "paddingHorizontal": 5,
             }
           }
         >
@@ -939,7 +933,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 Object {
                   "backgroundColor": "transparent",
                   "opacity": 1,
-                  "padding": 20,
+                  "padding": 10,
                 }
               }
             >
@@ -953,8 +947,9 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
             style={
               Object {
                 "color": "#014E68",
-                "fontSize": 14,
+                "fontSize": 12,
                 "fontStyle": "italic",
+                "marginBottom": 10,
               }
             }
           >
@@ -980,8 +975,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
         <View
           style={
             Object {
-              "marginTop": 5,
-              "paddingHorizontal": 10,
+              "paddingHorizontal": 5,
             }
           }
         >
@@ -1040,7 +1034,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 Object {
                   "backgroundColor": "transparent",
                   "opacity": 1,
-                  "padding": 20,
+                  "padding": 10,
                 }
               }
             >
@@ -1054,8 +1048,9 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
             style={
               Object {
                 "color": "#014E68",
-                "fontSize": 14,
+                "fontSize": 12,
                 "fontStyle": "italic",
+                "marginBottom": 10,
               }
             }
           >
@@ -1086,8 +1081,7 @@ exports[`Storyshots LawsuitsCard without data 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -1159,8 +1153,7 @@ exports[`Storyshots LawsuitsCard without lawsuits 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",
@@ -1226,8 +1219,7 @@ exports[`Storyshots PerformanceItem Default 1`] = `
   <View
     style={
       Object {
-        "marginTop": 5,
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 5,
       }
     }
   >
@@ -1259,8 +1251,9 @@ exports[`Storyshots PerformanceItem Default 1`] = `
       style={
         Object {
           "color": "#014E68",
-          "fontSize": 14,
+          "fontSize": 12,
           "fontStyle": "italic",
+          "marginBottom": 10,
         }
       }
     >
@@ -1282,8 +1275,7 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
   <View
     style={
       Object {
-        "marginTop": 5,
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 5,
       }
     }
   >
@@ -1331,7 +1323,7 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
           Object {
             "backgroundColor": "transparent",
             "opacity": 1,
-            "padding": 20,
+            "padding": 10,
           }
         }
       >
@@ -1345,8 +1337,9 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
       style={
         Object {
           "color": "#014E68",
-          "fontSize": 14,
+          "fontSize": 12,
           "fontStyle": "italic",
+          "marginBottom": 10,
         }
       }
     >
@@ -1368,8 +1361,7 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
   <View
     style={
       Object {
-        "marginTop": 5,
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 5,
       }
     }
   >
@@ -1417,7 +1409,7 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
           Object {
             "backgroundColor": "transparent",
             "opacity": 1,
-            "padding": 20,
+            "padding": 10,
           }
         }
       >
@@ -1431,8 +1423,9 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
       style={
         Object {
           "color": "#014E68",
-          "fontSize": 14,
+          "fontSize": 12,
           "fontStyle": "italic",
+          "marginBottom": 10,
         }
       }
     >
@@ -1470,8 +1463,7 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
   <View
     style={
       Object {
-        "marginTop": 5,
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 5,
       }
     }
   >
@@ -1530,7 +1522,7 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
           Object {
             "backgroundColor": "transparent",
             "opacity": 1,
-            "padding": 20,
+            "padding": 10,
           }
         }
       >
@@ -1544,8 +1536,9 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
       style={
         Object {
           "color": "#014E68",
-          "fontSize": 14,
+          "fontSize": 12,
           "fontStyle": "italic",
+          "marginBottom": 10,
         }
       }
     >
@@ -1618,8 +1611,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
           "backgroundColor": "#FFFFFF",
           "borderRadius": 12,
           "justifyContent": "center",
-          "marginBottom": 30,
-          "marginTop": 10,
+          "marginVertical": 10,
           "minHeight": 200,
           "padding": 10,
           "shadowColor": "#014E68",
@@ -1859,7 +1851,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             "borderRadius": 0.5,
             "borderStyle": "dashed",
             "borderWidth": 1,
-            "marginBottom": 30,
+            "marginBottom": 20,
             "marginTop": 10,
           },
         ]
@@ -1869,18 +1861,19 @@ exports[`Storyshots ProjectProposals Default 1`] = `
       style={
         Object {
           "color": "#79A2AF",
-          "fontSize": 14,
+          "fontSize": 10,
         }
       }
     >
-      Autoria de projetos
+      AUTORIA DE PROJETOS
     </Text>
     <View
       style={
         Object {
           "flexDirection": "row",
           "justifyContent": "space-between",
-          "marginRight": 50,
+          "marginBottom": 20,
+          "marginRight": 30,
         }
       }
     >
@@ -1889,7 +1882,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 34,
+              "fontSize": 30,
               "fontWeight": "bold",
             }
           }
@@ -1900,7 +1893,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 14,
+              "fontSize": 12,
             }
           }
         >
@@ -1912,7 +1905,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 34,
+              "fontSize": 30,
               "fontWeight": "bold",
             }
           }
@@ -1923,7 +1916,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 14,
+              "fontSize": 12,
             }
           }
         >
@@ -1934,8 +1927,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
     <View
       style={
         Object {
-          "marginTop": 5,
-          "paddingHorizontal": 10,
+          "paddingHorizontal": 5,
         }
       }
     >
@@ -1983,7 +1975,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             Object {
               "backgroundColor": "transparent",
               "opacity": 1,
-              "padding": 20,
+              "padding": 10,
             }
           }
         >
@@ -1997,8 +1989,9 @@ exports[`Storyshots ProjectProposals Default 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "italic",
+            "marginBottom": 10,
           }
         }
       >
@@ -2024,8 +2017,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
     <View
       style={
         Object {
-          "marginTop": 5,
-          "paddingHorizontal": 10,
+          "paddingHorizontal": 5,
         }
       }
     >
@@ -2073,7 +2065,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             Object {
               "backgroundColor": "transparent",
               "opacity": 1,
-              "padding": 20,
+              "padding": 10,
             }
           }
         >
@@ -2087,8 +2079,9 @@ exports[`Storyshots ProjectProposals Default 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "italic",
+            "marginBottom": 10,
           }
         }
       >
@@ -2114,8 +2107,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
     <View
       style={
         Object {
-          "marginTop": 5,
-          "paddingHorizontal": 10,
+          "paddingHorizontal": 5,
         }
       }
     >
@@ -2163,7 +2155,7 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             Object {
               "backgroundColor": "transparent",
               "opacity": 1,
-              "padding": 20,
+              "padding": 10,
             }
           }
         >
@@ -2177,8 +2169,9 @@ exports[`Storyshots ProjectProposals Default 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "italic",
+            "marginBottom": 10,
           }
         }
       >
@@ -2449,8 +2442,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
         "backgroundColor": "#FFFFFF",
         "borderRadius": 12,
         "justifyContent": "center",
-        "marginBottom": 30,
-        "marginTop": 10,
+        "marginVertical": 10,
         "minHeight": 200,
         "padding": 10,
         "shadowColor": "#014E68",

@@ -23,7 +23,7 @@ export default class ProjectProposals extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Separator style={styles.separator} />
-        <Text style={styles.title}>Autoria de projetos</Text>
+        <Text style={styles.title}>AUTORIA DE PROJETOS</Text>
         <View style={styles.statistics}>
           <View>
             <Text style={styles.total}>{data.totalProjetos}</Text>

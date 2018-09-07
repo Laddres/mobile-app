@@ -30,7 +30,7 @@ export default class PerformanceItem extends React.Component<Props> {
             <Text style={styles.title}>{title}</Text>
             {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
           </View>
-          {icon && <ImageButton source={icon} onPress={onPressIcon} />}
+          {icon && <ImageButton source={icon} onPress={onPressIcon} style={styles.imageButton} />}
         </View>
         <Text style={styles.description}>{_.truncate(description, { length: 200 })}</Text>
         {separator && <Separator style={styles.separator} />}
