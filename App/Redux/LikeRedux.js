@@ -7,8 +7,9 @@ import Immutable from 'seamless-immutable'
 
 const { Types, Creators } = createActions({
   likeRequest: ['idCandidate'],
-  likeSuccess: ['idCandidate', 'likes'],
+  likeSuccess: ['idCandidate', 'data'],
   likeFailure: ['idCandidate'],
+  requestLikeOrUnlike: ['idCandidate'],
   likeOrUnlikeCandidate: ['idCandidate']
 })
 
@@ -43,8 +44,8 @@ export const success = (state: LikeState, { idCandidate, data }: { idCandidate: 
     {
       fetching: { [idCandidate]: false },
       error: { [idCandidate]: null },
-      likes: { [idCandidate]: data.likes },
-      hasLiked: { [idCandidate]: data.curtiu }
+      likes: { [idCandidate]: data.curtidas },
+      hasLiked: { [idCandidate]: data.usuarioCurtiu }
     },
     { deep: true }
   )

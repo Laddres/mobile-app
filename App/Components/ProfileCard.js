@@ -45,7 +45,7 @@ export default class ProfileCard extends React.Component<Props> {
           <View style={styles.buttonsContainer}>
             <ImageButton source={Images.share} onPress={developmentAlert} />
             <View style={styles.likeContainer}>
-              <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) || '--'}</Text>
+              <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) ? numberOfLikes : '--'}</Text>
               <ImageButton
                 onPress={() => onLikeOrUnlike(candidate.id)}
                 style={styles.imageButton}

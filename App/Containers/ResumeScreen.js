@@ -7,7 +7,8 @@ import {
   CandidacySelectors,
   ProjectProposalsSelectors,
   SummarySelectors,
-  LikeSelectors
+  LikeSelectors,
+  LawsuitSelectors
 } from '../Selectors'
 import SummaryCard from '../Components/SummaryCard'
 import ProfileCard from '../Components/ProfileCard'
@@ -24,6 +25,8 @@ import type { CandidateProfileType } from '../Redux/CandidateRedux'
 import type { CandidacyType } from '../Redux/CandidacyRedux'
 import type { ProjectsType } from '../Redux/ProjectProposalRedux'
 import type { SummaryType } from '../Redux/SummaryRedux'
+import type { LawsuitDataType } from '../Redux/LawsuitRedux'
+import LawsuitsCard from '../Components/LawsuitsCard'
 
 type Props = {
   goBack: () => mixed,
@@ -36,7 +39,9 @@ type Props = {
   fetchingSummary: ?boolean,
   numberOfLikes: number,
   hasLikedCandidate: ?boolean,
-  likeOrUnlike: string => mixed
+  likeOrUnlike: string => mixed,
+  lawsuits: LawsuitDataType,
+  fetchingLawsuits: ?boolean
 }
 
 class ResumeScreen extends Component<Props> {
@@ -50,7 +55,9 @@ class ResumeScreen extends Component<Props> {
       fetchingSummary,
       hasLikedCandidate,
       likeOrUnlike,
-      numberOfLikes
+      numberOfLikes,
+      lawsuits,
+      fetchingLawsuits
     } = this.props
     return (
       <ScrollView style={styles.container}>
@@ -70,6 +77,17 @@ class ResumeScreen extends Component<Props> {
 
         {summary && <Text style={styles.sectionTitle}>RESUMO</Text>}
         {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+
+        {lawsuits && (
+          <View style={styles.sectionTitleContainer}>
+            <Text style={styles.sectionTitle}>PROCESSOS</Text>
+            <View style={styles.SectionSubtitleContainer}>
+              <Text style={styles.sectionSubtitle}>fornecido por </Text>
+              <Image source={Images.vigieAqui} />
+            </View>
+          </View>
+        )}
+        {lawsuits && <LawsuitsCard lawsuits={lawsuits} fetching={fetchingLawsuits} />}
 
         {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
         {candidacies &&
@@ -99,14 +117,16 @@ const mapStateToProps = state => {
     summary: SummarySelectors.getSummary(state),
     fetchingSummary: SummarySelectors.fetching(state),
     hasLikedCandidate: LikeSelectors.hasLiked(state),
-    numberOfLikes: LikeSelectors.hasLiked(state)
+    numberOfLikes: LikeSelectors.getLikes(state),
+    lawsuits: LawsuitSelectors.getLawsuit(state),
+    fetchingLawsuits: LawsuitSelectors.fetching(state)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
     goBack: () => dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName)),
-    likeOrUnlike: idCandidate => dispatch(LikeActions.likeOrUnlikeCandidate(idCandidate))
+    likeOrUnlike: idCandidate => dispatch(LikeActions.requestLikeOrUnlike(idCandidate))
   }
 }
 

@@ -13,8 +13,14 @@ export default StyleSheet.create({
     marginBottom: Metrics.smallMargin
   },
   title: {
+    maxWidth: '100%',
     color: Colors.title,
     fontSize: Fonts.size.medium
+  },
+  subtitle: {
+    maxWidth: '100%',
+    color: Colors.text,
+    fontSize: Fonts.size.regular
   },
   description: {
     color: Colors.text,

@@ -796,6 +796,426 @@ exports[`Storyshots ImageButton Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots LawsuitsCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "paddingVertical": 20,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 20,
+            "marginLeft": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 12,
+            }
+          }
+        >
+          AÇÕES JUDICIAIS
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 44,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          2
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 17,
+            }
+          }
+        >
+          Processos
+        </Text>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginTop": 5,
+              "paddingHorizontal": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginBottom": 5,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 14,
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                Ação ṇ° 4694 / 0016317-57.2018.1.00.0000
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                Inquérito • STF
+              </Text>
+            </View>
+            <View
+              accessible={true}
+              hitSlop={
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "opacity": 1,
+                  "padding": 20,
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={1}
+              />
+            </View>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontStyle": "italic",
+              }
+            }
+          >
+            É alvo de denúncia da Procuradoria Geral da República, por crime de racismo (Lei 7.716/89). A denúncia se baseia em declarações feitas pelo parlamentar durante palestra realizada no dia 3 de abril ...
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 1,
+                  "width": "100%",
+                },
+                Object {
+                  "backgroundColor": "#F3F6F7",
+                },
+                Object {
+                  "marginVertical": 5,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "marginTop": 5,
+              "paddingHorizontal": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginBottom": 5,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 14,
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                Ação ṇ° 4694 / 0016317-57.2018.1.00.0000
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                Inquérito • STF
+              </Text>
+            </View>
+            <View
+              accessible={true}
+              hitSlop={
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "opacity": 1,
+                  "padding": 20,
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={1}
+              />
+            </View>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+                "fontStyle": "italic",
+              }
+            }
+          >
+            É alvo de denúncia da Procuradoria Geral da República, por crime de racismo (Lei 7.716/89). A denúncia se baseia em declarações feitas pelo parlamentar durante palestra realizada no dia 3 de abril ...
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots LawsuitsCard without data 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "paddingVertical": 20,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 17,
+              "textAlign": "center",
+            }
+          }
+        >
+          Ainda não temos informações sobre os processos judiciais deste candidato.
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots LawsuitsCard without lawsuits 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginBottom": 30,
+        "marginTop": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "paddingVertical": 20,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 17,
+              "textAlign": "center",
+            }
+          }
+        >
+          Este candidato não possui nenhum processo judicial.
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots PerformanceItem Default 1`] = `
 <View
   style={
@@ -823,16 +1243,19 @@ exports[`Storyshots PerformanceItem Default 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
     </View>
     <Text
       style={
@@ -876,16 +1299,19 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
       <View
         accessible={true}
         hitSlop={
@@ -959,16 +1385,19 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 14,
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
           }
-        }
-      >
-        PL 7739/2010
-      </Text>
+        >
+          PL 7739/2010
+        </Text>
+      </View>
       <View
         accessible={true}
         hitSlop={
@@ -1027,6 +1456,103 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
         ]
       }
     />
+  </View>
+</View>
+`;
+
+exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 14,
+              "maxWidth": "100%",
+            }
+          }
+        >
+          Ação ṇ° 4694 / 0016317-57.2018.1.00.0000
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 17,
+              "maxWidth": "100%",
+            }
+          }
+        >
+          Inquérito • STF
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        hitSlop={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+          }
+        }
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+        />
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#014E68",
+          "fontSize": 14,
+          "fontStyle": "italic",
+        }
+      }
+    >
+      É alvo de denúncia da Procuradoria Geral da República, por crime de racismo (Lei 7.716/89). A denúncia se baseia em declarações feitas pelo parlamentar durante palestra realizada no dia 3 de abril ...
+    </Text>
   </View>
 </View>
 `;
@@ -1420,16 +1946,19 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "#79A2AF",
-              "fontSize": 14,
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 14,
+                "maxWidth": "100%",
+              }
             }
-          }
-        >
-          PL 1223/2007
-        </Text>
+          >
+            PL 1223/2007
+          </Text>
+        </View>
         <View
           accessible={true}
           hitSlop={
@@ -1507,16 +2036,19 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "#79A2AF",
-              "fontSize": 14,
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 14,
+                "maxWidth": "100%",
+              }
             }
-          }
-        >
-          PL 1223/2007
-        </Text>
+          >
+            PL 1223/2007
+          </Text>
+        </View>
         <View
           accessible={true}
           hitSlop={
@@ -1594,16 +2126,19 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "#79A2AF",
-              "fontSize": 14,
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 14,
+                "maxWidth": "100%",
+              }
             }
-          }
-        >
-          PL 1223/2007
-        </Text>
+          >
+            PL 1223/2007
+          </Text>
+        </View>
         <View
           accessible={true}
           hitSlop={
