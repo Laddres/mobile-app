@@ -8,6 +8,7 @@ export default StyleSheet.create({
   },
   content: {
     minHeight: '100%',
+    paddingTop: Metrics.marginVertical,
     paddingBottom: Metrics.section
   },
   header: {

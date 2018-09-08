@@ -9,33 +9,47 @@ export default StyleSheet.create({
   },
   subtitle: {
     color: Colors.title,
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.title
   },
   subsection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginRight: Metrics.doubleSection,
-    marginBottom: Metrics.doubleBaseMargin
+    marginBottom: Metrics.doubleBaseMargin,
+    width: '100%'
+  },
+  partiesLeftSubsubsection: {
+    flex: 4
+  },
+  partiesRightSubsubsection: {
+    flex: 9,
+    alignItems: 'flex-end'
+  },
+  leftSubsubsection: {
+    flex: 3
+  },
+  rightSubsubsection: {
+    flex: 2
   },
   removeMarginRight: {
     marginRight: 0
   },
   previousParties: {
     color: Colors.title,
-    fontSize: Fonts.size.gap
+    fontSize: Fonts.size.medium
   },
   actualParty: {
     fontWeight: 'bold',
     color: Colors.text,
-    fontSize: Fonts.size.gap
+    fontSize: Fonts.size.medium
   },
   value: {
     color: Colors.text,
     fontWeight: 'bold',
-    fontSize: Fonts.size.h2
+    fontSize: Fonts.size.h3
   },
   description: {
     color: Colors.text,
-    fontSize: Fonts.size.gap
+    fontSize: Fonts.size.small
   }
 })

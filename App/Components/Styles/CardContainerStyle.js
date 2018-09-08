@@ -19,8 +19,7 @@ export default StyleSheet.create({
       }
     }),
     padding: Metrics.cards.padding,
-    marginTop: Metrics.marginVertical,
-    marginBottom: Metrics.section,
+    marginVertical: Metrics.marginVertical,
     borderRadius: Metrics.cards.borderRadius
   },
   fetchingContainer: {

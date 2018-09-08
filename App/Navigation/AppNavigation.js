@@ -13,6 +13,7 @@ const PrimaryNav = createStackNavigator(
   {
     // Default config for all screens
     headerMode: 'none',
+    cardStyle: { shadowColor: 'transparent' },
     initialRouteName: 'MainScreen',
     navigationOptions: {
       headerStyle: styles.header

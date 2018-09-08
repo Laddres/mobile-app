@@ -26,6 +26,7 @@ export default class Section extends React.Component<Props> {
           bounces
           horizontal
           style={styles.itens}
+          contentContainerStyle={styles.itensContent}
           data={this.props.data}
           showsHorizontalScrollIndicator={false}
           keyExtractor={candidate => `${candidate.id}.${candidate.numero}.${Math.random()}`}
