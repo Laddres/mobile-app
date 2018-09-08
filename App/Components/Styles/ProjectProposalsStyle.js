@@ -11,25 +11,26 @@ export default StyleSheet.create({
     borderRadius: 0.5,
     borderStyle: 'dashed',
     borderColor: Colors.separator,
-    marginBottom: Metrics.section,
+    marginBottom: Metrics.doubleBaseMargin,
     marginTop: Metrics.marginVertical
   },
   title: {
     color: Colors.title,
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.title
   },
   statistics: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginRight: Metrics.doubleSection
+    marginRight: Metrics.section,
+    marginBottom: Metrics.doubleBaseMargin
   },
   total: {
     color: Colors.text,
     fontWeight: 'bold',
-    fontSize: Fonts.size.h2
+    fontSize: Fonts.size.h3
   },
   description: {
     color: Colors.text,
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.small
   }
 })

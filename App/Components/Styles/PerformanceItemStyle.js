@@ -3,8 +3,7 @@ import { Metrics, Fonts, Colors } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
-    paddingHorizontal: Metrics.marginHorizontal,
-    marginTop: Metrics.smallMargin
+    paddingHorizontal: Metrics.smallMargin
   },
   header: {
     alignItems: 'center',
@@ -22,10 +21,14 @@ export default StyleSheet.create({
     color: Colors.text,
     fontSize: Fonts.size.regular
   },
+  imageButton: {
+    padding: Metrics.marginVertical
+  },
   description: {
     color: Colors.text,
     fontStyle: 'italic',
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.small,
+    marginBottom: Metrics.marginVertical
   },
   separator: {
     marginVertical: Metrics.smallMargin
