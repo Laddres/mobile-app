@@ -9,13 +9,14 @@ export default StyleSheet.create({
     marginTop: Metrics.doubleSection
   },
   picContainer: {
+    backgroundColor: 'yellow',
     position: 'absolute',
     zIndex: 1,
     top: Metrics.cards.candidatePictureOverflow,
     marginBottom: Metrics.section,
-    height: Metrics.images.logo,
-    width: Metrics.images.logo,
-    borderRadius: Metrics.images.logo / 2,
+    height: 0.4 * Metrics.screenWidth,
+    width: 0.4 * Metrics.screenWidth,
+    borderRadius: (0.4 * Metrics.screenWidth) / 2,
     ...Platform.select({
       ios: {
         shadowOffset: { width: 0, height: 4 },
@@ -29,12 +30,12 @@ export default StyleSheet.create({
   },
   pictureSpaceMargin: {
     height: 1,
-    marginVertical: Metrics.cards.pictureSpaceMargin
+    marginVertical: 0.2 * Metrics.screenWidth - 20 + 10
   },
   picture: {
-    height: Metrics.images.logo,
-    width: Metrics.images.logo,
-    borderRadius: Metrics.images.logo / 2
+    height: 0.4 * Metrics.screenWidth,
+    width: 0.4 * Metrics.screenWidth,
+    borderRadius: (0.4 * Metrics.screenWidth) / 2
   },
   name: {
     color: Colors.text,
@@ -43,7 +44,8 @@ export default StyleSheet.create({
   },
   text: {
     color: Colors.text,
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.medium,
+    textAlign: 'center'
   },
   age: {
     color: Colors.title,
@@ -68,13 +70,13 @@ export default StyleSheet.create({
     fontWeight: 'bold'
   },
   role: {
-    marginBottom: Metrics.doubleBaseMargin,
+    marginBottom: 40,
     fontSize: Fonts.size.medium,
     color: Colors.yellow,
     fontWeight: Fonts.weight.regular
   },
   buttonsContainer: {
-    width: '100%',
+    width: '95%',
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
@@ -87,6 +89,7 @@ export default StyleSheet.create({
     color: Colors.text
   },
   imageButton: {
-    paddingLeft: Metrics.smallMargin
+    paddingVertical: Metrics.marginVertical,
+    paddingHorizontal: Metrics.smallMargin
   }
 })

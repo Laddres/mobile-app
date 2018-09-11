@@ -11,7 +11,9 @@ import { CandidateTypes } from '../Redux/CandidateRedux'
 import { CandidacyTypes } from '../Redux/CandidacyRedux'
 import { ProjectProposalTypes } from '../Redux/ProjectProposalRedux'
 import { SummaryTypes } from '../Redux/SummaryRedux'
+import { LawsuitTypes } from '../Redux/LawsuitRedux'
 import { LikeTypes } from '../Redux/LikeRedux'
+import { SecretTypes } from '../Redux/SecretRedux'
 
 /* ------------- Sagas ------------- */
 
@@ -21,7 +23,9 @@ import { getCandidateProfile } from './CandidateSagas'
 import { getCandidacy } from './CandidacySagas'
 import { getProjectProposal } from './ProjectProposalSagas'
 import { getSummary } from './SummarySagas'
+import { getLawsuits } from './LawsuitSagas'
 import { getLikes, likeOrUnlike } from './LikeSagas'
+import { getSecret } from './SecretSagas'
 
 /* ------------- API ------------- */
 
@@ -38,6 +42,8 @@ export default function * root () {
     takeEvery(CandidacyTypes.CANDIDACY_REQUEST, getCandidacy, api),
     takeEvery(ProjectProposalTypes.PROJECT_PROPOSAL_REQUEST, getProjectProposal, api),
     takeEvery(LikeTypes.LIKE_REQUEST, getLikes, api),
-    takeEvery(LikeTypes.LIKE_OR_UNLIKE_CANDIDATE, likeOrUnlike, api)
+    takeEvery(LikeTypes.REQUEST_LIKE_OR_UNLIKE, likeOrUnlike, api),
+    takeLatest(LawsuitTypes.LAWSUIT_REQUEST, getLawsuits, api),
+    takeLatest(SecretTypes.SECRET_REQUEST, getSecret, api)
   ])
 }

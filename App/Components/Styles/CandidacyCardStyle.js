@@ -21,7 +21,7 @@ export default StyleSheet.create({
     flex: 0.35
   },
   title: {
-    color: Colors.text,
+    color: Colors.title,
     fontSize: Fonts.size.title
   },
   headerText: {
@@ -51,6 +51,7 @@ export default StyleSheet.create({
   },
   performanceText: {
     color: Colors.text,
+    fontSize: Fonts.size.medium,
     fontWeight: Fonts.weight.bold
   },
   performanceSeparator: {

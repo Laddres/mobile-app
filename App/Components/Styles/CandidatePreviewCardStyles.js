@@ -1,32 +1,30 @@
 import { StyleSheet } from 'react-native'
-import { Colors, Metrics } from '../../Themes'
+import { Colors, Fonts, Metrics } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
-    width: Metrics.images.logo,
-    height: Metrics.images.logo,
-    borderRadius: 10,
-    justifyContent: 'flex-end',
-    marginLeft: Metrics.doubleMarginHorizontal,
-    marginVertical: Metrics.marginVertical
+    width: 125,
+    height: 210,
+    borderRadius: Metrics.borderRadius,
+    marginHorizontal: 0.015 * Metrics.screenWidth,
+    overflow: 'hidden'
   },
   photo: {
-    flex: 0.75,
-    borderRadius: Metrics.borderRadius
+    flex: 0.7
   },
   info: {
     justifyContent: 'center',
-    paddingLeft: Metrics.marginHorizontal,
+    paddingHorizontal: Metrics.marginHorizontal,
     backgroundColor: Colors.cardBackground,
-    borderBottomLeftRadius: Metrics.borderRadius,
-    borderBottomRightRadius: Metrics.borderRadius,
-    flex: 0.25
+    flex: 0.3
   },
   textParty: {
-    color: Colors.text
+    color: Colors.title,
+    fontSize: Fonts.size.small
   },
   textName: {
     color: Colors.subtitle,
-    fontWeight: 'bold'
+    fontSize: Fonts.size.small,
+    fontWeight: Fonts.weight.medium
   }
 })

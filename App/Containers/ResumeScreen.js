@@ -7,7 +7,8 @@ import {
   CandidacySelectors,
   ProjectProposalsSelectors,
   SummarySelectors,
-  LikeSelectors
+  LikeSelectors,
+  LawsuitSelectors
 } from '../Selectors'
 import SummaryCard from '../Components/SummaryCard'
 import ProfileCard from '../Components/ProfileCard'
@@ -24,6 +25,8 @@ import type { CandidateProfileType } from '../Redux/CandidateRedux'
 import type { CandidacyType } from '../Redux/CandidacyRedux'
 import type { ProjectsType } from '../Redux/ProjectProposalRedux'
 import type { SummaryType } from '../Redux/SummaryRedux'
+import type { LawsuitDataType } from '../Redux/LawsuitRedux'
+import LawsuitsCard from '../Components/LawsuitsCard'
 
 type Props = {
   goBack: () => mixed,
@@ -36,7 +39,9 @@ type Props = {
   fetchingSummary: ?boolean,
   numberOfLikes: number,
   hasLikedCandidate: ?boolean,
-  likeOrUnlike: string => mixed
+  likeOrUnlike: string => mixed,
+  lawsuits: LawsuitDataType,
+  fetchingLawsuits: ?boolean
 }
 
 class ResumeScreen extends Component<Props> {
@@ -50,40 +55,63 @@ class ResumeScreen extends Component<Props> {
       fetchingSummary,
       hasLikedCandidate,
       likeOrUnlike,
-      numberOfLikes
+      numberOfLikes,
+      lawsuits,
+      fetchingLawsuits
     } = this.props
     return (
-      <ScrollView style={styles.container}>
-        <View style={styles.header}>
+      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <View style={[styles.largeContainer, styles.header]}>
           <TouchableOpacity onPress={this.props.goBack} style={styles.backButton}>
             <Image source={Images.arrowLeft} resizeMode={'contain'} style={styles.backImage} />
             <Text style={styles.backText}>Candidatos</Text>
           </TouchableOpacity>
           <Image source={Images.logo} resizeMode={'contain'} style={styles.logo} />
         </View>
-        <ProfileCard
-          candidate={candidateProfile}
-          hasLiked={hasLikedCandidate}
-          numberOfLikes={numberOfLikes}
-          onLikeOrUnlike={likeOrUnlike}
-        />
+
+        <View style={styles.largeContainer}>
+          <ProfileCard
+            candidate={candidateProfile}
+            hasLiked={hasLikedCandidate}
+            numberOfLikes={numberOfLikes}
+            onLikeOrUnlike={likeOrUnlike}
+          />
+        </View>
 
         {summary && <Text style={styles.sectionTitle}>RESUMO</Text>}
-        {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+        <View style={styles.shortContainer}>
+          {summary && <SummaryCard data={summary} fetching={fetchingSummary} />}
+        </View>
+
+        {lawsuits && (
+          <View style={styles.sectionTitleContainer}>
+            <Text style={styles.sectionTitle}>PROCESSOS</Text>
+            <View style={styles.SectionSubtitleContainer}>
+              <Text style={styles.sectionSubtitle}>fornecido por </Text>
+              <Image source={Images.vigieAqui} />
+            </View>
+          </View>
+        )}
+        <View style={styles.largeContainer}>
+          {lawsuits && <LawsuitsCard lawsuits={lawsuits} fetching={fetchingLawsuits} />}
+        </View>
 
         {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
-        {candidacies &&
-          candidacies.map(candidacy => {
-            const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
-            return (
-              <CandidacyCard
-                candidacy={candidacy}
-                projectProposals={getProposals(key)}
-                key={key}
-                fetching={fetchingCandidacies}
-              />
-            )
-          })}
+        {candidacies && (
+          <View style={styles.shortContainer}>
+            {candidacies.map(candidacy => {
+              const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
+              return (
+                <CandidacyCard
+                  candidacy={candidacy}
+                  projectProposals={getProposals(key)}
+                  key={key}
+                  fetching={fetchingCandidacies}
+                />
+              )
+            })}
+          </View>
+        )}
       </ScrollView>
     )
   }
@@ -99,14 +127,16 @@ const mapStateToProps = state => {
     summary: SummarySelectors.getSummary(state),
     fetchingSummary: SummarySelectors.fetching(state),
     hasLikedCandidate: LikeSelectors.hasLiked(state),
-    numberOfLikes: LikeSelectors.hasLiked(state)
+    numberOfLikes: LikeSelectors.getLikes(state),
+    lawsuits: LawsuitSelectors.getLawsuit(state),
+    fetchingLawsuits: LawsuitSelectors.fetching(state)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
     goBack: () => dispatch(resetAction(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName)),
-    likeOrUnlike: idCandidate => dispatch(LikeActions.likeOrUnlikeCandidate(idCandidate))
+    likeOrUnlike: idCandidate => dispatch(LikeActions.requestLikeOrUnlike(idCandidate))
   }
 }
 
