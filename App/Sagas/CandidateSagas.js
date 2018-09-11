@@ -6,6 +6,7 @@ import CandidateActions from '../Redux/CandidateRedux'
 import CandidacyActions from '../Redux/CandidacyRedux'
 import SummaryActions from '../Redux/SummaryRedux'
 import LawsuitActions from '../Redux/LawsuitRedux'
+import LikeActions from '../Redux/LikeRedux'
 
 export function * getCandidateProfile (api, { id }) {
   const response = yield call(api.getCandidateProfile, id)
@@ -24,4 +25,5 @@ export function * requestResumeSections (id) {
   yield put(CandidacyActions.candidacyRequest(id))
   yield put(SummaryActions.summaryRequest(id))
   yield put(LawsuitActions.LawsuitRequest(id))
+  yield put(LikeActions.likeRequest(id))
 }

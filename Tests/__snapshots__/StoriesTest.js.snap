@@ -1778,7 +1778,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
               }
             }
           >
-            0
+            --
           </Text>
           <View
             accessible={true}
