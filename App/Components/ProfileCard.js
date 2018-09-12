@@ -8,16 +8,24 @@ import ImageButton from './ImageButton'
 import { developmentAlert } from '../Lib/Utils'
 import { Images } from '../Themes'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
+import Share from 'react-native-share'
+import Messages from '../Config/Messages'
 
 type Props = {
   candidate: CandidateProfileType
 }
 
 export default class ProfileCard extends React.Component<Props> {
-  // // Defaults for props
-  // static defaultProps = {
-  //   someSetting: false
-  // }
+  shareHandler = () => {
+    Share.open({
+      title: Messages.shareTitle,
+      message: Messages.shareMessage(this.props.candidate.nomeUrna),
+      subject: Messages.shareSubject,
+      url: Messages.landingPageURL
+    }).catch(err => {
+      err && console.log(err)
+    })
+  }
 
   render () {
     const { candidate } = this.props
@@ -39,7 +47,7 @@ export default class ProfileCard extends React.Component<Props> {
           <Text style={styles.role}>{candidate.cargo.toUpperCase()}</Text>
           <Separator />
           <View style={styles.buttonsContainer}>
-            <ImageButton source={Images.share} onPress={developmentAlert} style={styles.imageButton} />
+            <ImageButton source={Images.share} onPress={this.shareHandler} style={styles.imageButton} />
             <View style={styles.likeContainer}>
               <Text style={styles.numberLikes}>0</Text>
               <ImageButton source={Images.outlineHeart} onPress={developmentAlert} style={styles.imageButton} />
