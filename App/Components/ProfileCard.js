@@ -5,15 +5,18 @@ import styles from './Styles/ProfileCardStyle'
 import CardContainer from './CardContainer'
 import Separator from './Separator'
 import ImageButton from './ImageButton'
-import { developmentAlert } from '../Lib/Utils'
 import { Images } from '../Themes'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
 import Share from 'react-native-share'
 import ViewShot from 'react-native-view-shot'
 import Messages from '../Config/Messages'
+import _ from 'lodash'
 
 type Props = {
-  candidate: CandidateProfileType
+  candidate: CandidateProfileType,
+  hasLiked: ?boolean,
+  numberOfLikes: number,
+  onLikeOrUnlike: string => mixed
 }
 
 export default class ProfileCard extends React.Component<Props> {
@@ -32,7 +35,7 @@ export default class ProfileCard extends React.Component<Props> {
   }
 
   render () {
-    const { candidate } = this.props
+    const { candidate, hasLiked, onLikeOrUnlike, numberOfLikes } = this.props
     return (
       <ViewShot ref='viewShot' options={{ format: 'png' }} style={styles.viewShotBackground}>
         <View style={styles.container}>
@@ -57,8 +60,12 @@ export default class ProfileCard extends React.Component<Props> {
             <View style={styles.buttonsContainer}>
               <ImageButton source={Images.share} onPress={this.shareHandler} style={styles.imageButton} />
               <View style={styles.likeContainer}>
-                <Text style={styles.numberLikes}>0</Text>
-                <ImageButton source={Images.outlineHeart} onPress={developmentAlert} style={styles.imageButton} />
+                <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) ? numberOfLikes : '--'}</Text>
+                <ImageButton
+                  onPress={() => onLikeOrUnlike(candidate.id)}
+                  style={styles.imageButton}
+                  source={hasLiked ? Images.filledHeart : Images.outlineHeart}
+                />
               </View>
             </View>
           </CardContainer>

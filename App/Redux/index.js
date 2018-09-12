@@ -6,6 +6,7 @@ import ReduxPersist from '../Config/ReduxPersist'
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
+  secret: require('./SecretRedux').reducer,
   nav: require('./NavigationRedux').reducer,
   searchBar: require('./SearchBarRedux').reducer,
   candidatos: require('./CandidatosRedux').reducer,
@@ -13,6 +14,7 @@ export const reducers = combineReducers({
   candidacy: require('./CandidacyRedux').reducer,
   projectProposal: require('./ProjectProposalRedux').reducer,
   summary: require('./SummaryRedux').reducer,
+  likes: require('./LikeRedux').reducer,
   lawsuit: require('./LawsuitRedux').reducer
 })
 

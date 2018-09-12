@@ -7,6 +7,8 @@ import com.facebook.react.ReactApplication;
 import cl.json.ShareApplication;
 import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 import cl.json.RNSharePackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -26,9 +28,11 @@ public class MainApplication extends Application implements ShareApplication, Re
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new RNViewShotPackage(),
-            new RNSharePackage()
+        new MainReactPackage(),
+        new RNViewShotPackage(),
+        new RNSharePackage(),
+        new RNDeviceInfo(),
+        new ReactNativeConfigPackage()
       );
     }
 
