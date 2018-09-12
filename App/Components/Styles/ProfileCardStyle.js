@@ -2,6 +2,9 @@ import { Platform, StyleSheet } from 'react-native'
 import { Colors, Metrics, Fonts } from '../../Themes'
 
 export default StyleSheet.create({
+  viewShotBackground: {
+    backgroundColor: Colors.background
+  },
   container: {
     width: '100%',
     alignItems: 'center',
