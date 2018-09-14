@@ -26,11 +26,6 @@ type Props = {
 }
 
 class MainScreen extends Component<Props> {
-  // constructor (props) {
-  //   super(props)
-  //   this.state = {}
-  // }
-
   render () {
     const {
       fetching,
@@ -65,9 +60,14 @@ class MainScreen extends Component<Props> {
             data={Object.keys(candidates)}
             showsHorizontalScrollIndicator={false}
             keyExtractor={role => `${role}`}
-            renderItem={({ item: role }: { item: CandidateType }) => (
-              <Section data={candidates[role]} title={_.startCase(role)} onPressCandidate={getCandidateProfile} />
-            )}
+            renderItem={({ item: role }: { role: CandidateType }) => {
+              const hasCandidateInRole = !!candidates[role].length
+              return (
+                hasCandidateInRole && (
+                  <Section data={candidates[role]} title={_.startCase(role)} onPressCandidate={getCandidateProfile} />
+                )
+              )
+            }}
           />
         )}
       </View>
