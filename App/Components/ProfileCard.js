@@ -1,15 +1,15 @@
 // @flow
 import * as React from 'react'
-import { Image, View, Text } from 'react-native'
+import { Platform, Image, View, Text, Share as RNShare } from 'react-native'
 import styles from './Styles/ProfileCardStyle'
 import CardContainer from './CardContainer'
 import Separator from './Separator'
 import ImageButton from './ImageButton'
 import { Images } from '../Themes'
 import type { CandidateProfileType } from '../Redux/CandidateRedux'
-import Share from 'react-native-share'
 import ViewShot from 'react-native-view-shot'
 import Messages from '../Config/Messages'
+import Share from 'react-native-share'
 import _ from 'lodash'
 
 type Props = {
@@ -20,9 +20,8 @@ type Props = {
 }
 
 export default class ProfileCard extends React.Component<Props> {
-  shareHandler = () => {
+  shareHandlerAndroida = () => {
     this.refs.viewShot.capture().then(data => {
-      console.tron.logImportant(data)
       Share.open({
         title: Messages.shareTitle,
         message: Messages.shareMessage(this.props.candidate.nomeUrna),
@@ -32,6 +31,18 @@ export default class ProfileCard extends React.Component<Props> {
         err && console.log(err)
       })
     })
+  }
+
+  shareHandlerIOS = () => {
+    RNShare.share(
+      {
+        message: Messages.shareMessage(this.props.candidate.nomeUrna),
+        url: Messages.landingPageURL
+      },
+      {
+        subject: Messages.shareSubject
+      }
+    )
   }
 
   render () {
@@ -58,7 +69,11 @@ export default class ProfileCard extends React.Component<Props> {
             <Text style={styles.role}>{candidate.cargo.toUpperCase()}</Text>
             <Separator />
             <View style={styles.buttonsContainer}>
-              <ImageButton source={Images.share} onPress={this.shareHandler} style={styles.imageButton} />
+              <ImageButton
+                source={Images.share}
+                style={styles.imageButton}
+                onPress={Platform.OS === 'ios' ? this.shareHandlerIOS : this.shareHandlerAndroida}
+              />
               <View style={styles.likeContainer}>
                 <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) ? numberOfLikes : '--'}</Text>
                 <ImageButton
