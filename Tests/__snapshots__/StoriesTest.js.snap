@@ -1,5 +1,601 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots CandidaciesList Default 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "minHeight": 200,
+          "padding": 10,
+          "shadowColor": "#014E68",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 5,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 0.65,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 10,
+                  },
+                  Object {
+                    "color": "#E1B224",
+                  },
+                ]
+              }
+            >
+              CARGO
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                  Object {
+                    "color": "#E1B224",
+                  },
+                ]
+              }
+            >
+              Deputado Federal
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 0.35,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 10,
+                  },
+                  Object {
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            >
+              PARTIDO
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                  Object {
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            >
+              PV
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "height": 1,
+                "width": "100%",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+                "height": 2,
+                "marginBottom": 10,
+              },
+            ]
+          }
+        />
+        <View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              ELEIÇÕES GERAIS 2014
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              2010
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              LOCAL
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Acre
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              COLIGAÇÃO
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Acre Agora e Sempre
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              PV / PCB / PMDB
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              RESULTADO
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Eleito
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "minHeight": 200,
+          "padding": 10,
+          "shadowColor": "#014E68",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": 5,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 0.65,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 10,
+                  },
+                  Object {
+                    "color": "#E1B224",
+                  },
+                ]
+              }
+            >
+              CARGO
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                  Object {
+                    "color": "#E1B224",
+                  },
+                ]
+              }
+            >
+              Senador
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 0.35,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#79A2AF",
+                    "fontSize": 10,
+                  },
+                  Object {
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            >
+              PARTIDO
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  },
+                  Object {
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            >
+              REDE
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "height": 1,
+                "width": "100%",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+                "height": 2,
+                "marginBottom": 10,
+              },
+            ]
+          }
+        />
+        <View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              ELEIÇÕES GERAIS 2014
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              2014
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              LOCAL
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Acre
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              COLIGAÇÃO
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Frente Popular de Acrelândia
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              PT / PMN / PSB / PV / PC do B
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "marginVertical": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#79A2AF",
+                  "fontSize": 10,
+                }
+              }
+            >
+              RESULTADO
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Não Eleitoo
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CandidaciesList Without data 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FAFBFC",
+      "padding": 20,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "justifyContent": "center",
+          "marginVertical": 10,
+          "minHeight": 200,
+          "padding": 10,
+          "shadowColor": "#014E68",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#014E68",
+            "fontSize": 17,
+            "fontWeight": "400",
+            "marginTop": 20,
+            "paddingHorizontal": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Esta é a primeira vez de Teste candidato como candidato
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots CandidacyCard Default 1`] = `
 <View
   style={
@@ -1559,67 +2155,20 @@ exports[`Storyshots ProfileCard Default 1`] = `
   }
 >
   <View
+    collapsable={false}
+    onLayout={[Function]}
     style={
       Object {
-        "alignItems": "center",
-        "justifyContent": "center",
-        "marginTop": 50,
-        "width": "100%",
+        "backgroundColor": "#FAFBFC",
       }
     }
   >
     <View
       style={
         Object {
-          "backgroundColor": "yellow",
-          "borderRadius": 150,
-          "height": 300,
-          "marginBottom": 30,
-          "position": "absolute",
-          "shadowColor": "#014E68",
-          "shadowOffset": Object {
-            "height": 4,
-            "width": 0,
-          },
-          "shadowOpacity": 0.1,
-          "top": -20,
-          "width": 300,
-          "zIndex": 1,
-        }
-      }
-    >
-      <Image
-        resizeMode="cover"
-        source={
-          Object {
-            "uri": "http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171/foto_1534295591196.jpg",
-          }
-        }
-        style={
-          Object {
-            "borderRadius": 150,
-            "height": 300,
-            "width": 300,
-          }
-        }
-      />
-    </View>
-    <View
-      style={
-        Object {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 12,
           "justifyContent": "center",
-          "marginVertical": 10,
-          "minHeight": 200,
-          "padding": 10,
-          "shadowColor": "#014E68",
-          "shadowOffset": Object {
-            "height": 4,
-            "width": 0,
-          },
-          "shadowOpacity": 0.1,
+          "marginTop": 50,
           "width": "100%",
         }
       }
@@ -1627,159 +2176,165 @@ exports[`Storyshots ProfileCard Default 1`] = `
       <View
         style={
           Object {
-            "height": 1,
-            "marginVertical": 140,
-          }
-        }
-      />
-      <Text
-        style={
-          Object {
-            "color": "#014E68",
-            "fontSize": 20,
-            "fontWeight": "bold",
-          }
-        }
-      >
-        Marina Silva
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#014E68",
-            "fontSize": 14,
-            "textAlign": "center",
+            "backgroundColor": "yellow",
+            "borderRadius": 150,
+            "height": 300,
+            "marginBottom": 30,
+            "position": "absolute",
+            "shadowColor": "#014E68",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "top": -20,
+            "width": 300,
+            "zIndex": 1,
           }
         }
       >
-        Maria Osmarina Marina da Silva Vaz de Lima
-      </Text>
+        <Image
+          resizeMode="cover"
+          source={
+            Object {
+              "uri": "http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171/foto_1534295591196.jpg",
+            }
+          }
+          style={
+            Object {
+              "borderRadius": 150,
+              "height": 300,
+              "width": 300,
+            }
+          }
+        />
+      </View>
       <View
         style={
           Object {
-            "height": 1,
-            "marginVertical": 7.5,
-          }
-        }
-      />
-      <Text
-        style={
-          Object {
-            "color": "#79A2AF",
-            "fontSize": 12,
-          }
-        }
-      >
-        60 ANOS • SUPERIOR COMPLETO
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#25647C",
-            "fontSize": 12,
-            "fontWeight": "500",
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 12,
+            "justifyContent": "center",
+            "marginVertical": 10,
+            "minHeight": 200,
+            "padding": 10,
+            "shadowColor": "#014E68",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "width": "100%",
           }
         }
       >
-        Rio Branco, Acre
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#E1B224",
-            "fontSize": 34,
-            "fontWeight": "bold",
-            "marginTop": 30,
-          }
-        }
-      >
-        18
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#E1B224",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "marginBottom": 40,
-          }
-        }
-      >
-        PRESIDENTE
-      </Text>
-      <View
-        style={
-          Array [
+        <View
+          style={
             Object {
               "height": 1,
-              "width": "100%",
-            },
-            Object {
-              "backgroundColor": "#F3F6F7",
-            },
-            undefined,
-          ]
-        }
-      />
-      <View
-        style={
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "width": "95%",
-          }
-        }
-      >
-        <View
-          accessible={true}
-          hitSlop={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "right": 0,
-              "top": 0,
+              "marginVertical": 140,
             }
           }
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        />
+        <Text
           style={
             Object {
-              "backgroundColor": "transparent",
-              "opacity": 1,
-              "padding": 20,
-              "paddingHorizontal": 5,
-              "paddingVertical": 10,
+              "color": "#014E68",
+              "fontSize": 20,
+              "fontWeight": "bold",
             }
           }
         >
-          <Image
-            resizeMode="contain"
-            source={1}
-          />
-        </View>
-        <View
+          Marina Silva
+        </Text>
+        <Text
           style={
             Object {
-              "alignItems": "center",
-              "flexDirection": "row",
+              "color": "#014E68",
+              "fontSize": 14,
+              "textAlign": "center",
             }
           }
         >
-          <Text
-            style={
+          Maria Osmarina Marina da Silva Vaz de Lima
+        </Text>
+        <View
+          style={
+            Object {
+              "height": 1,
+              "marginVertical": 7.5,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 12,
+            }
+          }
+        >
+          60 ANOS • SUPERIOR COMPLETO
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#25647C",
+              "fontSize": 12,
+              "fontWeight": "500",
+            }
+          }
+        >
+          Rio Branco, Acre
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#E1B224",
+              "fontSize": 34,
+              "fontWeight": "bold",
+              "marginTop": 30,
+            }
+          }
+        >
+          18
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#E1B224",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 40,
+            }
+          }
+        >
+          PRESIDENTE
+        </Text>
+        <View
+          style={
+            Array [
               Object {
-                "color": "#014E68",
-                "fontSize": 12,
-              }
+                "height": 1,
+                "width": "100%",
+              },
+              Object {
+                "backgroundColor": "#F3F6F7",
+              },
+              undefined,
+            ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "width": "95%",
             }
-          >
-            --
-          </Text>
+          }
+        >
           <View
             accessible={true}
             hitSlop={
@@ -1811,6 +2366,57 @@ exports[`Storyshots ProfileCard Default 1`] = `
               resizeMode="contain"
               source={1}
             />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 12,
+                }
+              }
+            >
+              --
+            </Text>
+            <View
+              accessible={true}
+              hitSlop={
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "opacity": 1,
+                  "padding": 20,
+                  "paddingHorizontal": 5,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={1}
+              />
+            </View>
           </View>
         </View>
       </View>

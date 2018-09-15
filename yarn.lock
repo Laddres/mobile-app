@@ -7955,6 +7955,10 @@ react-native-safe-area-view@^0.8.0:
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
+react-native-share@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-share/-/react-native-share-1.1.2.tgz#f205265b9a3563eb20b9e247f17b8cab574a38dc"
+
 react-native-tab-view@^0.0.77:
   version "0.0.77"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.77.tgz#11ceb8e7c23100d07e628dc151b57797524d00d4"
@@ -7966,6 +7970,10 @@ react-native-tab-view@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-1.0.2.tgz#66e0bc6d38a227ed2b212e3a256b7902f6ce02ed"
   dependencies:
     prop-types "^15.6.1"
+
+react-native-view-shot@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-2.4.0.tgz#ba5dd7607a217a2fdd9e2e8165d0eb24614d2438"
 
 react-native@0.56.0:
   version "0.56.0"
