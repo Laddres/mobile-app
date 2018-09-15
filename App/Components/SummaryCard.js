@@ -37,7 +37,7 @@ export default class SummaryCard extends React.Component<Props> {
               <Text style={styles.description}>Processos Judiciais</Text>
             </View>
           </View>
-          <Text style={styles.subtitle}>ELEIÇÕES</Text>
+          <Text style={styles.subtitle}>ELEIÇÕES ANTERIORES</Text>
           <View style={styles.subsection}>
             <View style={styles.leftSubsubsection}>
               <Text style={styles.value}>{data.numeroCandidaturas}</Text>
@@ -48,7 +48,7 @@ export default class SummaryCard extends React.Component<Props> {
               <Text style={styles.description}>Mandatos</Text>
             </View>
           </View>
-          <Text style={styles.subtitle}>AUTORIA DE PROJETOS</Text>
+          <Text style={styles.subtitle}>AUTORIA DE PROJETOS NA CÂMARA DE DEPUTADOS</Text>
           <View style={styles.subsection}>
             <View style={styles.leftSubsubsection}>
               <Text style={styles.value}>{data.numeroProposicoes}</Text>

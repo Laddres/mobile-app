@@ -3211,7 +3211,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
           }
         }
       >
-        ELEIÇÕES
+        ELEIÇÕES ANTERIORES
       </Text>
       <View
         style={
@@ -3291,7 +3291,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
           }
         }
       >
-        AUTORIA DE PROJETOS
+        AUTORIA DE PROJETOS NA CÂMARA DE DEPUTADOS
       </Text>
       <View
         style={
