@@ -1,5 +1,7 @@
 const images = {
   logo: require('../Images/laddres.png'),
+  rocket: require('../Images/rocket.png'),
+  sadness: require('../Images/sadness.png'),
   smile: require('../Images/smile.png'),
   vigieAqui: require('../Images/vigie-aqui.png'),
   arrowLeft: require('../Images/icons/arrow-left.png'),

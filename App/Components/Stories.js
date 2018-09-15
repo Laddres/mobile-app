@@ -1,3 +1,4 @@
+import './CandidaciesList.story'
 import './LawsuitsCard.story'
 import './SummaryCard.story'
 import './ProjectProposals.story'

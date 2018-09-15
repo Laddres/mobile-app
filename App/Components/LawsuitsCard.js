@@ -14,16 +14,18 @@ type Props = {
 }
 
 export default class LawsuitsCard extends React.Component<Props> {
-  // // Defaults for props
-  // static defaultProps = {
-  //   someSetting: false
-  // }
+  get hasNoData (): boolean {
+    return this.props.lawsuits.processado === null
+  }
 
   get message (): string {
-    const hasNoData = this.props.lawsuits.processado === null
-    return hasNoData
+    return this.hasNoData
       ? 'Ainda não temos informações sobre os processos judiciais deste candidato.'
       : 'Este candidato não possui nenhum processo judicial.'
+  }
+
+  get image (): { uri: string } {
+    return this.hasNoData ? Images.sadness : Images.smile
   }
 
   render () {
@@ -33,7 +35,7 @@ export default class LawsuitsCard extends React.Component<Props> {
         {!lawsuits.processado ? (
           <View style={styles.container}>
             <View style={styles.noLawsuits}>
-              <Image source={Images.smile} style={styles.image} />
+              <Image source={this.image} style={styles.image} />
               <Text style={styles.message}>{this.message}</Text>
             </View>
           </View>

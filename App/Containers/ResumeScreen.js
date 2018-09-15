@@ -12,11 +12,9 @@ import {
 } from '../Selectors'
 import SummaryCard from '../Components/SummaryCard'
 import ProfileCard from '../Components/ProfileCard'
-import CandidacyCard from '../Components/CandidacyCard'
 import { Images } from '../Themes'
 import { resetAction } from '../Navigation/NavigationActions'
 import { DEFAULT_NAVIGATION_CONFIG } from '../Navigation/NavigationConfig'
-import { generateProjectProposalKey } from '../Lib/Utils'
 import LikeActions from '../Redux/LikeRedux'
 
 // Styles
@@ -27,6 +25,7 @@ import type { ProjectsType } from '../Redux/ProjectProposalRedux'
 import type { SummaryType } from '../Redux/SummaryRedux'
 import type { LawsuitDataType } from '../Redux/LawsuitRedux'
 import LawsuitsCard from '../Components/LawsuitsCard'
+import CandidaciesList from '../Components/CandidaciesList'
 
 type Props = {
   goBack: () => mixed,
@@ -96,20 +95,15 @@ class ResumeScreen extends Component<Props> {
           {lawsuits && <LawsuitsCard lawsuits={lawsuits} fetching={fetchingLawsuits} />}
         </View>
 
-        {candidacies && candidacies.length > 0 && <Text style={styles.sectionTitle}>CANDIDATURAS</Text>}
+        <Text style={styles.sectionTitle}>CANDIDATURAS</Text>
         {candidacies && (
           <View style={styles.shortContainer}>
-            {candidacies.map(candidacy => {
-              const key = generateProjectProposalKey(candidacy.idCandidato, candidacy.anoEleicao, candidacy.cargo)
-              return (
-                <CandidacyCard
-                  candidacy={candidacy}
-                  projectProposals={getProposals(key)}
-                  key={key}
-                  fetching={fetchingCandidacies}
-                />
-              )
-            })}
+            <CandidaciesList
+              candidateName={candidateProfile.nomeUrna}
+              fetching={fetchingCandidacies}
+              candidacies={candidacies}
+              getProposals={getProposals}
+            />
           </View>
         )}
       </ScrollView>
