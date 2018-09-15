@@ -2337,14 +2337,6 @@ exports[`Storyshots ProfileCard Default 1`] = `
         >
           <View
             accessible={true}
-            hitSlop={
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "right": 0,
-                "top": 0,
-              }
-            }
             isTVSelectable={true}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2354,18 +2346,32 @@ exports[`Storyshots ProfileCard Default 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "backgroundColor": "transparent",
+                "alignItems": "center",
+                "flexDirection": "row",
                 "opacity": 1,
-                "padding": 20,
-                "paddingHorizontal": 5,
-                "paddingVertical": 10,
               }
             }
           >
             <Image
-              resizeMode="contain"
               source={1}
+              style={
+                Object {
+                  "paddingHorizontal": 5,
+                  "paddingVertical": 10,
+                }
+              }
             />
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                  "marginLeft": 5,
+                }
+              }
+            >
+              COMPARTILHE
+            </Text>
           </View>
           <View
             style={

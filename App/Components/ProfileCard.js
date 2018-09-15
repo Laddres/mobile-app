@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react'
-import { Platform, Image, View, Text, Share as RNShare } from 'react-native'
+import { Platform, Image, View, Text, Share as RNShare, TouchableOpacity } from 'react-native'
 import styles from './Styles/ProfileCardStyle'
 import CardContainer from './CardContainer'
 import Separator from './Separator'
@@ -36,8 +36,8 @@ export default class ProfileCard extends React.Component<Props> {
   shareHandlerIOS = () => {
     RNShare.share(
       {
-        message: Messages.shareMessage(this.props.candidate.nomeUrna),
-        url: Messages.landingPageURL
+        title: Messages.shareTitle,
+        message: Messages.shareMessage(this.props.candidate.nomeUrna)
       },
       {
         subject: Messages.shareSubject
@@ -69,11 +69,13 @@ export default class ProfileCard extends React.Component<Props> {
             <Text style={styles.role}>{candidate.cargo.toUpperCase()}</Text>
             <Separator />
             <View style={styles.buttonsContainer}>
-              <ImageButton
-                source={Images.share}
-                style={styles.imageButton}
+              <TouchableOpacity
                 onPress={Platform.OS === 'ios' ? this.shareHandlerIOS : this.shareHandlerAndroida}
-              />
+                style={styles.shareContainer}
+              >
+                <Image source={Images.share} style={styles.imageButton} />
+                <Text style={styles.shareText}>COMPARTILHE</Text>
+              </TouchableOpacity>
               <View style={styles.likeContainer}>
                 <Text style={styles.numberLikes}>{_.isFinite(numberOfLikes) ? numberOfLikes : '--'}</Text>
                 <ImageButton

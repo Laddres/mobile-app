@@ -83,6 +83,15 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
+  shareContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  shareText: {
+    fontSize: Fonts.size.title,
+    color: Colors.text,
+    marginLeft: Metrics.smallMargin
+  },
   likeContainer: {
     flexDirection: 'row',
     alignItems: 'center'
