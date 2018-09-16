@@ -3517,17 +3517,35 @@ exports[`Storyshots SummaryCard Default 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": "#014E68",
-                "fontSize": 30,
-                "fontWeight": "bold",
+                "flexDirection": "row",
               }
             }
           >
-            1
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 30,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              1
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#B0B0B0",
+                  "fontSize": 20,
+                }
+              }
+            >
+              *
+            </Text>
+          </View>
           <Text
             style={
               Object {
@@ -3539,6 +3557,40 @@ exports[`Storyshots SummaryCard Default 1`] = `
             Mandatos
           </Text>
         </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "marginTop": -18,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#B0B0B0",
+              "fontSize": 20,
+            }
+          }
+        >
+          *
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#B0B0B0",
+              "fontSize": 10,
+              "fontStyle": "italic",
+              "marginLeft": 3,
+              "marginTop": 2,
+            }
+          }
+        >
+          Algumas candidaturas não tiveram resultado disponibilizado pelo TSE
+        </Text>
       </View>
       <Text
         style={

@@ -43,6 +43,9 @@ export default StyleSheet.create({
     color: Colors.text,
     fontSize: Fonts.size.medium
   },
+  mandatosContainer: {
+    flexDirection: 'row'
+  },
   value: {
     color: Colors.text,
     fontWeight: 'bold',
@@ -51,5 +54,22 @@ export default StyleSheet.create({
   description: {
     color: Colors.text,
     fontSize: Fonts.size.small
+  },
+  inaccurate: {
+    color: Colors.noContent,
+    fontSize: Fonts.size.h5
+  },
+  observationContainer: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginTop: 2 - Metrics.doubleBaseMargin,
+    marginBottom: Metrics.doubleBaseMargin
+  },
+  observation: {
+    marginTop: 2,
+    marginLeft: 3,
+    color: Colors.noContent,
+    fontSize: Fonts.size.title,
+    fontStyle: 'italic'
   }
 })
