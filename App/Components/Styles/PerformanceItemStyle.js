@@ -9,17 +9,24 @@ export default StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: Metrics.smallMargin
+    marginBottom: Metrics.marginVertical
+  },
+  headerText: {
+    paddingTop: Metrics.smallMargin,
+    flex: 9
   },
   title: {
     maxWidth: '100%',
     color: Colors.title,
-    fontSize: Fonts.size.medium
+    fontSize: Fonts.size.small
   },
   subtitle: {
     maxWidth: '100%',
     color: Colors.text,
-    fontSize: Fonts.size.regular
+    fontSize: Fonts.size.medium
+  },
+  headerIcon: {
+    flex: 1
   },
   imageButton: {
     padding: Metrics.marginVertical

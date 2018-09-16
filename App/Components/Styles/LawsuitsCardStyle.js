@@ -8,21 +8,21 @@ export default StyleSheet.create({
     paddingVertical: Metrics.baseMargin
   },
   header: {
-    marginLeft: Metrics.doubleBaseMargin,
+    // marginLeft: Metrics.doubleBaseMargin,
     marginBottom: Metrics.doubleBaseMargin
   },
   title: {
     color: Colors.title,
-    fontSize: Fonts.size.small
+    fontSize: Fonts.size.title
   },
   number: {
     color: Colors.text,
     fontWeight: 'bold',
-    fontSize: Fonts.size.h1
+    fontSize: Fonts.size.h3
   },
   description: {
     color: Colors.text,
-    fontSize: Fonts.size.regular
+    fontSize: Fonts.size.small
   },
   noLawsuits: {
     alignItems: 'center'
@@ -33,6 +33,7 @@ export default StyleSheet.create({
   message: {
     color: Colors.text,
     textAlign: 'center',
-    fontSize: Fonts.size.regular
+    fontSize: Fonts.size.medium,
+    paddingHorizontal: Metrics.marginHorizontal
   }
 })

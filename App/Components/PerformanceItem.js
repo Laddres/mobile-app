@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import styles from './Styles/PerformanceItemStyle'
 import ImageButton from './ImageButton'
 import Separator from './Separator'
@@ -24,17 +24,19 @@ export default class PerformanceItem extends React.Component<Props> {
   render () {
     const { title, subtitle, description, icon, onPressIcon, separator } = this.props
     return (
-      <View style={styles.container}>
+      <TouchableOpacity onPress={onPressIcon} style={styles.container}>
         <View style={styles.header}>
-          <View>
+          <View style={styles.headerText}>
             <Text style={styles.title}>{title}</Text>
             {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
           </View>
-          {icon && <ImageButton source={icon} onPress={onPressIcon} style={styles.imageButton} />}
+          <View style={styles.headerIcon}>
+            {icon && <ImageButton source={icon} onPress={onPressIcon} style={styles.imageButton} />}
+          </View>
         </View>
         <Text style={styles.description}>{_.truncate(description, { length: 200 })}</Text>
         {separator && <Separator style={styles.separator} />}
-      </View>
+      </TouchableOpacity>
     )
   }
 }
