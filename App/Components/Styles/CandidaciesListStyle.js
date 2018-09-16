@@ -6,8 +6,8 @@ export default StyleSheet.create({
     color: Colors.text,
     textAlign: 'center',
     marginTop: Metrics.baseMargin,
-    fontSize: Fonts.size.regular,
+    fontSize: Fonts.size.medium,
     fontWeight: Fonts.weight.regular,
-    paddingHorizontal: Metrics.doublePadding
+    paddingHorizontal: Metrics.marginHorizontal
   }
 })

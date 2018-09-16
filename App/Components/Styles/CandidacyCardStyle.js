@@ -35,12 +35,19 @@ export default StyleSheet.create({
     marginBottom: Metrics.marginVertical
   },
   info: {
-    marginVertical: Metrics.marginVertical
+    marginVertical: 8
   },
   bodyText: {
+    marginTop: 2,
     color: Colors.text,
     fontSize: Fonts.size.medium,
     fontWeight: Fonts.weight.medium
+  },
+  composition: {
+    fontSize: Fonts.size.small
+  },
+  noDataText: {
+    color: Colors.noContent
   },
   performance: {},
   performanceButton: {

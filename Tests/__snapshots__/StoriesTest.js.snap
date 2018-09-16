@@ -148,7 +148,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -168,6 +168,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -177,7 +178,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -197,6 +198,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -206,7 +208,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -226,6 +228,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -233,11 +236,17 @@ exports[`Storyshots CandidaciesList Default 1`] = `
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#014E68",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                }
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginTop": 2,
+                  },
+                  Object {
+                    "fontSize": 12,
+                  },
+                ]
               }
             >
               PV / PCB / PMDB
@@ -246,7 +255,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -266,6 +275,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -413,7 +423,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -433,6 +443,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -442,7 +453,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -462,6 +473,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -471,7 +483,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -491,6 +503,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -498,11 +511,17 @@ exports[`Storyshots CandidaciesList Default 1`] = `
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#014E68",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                }
+                Array [
+                  Object {
+                    "color": "#014E68",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginTop": 2,
+                  },
+                  Object {
+                    "fontSize": 12,
+                  },
+                ]
               }
             >
               PT / PMN / PSB / PV / PC do B
@@ -511,7 +530,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
           <View
             style={
               Object {
-                "marginVertical": 10,
+                "marginVertical": 8,
               }
             }
           >
@@ -531,6 +550,7 @@ exports[`Storyshots CandidaciesList Default 1`] = `
                   "color": "#014E68",
                   "fontSize": 14,
                   "fontWeight": "500",
+                  "marginTop": 2,
                 }
               }
             >
@@ -581,10 +601,10 @@ exports[`Storyshots CandidaciesList Without data 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 17,
+            "fontSize": 14,
             "fontWeight": "400",
             "marginTop": 20,
-            "paddingHorizontal": 20,
+            "paddingHorizontal": 10,
             "textAlign": "center",
           }
         }
@@ -744,7 +764,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -764,6 +784,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -773,7 +794,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -793,6 +814,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -802,7 +824,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -822,6 +844,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -829,11 +852,17 @@ exports[`Storyshots CandidacyCard Default 1`] = `
           </Text>
           <Text
             style={
-              Object {
-                "color": "#014E68",
-                "fontSize": 14,
-                "fontWeight": "500",
-              }
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginTop": 2,
+                },
+                Object {
+                  "fontSize": 12,
+                },
+              ]
             }
           >
             PV / PCB / PMDB
@@ -842,7 +871,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -862,6 +891,7 @@ exports[`Storyshots CandidacyCard Default 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -1022,7 +1052,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -1042,6 +1072,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -1051,7 +1082,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -1071,6 +1102,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -1080,7 +1112,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -1100,6 +1132,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -1107,11 +1140,17 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
           </Text>
           <Text
             style={
-              Object {
-                "color": "#014E68",
-                "fontSize": 14,
-                "fontWeight": "500",
-              }
+              Array [
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginTop": 2,
+                },
+                Object {
+                  "fontSize": 12,
+                },
+              ]
             }
           >
             PT / PMN / PSB / PV / PC do B
@@ -1120,7 +1159,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
         <View
           style={
             Object {
-              "marginVertical": 10,
+              "marginVertical": 8,
             }
           }
         >
@@ -1140,6 +1179,7 @@ exports[`Storyshots CandidacyCard Senador 1`] = `
                 "color": "#014E68",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "marginTop": 2,
               }
             }
           >
@@ -1430,7 +1470,6 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
         style={
           Object {
             "marginBottom": 20,
-            "marginLeft": 20,
           }
         }
       >
@@ -1438,7 +1477,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
           style={
             Object {
               "color": "#79A2AF",
-              "fontSize": 12,
+              "fontSize": 10,
             }
           }
         >
@@ -1448,7 +1487,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 38,
+              "fontSize": 30,
               "fontWeight": "bold",
             }
           }
@@ -1459,7 +1498,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 17,
+              "fontSize": 12,
             }
           }
         >
@@ -1468,8 +1507,17 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
       </View>
       <View>
         <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
+              "opacity": 1,
               "paddingHorizontal": 5,
             }
           }
@@ -1480,16 +1528,23 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 "alignItems": "center",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 9,
+                  "paddingTop": 5,
+                }
+              }
+            >
               <Text
                 style={
                   Object {
                     "color": "#79A2AF",
-                    "fontSize": 14,
+                    "fontSize": 12,
                     "maxWidth": "100%",
                   }
                 }
@@ -1500,7 +1555,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 style={
                   Object {
                     "color": "#014E68",
-                    "fontSize": 17,
+                    "fontSize": 14,
                     "maxWidth": "100%",
                   }
                 }
@@ -1509,34 +1564,42 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
               </Text>
             </View>
             <View
-              accessible={true}
-              hitSlop={
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-              isTVSelectable={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "backgroundColor": "transparent",
-                  "opacity": 1,
-                  "padding": 10,
+                  "flex": 1,
                 }
               }
             >
-              <Image
-                resizeMode="contain"
-                source={1}
-              />
+              <View
+                accessible={true}
+                hitSlop={
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "opacity": 1,
+                    "padding": 10,
+                  }
+                }
+              >
+                <Image
+                  resizeMode="contain"
+                  source={1}
+                />
+              </View>
             </View>
           </View>
           <Text
@@ -1569,8 +1632,17 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
           />
         </View>
         <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
+              "opacity": 1,
               "paddingHorizontal": 5,
             }
           }
@@ -1581,16 +1653,23 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 "alignItems": "center",
                 "flexDirection": "row",
                 "justifyContent": "space-between",
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 9,
+                  "paddingTop": 5,
+                }
+              }
+            >
               <Text
                 style={
                   Object {
                     "color": "#79A2AF",
-                    "fontSize": 14,
+                    "fontSize": 12,
                     "maxWidth": "100%",
                   }
                 }
@@ -1601,7 +1680,7 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
                 style={
                   Object {
                     "color": "#014E68",
-                    "fontSize": 17,
+                    "fontSize": 14,
                     "maxWidth": "100%",
                   }
                 }
@@ -1610,34 +1689,42 @@ exports[`Storyshots LawsuitsCard Default 1`] = `
               </Text>
             </View>
             <View
-              accessible={true}
-              hitSlop={
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-              isTVSelectable={true}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
               style={
                 Object {
-                  "backgroundColor": "transparent",
-                  "opacity": 1,
-                  "padding": 10,
+                  "flex": 1,
                 }
               }
             >
-              <Image
-                resizeMode="contain"
-                source={1}
-              />
+              <View
+                accessible={true}
+                hitSlop={
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "opacity": 1,
+                    "padding": 10,
+                  }
+                }
+              >
+                <Image
+                  resizeMode="contain"
+                  source={1}
+                />
+              </View>
             </View>
           </View>
           <Text
@@ -1718,7 +1805,8 @@ exports[`Storyshots LawsuitsCard without data 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 17,
+              "fontSize": 14,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
@@ -1790,7 +1878,8 @@ exports[`Storyshots LawsuitsCard without lawsuits 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 17,
+              "fontSize": 14,
+              "paddingHorizontal": 10,
               "textAlign": "center",
             }
           }
@@ -1813,8 +1902,17 @@ exports[`Storyshots PerformanceItem Default 1`] = `
   }
 >
   <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "opacity": 1,
         "paddingHorizontal": 5,
       }
     }
@@ -1825,16 +1923,23 @@ exports[`Storyshots PerformanceItem Default 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "space-between",
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
+      <View
+        style={
+          Object {
+            "flex": 9,
+            "paddingTop": 5,
+          }
+        }
+      >
         <Text
           style={
             Object {
               "color": "#79A2AF",
-              "fontSize": 14,
+              "fontSize": 12,
               "maxWidth": "100%",
             }
           }
@@ -1842,6 +1947,13 @@ exports[`Storyshots PerformanceItem Default 1`] = `
           PL 7739/2010
         </Text>
       </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
     </View>
     <Text
       style={
@@ -1869,8 +1981,17 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
   }
 >
   <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "opacity": 1,
         "paddingHorizontal": 5,
       }
     }
@@ -1881,16 +2002,23 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "space-between",
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
+      <View
+        style={
+          Object {
+            "flex": 9,
+            "paddingTop": 5,
+          }
+        }
+      >
         <Text
           style={
             Object {
               "color": "#79A2AF",
-              "fontSize": 14,
+              "fontSize": 12,
               "maxWidth": "100%",
             }
           }
@@ -1899,34 +2027,42 @@ exports[`Storyshots PerformanceItem w/ icon 1`] = `
         </Text>
       </View>
       <View
-        accessible={true}
-        hitSlop={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0,
-          }
-        }
-        isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "transparent",
-            "opacity": 1,
-            "padding": 10,
+            "flex": 1,
           }
         }
       >
-        <Image
-          resizeMode="contain"
-          source={1}
-        />
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
       </View>
     </View>
     <Text
@@ -1955,8 +2091,17 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
   }
 >
   <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "opacity": 1,
         "paddingHorizontal": 5,
       }
     }
@@ -1967,16 +2112,23 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "space-between",
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
+      <View
+        style={
+          Object {
+            "flex": 9,
+            "paddingTop": 5,
+          }
+        }
+      >
         <Text
           style={
             Object {
               "color": "#79A2AF",
-              "fontSize": 14,
+              "fontSize": 12,
               "maxWidth": "100%",
             }
           }
@@ -1985,34 +2137,42 @@ exports[`Storyshots PerformanceItem w/ icon and w/ separator 1`] = `
         </Text>
       </View>
       <View
-        accessible={true}
-        hitSlop={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0,
-          }
-        }
-        isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "transparent",
-            "opacity": 1,
-            "padding": 10,
+            "flex": 1,
           }
         }
       >
-        <Image
-          resizeMode="contain"
-          source={1}
-        />
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
       </View>
     </View>
     <Text
@@ -2057,8 +2217,17 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
   }
 >
   <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "opacity": 1,
         "paddingHorizontal": 5,
       }
     }
@@ -2069,16 +2238,23 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "space-between",
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
+      <View
+        style={
+          Object {
+            "flex": 9,
+            "paddingTop": 5,
+          }
+        }
+      >
         <Text
           style={
             Object {
               "color": "#79A2AF",
-              "fontSize": 14,
+              "fontSize": 12,
               "maxWidth": "100%",
             }
           }
@@ -2089,7 +2265,7 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
           style={
             Object {
               "color": "#014E68",
-              "fontSize": 17,
+              "fontSize": 14,
               "maxWidth": "100%",
             }
           }
@@ -2098,34 +2274,42 @@ exports[`Storyshots PerformanceItem w/ subtitle 1`] = `
         </Text>
       </View>
       <View
-        accessible={true}
-        hitSlop={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0,
-          }
-        }
-        isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "backgroundColor": "transparent",
-            "opacity": 1,
-            "padding": 10,
+            "flex": 1,
           }
         }
       >
-        <Image
-          resizeMode="contain"
-          source={1}
-        />
+        <View
+          accessible={true}
+          hitSlop={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0,
+            }
+          }
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "opacity": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source={1}
+          />
+        </View>
       </View>
     </View>
     <Text
@@ -2272,6 +2456,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
             Object {
               "color": "#79A2AF",
               "fontSize": 12,
+              "textAlign": "center",
             }
           }
         >
@@ -2337,14 +2522,6 @@ exports[`Storyshots ProfileCard Default 1`] = `
         >
           <View
             accessible={true}
-            hitSlop={
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "right": 0,
-                "top": 0,
-              }
-            }
             isTVSelectable={true}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2354,18 +2531,32 @@ exports[`Storyshots ProfileCard Default 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "backgroundColor": "transparent",
+                "alignItems": "center",
+                "flexDirection": "row",
                 "opacity": 1,
-                "padding": 20,
-                "paddingHorizontal": 5,
-                "paddingVertical": 10,
               }
             }
           >
             <Image
-              resizeMode="contain"
               source={1}
+              style={
+                Object {
+                  "paddingHorizontal": 5,
+                  "paddingVertical": 10,
+                }
+              }
             />
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 10,
+                  "marginLeft": 5,
+                }
+              }
+            >
+              COMPARTILHE
+            </Text>
           </View>
           <View
             style={
@@ -2531,8 +2722,17 @@ exports[`Storyshots ProjectProposals Default 1`] = `
       </View>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "opacity": 1,
           "paddingHorizontal": 5,
         }
       }
@@ -2543,16 +2743,23 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "marginBottom": 5,
+            "marginBottom": 10,
           }
         }
       >
-        <View>
+        <View
+          style={
+            Object {
+              "flex": 9,
+              "paddingTop": 5,
+            }
+          }
+        >
           <Text
             style={
               Object {
                 "color": "#79A2AF",
-                "fontSize": 14,
+                "fontSize": 12,
                 "maxWidth": "100%",
               }
             }
@@ -2561,34 +2768,42 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           </Text>
         </View>
         <View
-          accessible={true}
-          hitSlop={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "right": 0,
-              "top": 0,
-            }
-          }
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "opacity": 1,
-              "padding": 10,
+              "flex": 1,
             }
           }
         >
-          <Image
-            resizeMode="contain"
-            source={1}
-          />
+          <View
+            accessible={true}
+            hitSlop={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0,
+              }
+            }
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "opacity": 1,
+                "padding": 10,
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={1}
+            />
+          </View>
         </View>
       </View>
       <Text
@@ -2621,8 +2836,17 @@ exports[`Storyshots ProjectProposals Default 1`] = `
       />
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "opacity": 1,
           "paddingHorizontal": 5,
         }
       }
@@ -2633,16 +2857,23 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "marginBottom": 5,
+            "marginBottom": 10,
           }
         }
       >
-        <View>
+        <View
+          style={
+            Object {
+              "flex": 9,
+              "paddingTop": 5,
+            }
+          }
+        >
           <Text
             style={
               Object {
                 "color": "#79A2AF",
-                "fontSize": 14,
+                "fontSize": 12,
                 "maxWidth": "100%",
               }
             }
@@ -2651,34 +2882,42 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           </Text>
         </View>
         <View
-          accessible={true}
-          hitSlop={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "right": 0,
-              "top": 0,
-            }
-          }
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "opacity": 1,
-              "padding": 10,
+              "flex": 1,
             }
           }
         >
-          <Image
-            resizeMode="contain"
-            source={1}
-          />
+          <View
+            accessible={true}
+            hitSlop={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0,
+              }
+            }
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "opacity": 1,
+                "padding": 10,
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={1}
+            />
+          </View>
         </View>
       </View>
       <Text
@@ -2711,8 +2950,17 @@ exports[`Storyshots ProjectProposals Default 1`] = `
       />
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "opacity": 1,
           "paddingHorizontal": 5,
         }
       }
@@ -2723,16 +2971,23 @@ exports[`Storyshots ProjectProposals Default 1`] = `
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "space-between",
-            "marginBottom": 5,
+            "marginBottom": 10,
           }
         }
       >
-        <View>
+        <View
+          style={
+            Object {
+              "flex": 9,
+              "paddingTop": 5,
+            }
+          }
+        >
           <Text
             style={
               Object {
                 "color": "#79A2AF",
-                "fontSize": 14,
+                "fontSize": 12,
                 "maxWidth": "100%",
               }
             }
@@ -2741,34 +2996,42 @@ exports[`Storyshots ProjectProposals Default 1`] = `
           </Text>
         </View>
         <View
-          accessible={true}
-          hitSlop={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "right": 0,
-              "top": 0,
-            }
-          }
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "opacity": 1,
-              "padding": 10,
+              "flex": 1,
             }
           }
         >
-          <Image
-            resizeMode="contain"
-            source={1}
-          />
+          <View
+            accessible={true}
+            hitSlop={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0,
+              }
+            }
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "opacity": 1,
+                "padding": 10,
+              }
+            }
+          >
+            <Image
+              resizeMode="contain"
+              source={1}
+            />
+          </View>
         </View>
       </View>
       <Text
@@ -3205,7 +3468,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
           }
         }
       >
-        ELEIÇÕES
+        ELEIÇÕES ANTERIORES
       </Text>
       <View
         style={
@@ -3254,17 +3517,35 @@ exports[`Storyshots SummaryCard Default 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": "#014E68",
-                "fontSize": 30,
-                "fontWeight": "bold",
+                "flexDirection": "row",
               }
             }
           >
-            1
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#014E68",
+                  "fontSize": 30,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              1
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#B0B0B0",
+                  "fontSize": 20,
+                }
+              }
+            >
+              *
+            </Text>
+          </View>
           <Text
             style={
               Object {
@@ -3277,6 +3558,40 @@ exports[`Storyshots SummaryCard Default 1`] = `
           </Text>
         </View>
       </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "marginTop": -18,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#B0B0B0",
+              "fontSize": 20,
+            }
+          }
+        >
+          *
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#B0B0B0",
+              "fontSize": 10,
+              "fontStyle": "italic",
+              "marginLeft": 3,
+              "marginTop": 2,
+            }
+          }
+        >
+          Algumas candidaturas não tiveram resultado disponibilizado pelo TSE
+        </Text>
+      </View>
       <Text
         style={
           Object {
@@ -3285,7 +3600,7 @@ exports[`Storyshots SummaryCard Default 1`] = `
           }
         }
       >
-        AUTORIA DE PROJETOS
+        AUTORIA DE PROJETOS NA CÂMARA DE DEPUTADOS
       </Text>
       <View
         style={

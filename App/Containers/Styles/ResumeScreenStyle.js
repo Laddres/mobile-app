@@ -52,12 +52,14 @@ export default StyleSheet.create({
   },
   SectionSubtitleContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
-    marginLeft: Metrics.doubleBaseMargin
+    alignItems: 'flex-end',
+    marginLeft: Metrics.doubleBaseMargin,
+    marginTop: -10,
+    marginBottom: Metrics.smallMargin
   },
   sectionSubtitle: {
-    fontWeight: 'bold',
-    fontSize: Fonts.size.h4,
+    fontWeight: Fonts.weight.bold,
+    fontSize: Fonts.size.h5,
     color: Colors.sectionTitle
   }
 })

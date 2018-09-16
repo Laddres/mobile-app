@@ -52,7 +52,8 @@ export default StyleSheet.create({
   },
   age: {
     color: Colors.title,
-    fontSize: Fonts.size.small
+    fontSize: Fonts.size.small,
+    textAlign: 'center'
   },
   location: {
     color: Colors.subtitle,
@@ -82,6 +83,15 @@ export default StyleSheet.create({
     width: '95%',
     flexDirection: 'row',
     justifyContent: 'space-between'
+  },
+  shareContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  shareText: {
+    fontSize: Fonts.size.title,
+    color: Colors.text,
+    marginLeft: Metrics.smallMargin
   },
   likeContainer: {
     flexDirection: 'row',
