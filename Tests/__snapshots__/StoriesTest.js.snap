@@ -2456,6 +2456,7 @@ exports[`Storyshots ProfileCard Default 1`] = `
             Object {
               "color": "#79A2AF",
               "fontSize": 12,
+              "textAlign": "center",
             }
           }
         >

@@ -52,7 +52,8 @@ export default StyleSheet.create({
   },
   age: {
     color: Colors.title,
-    fontSize: Fonts.size.small
+    fontSize: Fonts.size.small,
+    textAlign: 'center'
   },
   location: {
     color: Colors.subtitle,
