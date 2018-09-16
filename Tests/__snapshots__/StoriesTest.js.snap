@@ -1426,6 +1426,300 @@ exports[`Storyshots ImageButton Default 1`] = `
 </View>
 `;
 
+exports[`Storyshots IssueItem Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAFBFC",
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+        "paddingHorizontal": 5,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 5,
+        }
+      }
+    >
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#79A2AF",
+              "fontSize": 12,
+            }
+          }
+        >
+          PL 6787/2016
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#014E68",
+              "fontSize": 14,
+            }
+          }
+        >
+          Reforma trabalhista
+        </Text>
+      </View>
+      <Image
+        source={1}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots IssuePositioningCard Default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "green",
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 12,
+        "justifyContent": "center",
+        "marginVertical": 10,
+        "minHeight": 200,
+        "padding": 10,
+        "shadowColor": "#014E68",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 12,
+              }
+            }
+          >
+            PL 6787/2016
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+              }
+            }
+          >
+            Reforma trabalhista
+          </Text>
+        </View>
+        <Image
+          source={1}
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 12,
+              }
+            }
+          >
+            PL 6787/2016
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+              }
+            }
+          >
+            Reforma trabalhista
+          </Text>
+        </View>
+        <Image
+          source={1}
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "height": 1,
+              "width": "100%",
+            },
+            Object {
+              "backgroundColor": "#F3F6F7",
+            },
+            Object {
+              "marginVertical": 5,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "paddingHorizontal": 5,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 5,
+          }
+        }
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#79A2AF",
+                "fontSize": 12,
+              }
+            }
+          >
+            PL 6787/2016
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#014E68",
+                "fontSize": 14,
+              }
+            }
+          >
+            Reforma trabalhista
+          </Text>
+        </View>
+        <Image
+          source={1}
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`Storyshots LawsuitsCard Default 1`] = `
 <View
   style={

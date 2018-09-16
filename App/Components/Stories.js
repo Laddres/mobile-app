@@ -1,3 +1,5 @@
+import './IssuePositioningCard.story'
+import './IssueItem.story'
 import './CandidaciesList.story'
 import './LawsuitsCard.story'
 import './SummaryCard.story'

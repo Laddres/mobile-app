@@ -12,7 +12,12 @@ const images = {
   outlineHeart: require('../Images/icons/heart-outline.png'),
   menu: require('../Images/icons/menu.png'),
   share: require('../Images/icons/share.png'),
-  search: require('../Images/icons/search.png')
+  search: require('../Images/icons/search.png'),
+  votedFor: require('../Images/icons/posicao-votou-a-favor.png'),
+  favorable: require('../Images/icons/posicao-favoravel.png'),
+  undefined: require('../Images/icons/posicao-indefinida.png'),
+  opposite: require('../Images/icons/posicao-contraria.png'),
+  votedAgainst: require('../Images/icons/posicao-votou-contra.png')
 }
 
 export default images

@@ -4,6 +4,7 @@ const { width, height } = Dimensions.get('window')
 
 const metrics = {
   marginHorizontal: 10,
+  regularMargin: 15,
   doubleMarginHorizontal: 25,
   marginVertical: 10,
   section: 30,
