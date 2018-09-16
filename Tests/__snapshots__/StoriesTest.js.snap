@@ -581,10 +581,10 @@ exports[`Storyshots CandidaciesList Without data 1`] = `
         style={
           Object {
             "color": "#014E68",
-            "fontSize": 17,
+            "fontSize": 14,
             "fontWeight": "400",
             "marginTop": 20,
-            "paddingHorizontal": 20,
+            "paddingHorizontal": 10,
             "textAlign": "center",
           }
         }
