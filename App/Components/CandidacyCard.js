@@ -86,12 +86,26 @@ class CandidacyCard extends Component<Props, State> {
             </View>
             <View style={styles.info}>
               <Text style={styles.title}>COLIGAÇÃO</Text>
-              <Text style={styles.bodyText}>{candidacy.nomeLegenda}</Text>
-              <Text style={styles.bodyText}>{candidacy.composicaoLegenda}</Text>
+              {!!candidacy.nomeLegenda && <Text style={styles.bodyText}>{candidacy.nomeLegenda}</Text>}
+              {!!candidacy.composicaoLegenda && (
+                <Text style={[styles.bodyText, styles.composition]}>{candidacy.composicaoLegenda}</Text>
+              )}
+              {!candidacy.nomeLegenda &&
+                !candidacy.composicaoLegenda && (
+                  <Text style={[styles.bodyText, styles.noDataText]}>
+                    O TSE não disponibilizou informações sobre esta coligação
+                  </Text>
+                )}
             </View>
             <View style={styles.info}>
               <Text style={styles.title}>RESULTADO</Text>
-              <Text style={styles.bodyText}>{candidacy.resultado}</Text>
+              {candidacy.resultado ? (
+                <Text style={styles.bodyText}>{candidacy.resultado}</Text>
+              ) : (
+                <Text style={[styles.bodyText, styles.noDataText]}>
+                  O TSE não disponibilizou o resultado desta candidatura
+                </Text>
+              )}
             </View>
           </View>
           {this.state.expanded && <ProjectProposals data={projectProposals} />}
