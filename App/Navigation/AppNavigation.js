@@ -2,6 +2,7 @@ import { createStackNavigator } from 'react-navigation'
 import ResumeScreen from '../Containers/ResumeScreen'
 import MainScreen from '../Containers/MainScreen'
 import WelcomeScreen from '../Containers/WelcomeScreen'
+import StateSelectionScreen from '../Containers/StateSelectionScreen'
 
 import styles from './Styles/NavigationStyles'
 
@@ -9,6 +10,7 @@ import styles from './Styles/NavigationStyles'
 const PrimaryNav = createStackNavigator(
   {
     WelcomeScreen: { screen: WelcomeScreen },
+    StateSelectionScreen: { screen: StateSelectionScreen },
     MainScreen: { screen: MainScreen },
     ResumeScreen: { screen: ResumeScreen }
   },

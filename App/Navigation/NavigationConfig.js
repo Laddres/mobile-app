@@ -4,6 +4,7 @@
 export const DEFAULT_NAVIGATION_CONFIG = {
   exitRoutes: ['MainScreen'],
   welcomeScreenRouteName: { routeName: 'WelcomeScreen' },
+  stateSelectionScreenRouteName: { routeName: 'StateSelectionScreen' },
   mainScreenRouteName: { routeName: 'MainScreen' },
   candidateResumeRouteName: { routeName: 'ResumeScreen' }
 }
