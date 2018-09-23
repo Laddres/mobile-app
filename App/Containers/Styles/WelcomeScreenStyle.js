@@ -35,13 +35,14 @@ export default StyleSheet.create({
     backgroundColor: Colors.text,
     borderRadius: Metrics.borderRadius,
     marginVertical: Metrics.baseMargin,
-    marginHorizontal: 0.1 * Metrics.screenWidth,
     paddingVertical: Metrics.marginVertical + Metrics.smallMargin,
-    alignItems: 'center'
+    alignItems: 'center',
+    alignSelf: 'center',
+    width: 0.5 * Metrics.screenWidth
   },
   buttonContent: {
     color: Colors.white,
-    fontWeight: Fonts.weight.bold,
+    fontWeight: Fonts.weight.medium,
     fontSize: Fonts.size.medium
   }
 })
