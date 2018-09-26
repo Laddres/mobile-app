@@ -1,4 +1,4 @@
-import { Alert, Linking } from 'react-native'
+import { Alert, Linking, PermissionsAndroid } from 'react-native'
 
 export const getImageHitSlop = (width, height) => {
   const clamp = (base, min, max) => Math.max(Math.min(base, max), min)
@@ -168,3 +168,26 @@ export const brazilianStates = () => ({
     nome: 'Tocantins'
   }
 })
+
+export const requireAndroidLocationPermission = async () => {
+  try {
+    return await PermissionsAndroid.require(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
+      title: 'Permissão para capturar localização',
+      message: 'Laddres gostaria de acessar a localização do seu celular.'
+    })
+  } catch (err) {
+    return false
+  }
+}
+
+export const extractStateInitialsFromAddress = (address: string) => {
+  if (typeof address !== 'string') {
+    return null
+  }
+  const members = address.match(/State of (\w+)/)
+  if (!Array.isArray(members) || typeof members[1] !== 'string') {
+    return null
+  }
+  const stateInitials = members[1].substr(0, 2).toUpperCase()
+  return stateInitials
+}

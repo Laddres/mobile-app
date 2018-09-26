@@ -1,17 +1,34 @@
 // @flow
 import React, { Component } from 'react'
-import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { Image, ScrollView, Text, TouchableOpacity, View, Platform } from 'react-native'
 import { connect } from 'react-redux'
-import { developmentAlert, openExternalApp } from '../Lib/Utils'
+import { openExternalApp, requireAndroidLocationPermission } from '../Lib/Utils'
+import SearchFiltersActions from '../Redux/SearchFiltersRedux'
 
 // Styles
 import styles from './Styles/WelcomeScreenStyle'
 import { Images } from '../Themes'
+import type { NavigationScreenProp } from 'react-navigation'
 
-type Props = {}
+type Props = {
+  navigation: NavigationScreenProp,
+  requestState: ({}) => mixed
+}
 
 class WelcomeScreen extends Component<Props> {
+  constructor (props: Props) {
+    super(props)
+    if (Platform.OS === 'ios' || requireAndroidLocationPermission()) {
+      navigator.geolocation.getCurrentPosition(
+        ({ coords: { latitude: lat, longitude: lng } }) => this.props.requestState({ lat, lng }),
+        err => console.log(err),
+        { enableHighAccuracy: true, timeout: 5000 }
+      )
+    }
+  }
+
   render () {
+    const { navigate } = this.props.navigation
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
@@ -61,7 +78,7 @@ class WelcomeScreen extends Component<Props> {
             dúvida, basta acessar o link fornecido e acompanhar cada caso individualmente.
           </Text>
         </View>
-        <TouchableOpacity onPress={developmentAlert} style={styles.buttonNextStep}>
+        <TouchableOpacity onPress={() => navigate('StateSelectionScreen')} style={styles.buttonNextStep}>
           <Text style={styles.buttonContent}>AVANÇAR</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -69,15 +86,11 @@ class WelcomeScreen extends Component<Props> {
   }
 }
 
-const mapStateToProps = state => {
-  return {}
-}
-
-const mapDispatchToProps = dispatch => {
-  return {}
+const mapDispatchToProps = {
+  requestState: SearchFiltersActions.searchFiltersRequestState
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(WelcomeScreen)

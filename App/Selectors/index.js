@@ -7,6 +7,8 @@ import { SummarySelectors } from './SummarySelectors'
 import { LawsuitSelectors } from './LawsuitSelectors'
 import { LikeSelectors } from './LikeSelectors'
 import { SecretSelectors } from './SecretSelectors'
+import { StartupSelectors } from './StartupSelectors'
+import { SearchFiltersSelectors } from './SearchFiltersSelectors'
 
 export {
   CandidatesSelectors,
@@ -17,5 +19,7 @@ export {
   SummarySelectors,
   LikeSelectors,
   LawsuitSelectors,
-  SecretSelectors
+  SecretSelectors,
+  StartupSelectors,
+  SearchFiltersSelectors
 }
