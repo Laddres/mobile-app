@@ -1,11 +1,11 @@
 export default {
-  getCandidatos: () =>
+  getCandidates: () =>
     new Promise(resolve =>
       setTimeout(
         () =>
           resolve({
             ok: true,
-            data: require('../Fixtures/getCandidatos.json')
+            data: require('../Fixtures/getCandidates.json')
           }),
         500
       )

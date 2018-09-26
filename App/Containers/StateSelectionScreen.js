@@ -1,41 +1,80 @@
 // @flow
 import React, { Component } from 'react'
-import { Text, Picker, TouchableOpacity, View } from 'react-native'
+import { Text, Picker, TouchableOpacity, View, ActivityIndicator } from 'react-native'
 import { connect } from 'react-redux'
 import _ from 'lodash'
-import { brazilianStates, developmentAlert } from '../Lib/Utils'
+import { brazilianStates } from '../Lib/Utils'
+import { Colors } from '../Themes'
+import SearchFiltersActions from '../Redux/SearchFiltersRedux'
+import CandidatesActions from '../Redux/CandidatesRedux'
 
 // Styles
 import styles from './Styles/StateSelectionScreenStyle'
+import type { NavigationScreenProp } from 'react-navigation'
 
-type Props = {}
+type Props = {
+  stateInitials: ?string,
+  fetchingState: ?boolean,
+  setState: string => mixed,
+  getCandidates: string => mixed,
+  navigation: NavigationScreenProp
+}
 
-const states = brazilianStates()
+type State = {
+  selected: string
+}
 
-class StateSelection extends Component<Props> {
+class StateSelection extends Component<Props, State> {
+  constructor (props: Props) {
+    super(props)
+    const FALLBACK_SELECTED_STATE = 'SE'
+    this.state = { selected: props.stateInitials || FALLBACK_SELECTED_STATE }
+  }
+
+  onSubmit = () => {
+    this.props.setState(this.state.selected)
+    this.props.getCandidates(this.state.selected)
+    this.props.navigation.navigate('MainScreen')
+  }
+
   render () {
+    const { fetchingState } = this.props
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>SELECIONE SEU ESTADO</Text>
-        <Picker onValueChange={value => developmentAlert()} selectedValue={'SE'} style={styles.picker}>
-          {_.map(states, state => (
-            <Picker.Item key={state.id} label={state.nome} value={state.sigla} />
-          ))}
-        </Picker>
-        <TouchableOpacity onPress={developmentAlert} style={styles.buttonNextStep}>
-          <Text style={styles.buttonContent}>CONFIRMAR</Text>
-        </TouchableOpacity>
+        {fetchingState ? (
+          <ActivityIndicator size={'large'} color={Colors.text} />
+        ) : (
+          <View>
+            <Text style={styles.title}>SELECIONE SEU ESTADO</Text>
+            <Picker
+              style={styles.picker}
+              selectedValue={this.state.selected}
+              onValueChange={selected => this.setState({ selected })}
+            >
+              {_.map(brazilianStates(), state => (
+                <Picker.Item key={state.id} label={state.nome} value={state.sigla} />
+              ))}
+            </Picker>
+            <TouchableOpacity onPress={this.onSubmit} style={styles.buttonNextStep}>
+              <Text style={styles.buttonContent}>CONFIRMAR</Text>
+            </TouchableOpacity>
+          </View>
+        )}
       </View>
     )
   }
 }
 
 const mapStateToProps = state => {
-  return {}
+  return {
+    stateInitials: state.searchFilters.stateInitials,
+    fetching: state.searchFilters.fetching
+  }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {}
+const mapDispatchToProps = {
+  setState: SearchFiltersActions.searchFiltersSetState,
+  getCandidates: CandidatesActions.candidatesRequest
 }
 
 export default connect(
