@@ -1,12 +1,15 @@
 import '../Config'
 import DebugConfig from '../Config/DebugConfig'
 import React, { Component } from 'react'
+import { View, ActivityIndicator } from 'react-native'
 import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
+import { PersistGate } from 'redux-persist/integration/react'
+import { Colors } from '../Themes'
 
 // create our store
-const store = createStore()
+const { store, persistor } = createStore()
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -21,7 +24,16 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <RootContainer />
+        <PersistGate
+          loading={
+            <View style={{ flex: 1, justifyContent: 'center' }}>
+              <ActivityIndicator size={'large'} color={Colors.text} />
+            </View>
+          }
+          persistor={persistor}
+        >
+          <RootContainer />
+        </PersistGate>
       </Provider>
     )
   }

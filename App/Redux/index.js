@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import { persistReducer } from 'redux-persist'
 import configureStore from './CreateStore'
 import rootSaga from '../Sagas/'
 import ReduxPersist from '../Config/ReduxPersist'
+import { persistStore, persistReducer } from 'redux-persist'
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
@@ -43,5 +43,7 @@ export default () => {
     })
   }
 
-  return store
+  let persistor = persistStore(store)
+
+  return { store, persistor }
 }
