@@ -6,7 +6,7 @@ import Immutable from 'seamless-immutable'
 
 const { Types, Creators } = createActions({
   candidatesRequest: ['stateInitials'],
-  candidatesSuccess: ['stateInitials', 'data'],
+  candidatesSuccess: ['stateInitials', 'candidates'],
   candidatesFailure: ['stateInitials']
 })
 
@@ -24,7 +24,7 @@ export type CandidateType = {
 }
 
 export type CandidatesType = {
-  string: { [string]: Array<CandidateType> }
+  string: { [state: string]: { [role: string]: Array<CandidateType> } }
 }
 
 export type CandidatesState = Immutable<{

@@ -4,31 +4,42 @@ import { Image, ScrollView, Text, TouchableOpacity, View, Platform } from 'react
 import { connect } from 'react-redux'
 import { openExternalApp, requireAndroidLocationPermission } from '../Lib/Utils'
 import SearchFiltersActions from '../Redux/SearchFiltersRedux'
+import { resetAction } from '../Navigation/NavigationActions'
 
 // Styles
 import styles from './Styles/WelcomeScreenStyle'
 import { Images } from '../Themes'
-import type { NavigationScreenProp } from 'react-navigation'
+import { SearchFiltersSelectors } from '../Selectors'
 
 type Props = {
-  navigation: NavigationScreenProp,
-  requestState: ({}) => mixed
+  stateInitials: ?string,
+  requestState: ({ [string]: number }) => mixed,
+  navigateForStateSelectionScreen: () => mixed
 }
 
 class WelcomeScreen extends Component<Props> {
+  getUserLocation () {
+    navigator.geolocation.getCurrentPosition(
+      ({ coords: { latitude: lat, longitude: lng } }) => this.props.requestState({ lat, lng }),
+      err => console.log(err),
+      { enableHighAccuracy: true, timeout: 5000 }
+    )
+  }
+
   constructor (props: Props) {
     super(props)
-    if (Platform.OS === 'ios' || requireAndroidLocationPermission()) {
-      navigator.geolocation.getCurrentPosition(
-        ({ coords: { latitude: lat, longitude: lng } }) => this.props.requestState({ lat, lng }),
-        err => console.log(err),
-        { enableHighAccuracy: true, timeout: 5000 }
-      )
+    if (!props.stateInitials) {
+      if (Platform.OS === 'android') {
+        requireAndroidLocationPermission()
+          .then(this.getUserLocation())
+          .catch(err => console.log(err))
+      } else {
+        this.getUserLocation()
+      }
     }
   }
 
   render () {
-    const { navigate } = this.props.navigation
     return (
       <ScrollView style={styles.container}>
         <View style={styles.header}>
@@ -78,7 +89,7 @@ class WelcomeScreen extends Component<Props> {
             dúvida, basta acessar o link fornecido e acompanhar cada caso individualmente.
           </Text>
         </View>
-        <TouchableOpacity onPress={() => navigate('StateSelectionScreen')} style={styles.buttonNextStep}>
+        <TouchableOpacity onPress={this.props.navigateForStateSelectionScreen} style={styles.buttonNextStep}>
           <Text style={styles.buttonContent}>AVANÇAR</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -86,11 +97,16 @@ class WelcomeScreen extends Component<Props> {
   }
 }
 
-const mapDispatchToProps = {
-  requestState: SearchFiltersActions.searchFiltersRequestState
-}
+const mapStateToProps = state => ({
+  stateInitials: SearchFiltersSelectors.getStateInitials(state)
+})
+
+const mapDispatchToProps = dispatch => ({
+  requestState: coordinates => dispatch(SearchFiltersActions.searchFiltersRequestState(coordinates)),
+  navigateForStateSelectionScreen: () => dispatch(resetAction({ routeName: 'StateSelectionScreen' }))
+})
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(WelcomeScreen)
