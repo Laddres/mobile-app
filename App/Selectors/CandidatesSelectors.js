@@ -1,5 +1,6 @@
 // @flow
-import { SearchFiltersSelectors, SearchBarSelectors } from '../Selectors'
+import { SearchBarSelectors } from './SearchBarSelectors'
+import { SearchFiltersSelectors } from './SearchFiltersSelectors'
 import { createSelector } from 'reselect'
 
 export const CandidatesSelectors = {
@@ -13,14 +14,17 @@ export const CandidatesSelectors = {
     SearchFiltersSelectors.getStateInitials,
     (state: any) => state.candidates.data,
     (query, stateInitials, data) => {
+      const formatedQuery = query.toUpperCase()
       const candidates = data[stateInitials]
-      const noCandidatesAvailable = !Object.keys(candidates).length
+      const noCandidatesAvailable = candidates instanceof Object && !Object.keys(candidates).length
       if (noCandidatesAvailable || query.length < 2) {
         return candidates
       }
       let filteredCandidates = {}
-      Object.keys(filteredCandidates).map(role => {
-        candidates[role] = filteredCandidates[role].filter(candidate => candidate.nome.toUpperCase().includes(query))
+      Object.keys(candidates).map(role => {
+        filteredCandidates[role] = candidates[role].filter(candidate =>
+          candidate.nome.toUpperCase().includes(formatedQuery)
+        )
       })
       return filteredCandidates
     }

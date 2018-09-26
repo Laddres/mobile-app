@@ -11,6 +11,7 @@ import CandidatesActions from '../Redux/CandidatesRedux'
 // Styles
 import styles from './Styles/StateSelectionScreenStyle'
 import type { NavigationScreenProp } from 'react-navigation'
+import { SearchFiltersSelectors } from '../Selectors'
 
 type Props = {
   stateInitials: ?string,
@@ -49,7 +50,7 @@ class StateSelection extends Component<Props, State> {
             <Picker
               style={styles.picker}
               selectedValue={this.state.selected}
-              onValueChange={selected => this.setState({ selected })}
+              onValueChange={item => this.setState({ selected: item })}
             >
               {_.map(brazilianStates(), state => (
                 <Picker.Item key={state.id} label={state.nome} value={state.sigla} />
@@ -67,8 +68,8 @@ class StateSelection extends Component<Props, State> {
 
 const mapStateToProps = state => {
   return {
-    stateInitials: state.searchFilters.stateInitials,
-    fetching: state.searchFilters.fetching
+    stateInitials: SearchFiltersSelectors.getStateInitials(state),
+    fetching: SearchFiltersSelectors.isFetching(state)
   }
 }
 

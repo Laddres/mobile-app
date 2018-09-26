@@ -15,11 +15,13 @@ import { developmentAlert } from '../Lib/Utils'
 import styles from './Styles/MainScreenStyle'
 import { Images, Colors } from '../Themes'
 import type { CandidatesType, CandidateType } from '../Redux/CandidatesRedux'
+import type { NavigationScreenProp } from 'react-navigation'
 
 type Props = {
   fetching: boolean,
   candidates: CandidatesType,
   searchQuery: string,
+  navigation: NavigationScreenProp,
   searchBarSuggestions: Array<CandidateType>,
   onChangeSearchQuery: string => mixed,
   getCandidateProfile: number => mixed
@@ -33,12 +35,17 @@ class MainScreen extends Component<Props> {
       searchQuery,
       searchBarSuggestions,
       onChangeSearchQuery,
-      getCandidateProfile
+      getCandidateProfile,
+      navigation: { navigate }
     } = this.props
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <ImageButton source={Images.menu} style={styles.filtersButton} onPress={developmentAlert} />
+          <ImageButton
+            source={Images.menu}
+            style={styles.filtersButton}
+            onPress={() => navigate('StateSelectionScreen')}
+          />
           <View style={styles.verticalSeparator} />
           <SearchBar
             query={searchQuery}
