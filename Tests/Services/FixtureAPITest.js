@@ -13,8 +13,8 @@ test('All fixtures map to actual API', () => {
 })
 
 test('FixtureAPI getRate returns the right file', () => {
-  const expectedFile = require('../../App/Fixtures/getCandidatos.json')
-  FixtureAPI.getCandidatos().then(data =>
+  const expectedFile = require('../../App/Fixtures/getCandidates.json')
+  FixtureAPI.getCandidates().then(data =>
     expect(data).toEqual({
       ok: true,
       data: expectedFile

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { TouchableOpacity, View, Keyboard, FlatList, TextInput, Text } from 'react-native'
 import styles from './Styles/SearchBarStyle'
 import { Colors } from '../Themes'
-import { CandidateType } from '../Redux/CandidatosRedux'
+import { CandidateType } from '../Redux/CandidatesRedux'
 
 type Props = {
   query: string,

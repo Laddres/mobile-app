@@ -14,7 +14,7 @@ import { developmentAlert } from '../Lib/Utils'
 // Styles
 import styles from './Styles/MainScreenStyle'
 import { Images, Colors } from '../Themes'
-import type { CandidatesType, CandidateType } from '../Redux/CandidatosRedux'
+import type { CandidatesType, CandidateType } from '../Redux/CandidatesRedux'
 
 type Props = {
   fetching: boolean,
@@ -78,8 +78,8 @@ class MainScreen extends Component<Props> {
 const mapStateToProps = state => {
   return {
     candidates: CandidatesSelectors.filterResults(state),
-    fetching: state.candidatos.fetching,
-    searchQuery: state.searchBar.query,
+    fetching: CandidatesSelectors.isFetching(state),
+    searchQuery: SearchBarSelectors.getQuery(state),
     searchBarSuggestions: SearchBarSelectors.fetchSuggestions(state)
   }
 }

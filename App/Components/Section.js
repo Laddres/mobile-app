@@ -2,8 +2,8 @@
 import * as React from 'react'
 import { FlatList, View, Text } from 'react-native'
 import styles from './Styles/SectionStyle'
-import type { CandidatesType } from '../Redux/CandidatosRedux'
-import { CandidateType } from '../Redux/CandidatosRedux'
+import type { CandidatesType } from '../Redux/CandidatesRedux'
+import { CandidateType } from '../Redux/CandidatesRedux'
 import CandidatePreviewCard from './CandidatePreviewCard'
 
 type Props = {
