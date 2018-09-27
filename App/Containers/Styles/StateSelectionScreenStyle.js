@@ -9,6 +9,7 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   title: {
+    alignSelf: 'center',
     color: Colors.title,
     fontSize: Fonts.size.small,
     fontWeight: Fonts.weight.medium
@@ -17,6 +18,7 @@ export default StyleSheet.create({
     width: Metrics.screenWidth
   },
   buttonNextStep: {
+    alignSelf: 'center',
     backgroundColor: Colors.text,
     borderRadius: Metrics.borderRadius,
     marginVertical: Metrics.marginVertical,
