@@ -11,6 +11,8 @@ export function * startup () {
   if (userHasSelectedState) {
     yield put(NavigationActions.navigate(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName))
     yield put(CandidatesActions.candidatesRequest(userState))
+  } else {
+    yield put(NavigationActions.navigate(DEFAULT_NAVIGATION_CONFIG.welcomeScreenRouteName))
   }
   yield put(SecretActions.secretRequest())
 }
