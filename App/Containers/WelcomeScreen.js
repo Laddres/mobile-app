@@ -20,7 +20,12 @@ type Props = {
 class WelcomeScreen extends Component<Props> {
   getUserLocation () {
     navigator.geolocation.getCurrentPosition(
-      ({ coords: { latitude: lat, longitude: lng } }) => this.props.requestState({ lat, lng }),
+      coords => {
+        if (coords) {
+          const { latitude: lat, longitude: lng } = coords
+          this.props.requestState({ lat, lng })
+        }
+      },
       err => console.log(err),
       { enableHighAccuracy: true, timeout: 5000 }
     )
