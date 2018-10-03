@@ -9,7 +9,7 @@ import SearchFiltersActions from '../Redux/SearchFiltersRedux'
 import CandidatesActions from '../Redux/CandidatesRedux'
 
 // Styles
-import styles from './Styles/StateSelectionScreenStyle'
+import styles from './Styles/OptionsScreenStyle'
 import type { NavigationScreenProp } from 'react-navigation'
 import { SearchFiltersSelectors } from '../Selectors'
 import type { optionsType } from '../Redux/SearchFiltersRedux'
@@ -30,7 +30,7 @@ type State = {
   selectedState: string
 }
 
-class StateSelection extends Component<Props, State> {
+class OptionsScreen extends Component<Props, State> {
   constructor (props: Props) {
     super(props)
     const FALLBACK_SELECTED_STATE = 'SE'
@@ -131,4 +131,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(StateSelection)
+)(OptionsScreen)
