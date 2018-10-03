@@ -194,7 +194,7 @@ export const extractStateInitialsFromAddress = (address: string) => {
 }
 
 export const generateSearchFilterKey = (options: optionsType) => {
-  return `${options.gender}.${options.raceOrColor}.${options.state}`.toUpperCase()
+  return `${options.gender}.${options.raceOrColor}.${options.state}.${options.favorites}`.toUpperCase()
 }
 
 export const generateCandidatesQueryWithFilters = (options: optionsType) => {
