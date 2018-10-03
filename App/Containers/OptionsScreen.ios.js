@@ -21,7 +21,7 @@ import CandidatesActions from '../Redux/CandidatesRedux'
 // Styles
 import styles from './Styles/OptionsScreenStyle'
 import type { NavigationScreenProp } from 'react-navigation'
-import { SearchFiltersSelectors, StartupSelectors } from '../Selectors'
+import { SearchFiltersSelectors } from '../Selectors'
 import type { optionsType } from '../Redux/SearchFiltersRedux'
 import OptionSelector from '../Components/OptionSelector'
 import Separator from '../Components/Separator'
@@ -48,6 +48,7 @@ class OptionsScreen extends Component<Props, State> {
   constructor (props: Props) {
     super(props)
     const FALLBACK_SELECTED_STATE = 'SE'
+    this.isFirstTime = !props.stateInitials
     this.state = {
       favorites: props.favorites,
       selectedGender: props.gender,
@@ -101,20 +102,20 @@ class OptionsScreen extends Component<Props, State> {
   }
 
   render () {
-    const { fetchingState, isFirstTimeOpeningApp } = this.props
+    const { fetchingState } = this.props
     return (
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer} centerContent>
         {fetchingState ? (
           <ActivityIndicator size={'large'} color={Colors.text} />
         ) : (
           <View style={styles.internalContainer}>
-            {!isFirstTimeOpeningApp && (
+            {!this.isFirstTime && (
               <View style={styles.header}>
                 <Text style={styles.headerText}>FILTROS</Text>
               </View>
             )}
             <View style={styles.content}>
-              {!isFirstTimeOpeningApp && (
+              {!this.isFirstTime && (
                 <View>
                   <View style={[styles.optionContainer, styles.inlineOption]}>
                     <Text style={styles.title}>EXIBIR APENAS FAVORITOS</Text>
@@ -143,7 +144,7 @@ class OptionsScreen extends Component<Props, State> {
                 </View>
               )}
               <View style={styles.optionContainer}>
-                {isFirstTimeOpeningApp ? (
+                {this.isFirstTime ? (
                   <Text style={[styles.title, styles.firstTime]}>SELECIONE SEU ESTADO</Text>
                 ) : (
                   <Text style={styles.title}>ESTADO</Text>
@@ -171,7 +172,6 @@ class OptionsScreen extends Component<Props, State> {
 
 const mapStateToProps = state => {
   return {
-    isFirstTimeOpeningApp: StartupSelectors.firstTimeOpeningApp(state),
     favorites: SearchFiltersSelectors.getFavorites(state),
     stateInitials: SearchFiltersSelectors.getStateInitials(state),
     raceOrColor: SearchFiltersSelectors.getRaceOrColor(state),
