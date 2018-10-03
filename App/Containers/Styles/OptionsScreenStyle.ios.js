@@ -24,7 +24,7 @@ export default StyleSheet.create({
   content: {
     flex: 1,
     marginHorizontal: Metrics.smallMargin,
-    marginVertical: Metrics.baseMargin
+    marginBottom: -Metrics.marginVertical
   },
   title: {
     color: Colors.title,
@@ -65,6 +65,6 @@ export default StyleSheet.create({
   },
   selectedChoice: {
     color: Colors.text,
-    fontSize: Fonts.size.gap
+    fontSize: Fonts.size.medium
   }
 })
