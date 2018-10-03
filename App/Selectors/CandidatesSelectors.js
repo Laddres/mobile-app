@@ -5,17 +5,17 @@ import { createSelector } from 'reselect'
 
 export const CandidatesSelectors = {
   isFetching: createSelector(
-    SearchFiltersSelectors.getStateInitials,
+    SearchFiltersSelectors.getSearchFilterKey,
     (state: any) => state.candidates.fetching,
-    (stateInitials: string, fetching: { [string]: ?boolean }) => fetching[stateInitials]
+    (key: string, fetching: { [string]: ?boolean }) => fetching[key]
   ),
   filterResults: createSelector(
     SearchBarSelectors.getQuery,
-    SearchFiltersSelectors.getStateInitials,
+    SearchFiltersSelectors.getSearchFilterKey,
     (state: any) => state.candidates.data,
-    (query, stateInitials, data) => {
+    (query, key, data) => {
       const formatedQuery = query.toUpperCase()
-      const candidates = data[stateInitials]
+      const candidates = data[key]
       const noCandidatesAvailable = candidates instanceof Object && !Object.keys(candidates).length
       if (noCandidatesAvailable || query.length < 2) {
         return candidates

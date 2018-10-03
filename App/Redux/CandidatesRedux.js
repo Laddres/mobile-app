@@ -1,13 +1,15 @@
 // @flow
 import { createReducer, createActions } from 'reduxsauce'
 import Immutable from 'seamless-immutable'
+import { generateSearchFilterKey } from '../Lib/Utils'
+import type { optionsType } from './SearchFiltersRedux'
 
 /* ------------- Tipos e Criadores de ações ------------- */
 
 const { Types, Creators } = createActions({
-  candidatesRequest: ['stateInitials'],
-  candidatesSuccess: ['stateInitials', 'candidates'],
-  candidatesFailure: ['stateInitials']
+  candidatesRequest: ['options'],
+  candidatesSuccess: ['key', 'candidates'],
+  candidatesFailure: ['key']
 })
 
 export const candidatesTypes = Types
@@ -43,27 +45,26 @@ export const INITIAL_STATE: CandidatesState = Immutable({
 
 /* ------------- Redutores ------------- */
 
-export const request = (state: CandidatesState, { stateInitials }: { stateInitials: string }) =>
-  state.merge({ fetching: { [stateInitials]: true } }, { deep: true })
+export const request = (state: CandidatesState, { options }: { options: optionsType }) => {
+  const key = generateSearchFilterKey(options)
+  return state.merge({ fetching: { [key]: true } }, { deep: true })
+}
 
-export const success = (
-  state: CandidatesState,
-  { stateInitials, candidates }: { stateInitials: string, candidates: CandidatesType }
-) =>
+export const success = (state: CandidatesState, { key, candidates }: { key: string, candidates: CandidatesType }) =>
   state.merge(
     {
-      fetching: { [stateInitials]: false },
-      error: { [stateInitials]: null },
-      data: { [stateInitials]: candidates }
+      fetching: { [key]: false },
+      error: { [key]: null },
+      data: { [key]: candidates }
     },
     { deep: true }
   )
 
-export const failure = (state: CandidatesState, { stateInitials }: { stateInitials: string }) =>
+export const failure = (state: CandidatesState, { key }: { key: string }) =>
   state.merge(
     {
-      fetching: { [stateInitials]: false },
-      error: { [stateInitials]: true }
+      fetching: { [key]: false },
+      error: { [key]: true }
     },
     { deep: true }
   )

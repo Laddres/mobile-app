@@ -9,7 +9,7 @@ const { Types, Creators } = createActions({
   searchFiltersRequestState: ['coordinates'],
   searchFiltersSuccessState: ['stateInitials'],
   searchFiltersFailureState: null,
-  searchFiltersSetState: ['stateInitials']
+  searchFiltersSetOptions: ['options']
 })
 
 export const SearchFiltersTypes = Types
@@ -17,8 +17,14 @@ export default Creators
 
 /* ------------- Tipos Flow ------------- */
 
-export type SearchFiltersState = Immutable<{
+export type optionsType = {
   state: string,
+  gender: string,
+  raceOrColor: string
+}
+
+export type SearchFiltersState = Immutable<{
+  options: optionsType,
   fetching: ?boolean,
   error: ?boolean
 }>
@@ -26,7 +32,7 @@ export type SearchFiltersState = Immutable<{
 /* ------------- Estado Inicial ------------- */
 
 export const INITIAL_STATE: SearchFiltersState = Immutable({
-  state: '',
+  options: { gender: 'todos', state: null, raceOrColor: 'todos' },
   fetching: null,
   error: null
 })
@@ -40,8 +46,7 @@ export const successState = (state: SearchFiltersState, { stateInitials }: { sta
 
 export const failureState = (state: SearchFiltersState) => state.merge({ fetching: false, error: true })
 
-export const setState = (state: SearchFiltersState, { stateInitials }: { stateInitials: string }) =>
-  state.merge({ state: stateInitials })
+export const setOptions = (state: SearchFiltersState, { options }: { options: optionsType }) => state.merge({ options })
 
 /* ------------- Conectar redutores aos tipos ------------- */
 
@@ -49,5 +54,5 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.SEARCH_FILTERS_REQUEST_STATE]: requestState,
   [Types.SEARCH_FILTERS_SUCCESS_STATE]: successState,
   [Types.SEARCH_FILTERS_FAILURE_STATE]: failureState,
-  [Types.SEARCH_FILTERS_SET_STATE]: setState
+  [Types.SEARCH_FILTERS_SET_OPTIONS]: setOptions
 })

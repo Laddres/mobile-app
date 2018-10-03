@@ -38,7 +38,8 @@ const metrics = {
     marginVerticalSeparator: 7.5,
     pictureSpaceMargin: 80,
     candidatePictureOverflow: -20
-  }
+  },
+  headerHeight: 40
 }
 
 export default metrics

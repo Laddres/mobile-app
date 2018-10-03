@@ -5,17 +5,33 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
-    justifyContent: 'center',
-    alignItems: 'center'
+    paddingHorizontal: Metrics.smallMargin
+  },
+  header: {
+    justifyContent: 'center'
+  },
+  headerText: {
+    fontWeight: 'bold',
+    fontSize: Fonts.size.h1,
+    color: Colors.sectionTitle,
+    lineHeight: Fonts.size.h1,
+    marginTop: Metrics.smallMargin,
+    marginBottom: Metrics.baseMargin
+  },
+  content: {
+    flex: 1,
+    marginTop: Metrics.doubleSection
   },
   title: {
-    alignSelf: 'center',
     color: Colors.title,
     fontSize: Fonts.size.small,
     fontWeight: Fonts.weight.medium
   },
+  pickerContainer: {
+    marginVertical: Metrics.smallMargin
+  },
   picker: {
-    width: Metrics.screenWidth
+    marginHorizontal: Metrics.smallMargin
   },
   buttonNextStep: {
     alignSelf: 'center',
@@ -24,9 +40,10 @@ export default StyleSheet.create({
     marginVertical: Metrics.marginVertical,
     paddingVertical: Metrics.marginVertical + Metrics.smallMargin,
     alignItems: 'center',
-    width: 0.5 * Metrics.screenWidth
+    width: 0.5 * Metrics.screenWidth,
+    marginBottom: Metrics.doubleSection
   },
-  buttonContent: {
+  buttonText: {
     color: Colors.white,
     fontWeight: Fonts.weight.medium,
     fontSize: Fonts.size.medium

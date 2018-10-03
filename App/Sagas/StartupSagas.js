@@ -9,8 +9,9 @@ export function * startup () {
   const userState = yield select(SearchFiltersSelectors.getStateInitials)
   const userHasSelectedState = !!userState
   if (userHasSelectedState) {
+    const options = yield select(SearchFiltersSelectors.getOptions)
     yield put(NavigationActions.navigate(DEFAULT_NAVIGATION_CONFIG.mainScreenRouteName))
-    yield put(CandidatesActions.candidatesRequest(userState))
+    yield put(CandidatesActions.candidatesRequest(options))
   } else {
     yield put(NavigationActions.navigate(DEFAULT_NAVIGATION_CONFIG.welcomeScreenRouteName))
   }
