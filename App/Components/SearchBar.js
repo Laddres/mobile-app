@@ -38,7 +38,7 @@ class SearchBar extends Component<Props> {
           underlineColorAndroid={'transparent'}
           onChangeText={onChange}
           value={query}
-          eturnKeyType='search'
+          returnKeyType='search'
           placeholder={placeholder}
           placeholderTextColor={Colors.disabled}
           style={[styles.textInput, disabled && styles.disabledTextInput]}
