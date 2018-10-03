@@ -60,6 +60,7 @@ class MainScreen extends Component<Props> {
           <FlatList
             bounces
             contentContainerStyle={styles.content}
+            style={styles.listContainer}
             data={Object.keys(candidates)}
             showsHorizontalScrollIndicator={false}
             keyExtractor={role => `${role}`}

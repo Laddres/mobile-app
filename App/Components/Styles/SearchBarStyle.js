@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import { Metrics } from '../../Themes'
 
 export const SUGGESTION_BOX_HEIGHT = 46
 
@@ -7,11 +8,10 @@ export default StyleSheet.create({
     flex: 1
   },
   textInput: {
-    height: 46,
+    flex: 1,
     color: '#424242',
     fontSize: 15,
-    paddingLeft: 41,
-    paddingRight: 14
+    paddingHorizontal: Metrics.marginHorizontal + Metrics.smallMargin
   },
   disabledTextInput: {
     backgroundColor: 'rgba(92, 128, 136, 0.09)',

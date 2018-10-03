@@ -3169,10 +3169,9 @@ exports[`Storyshots SearchBar Default 1`] = `
         Array [
           Object {
             "color": "#424242",
+            "flex": 1,
             "fontSize": 15,
-            "height": 46,
-            "paddingLeft": 41,
-            "paddingRight": 14,
+            "paddingHorizontal": 15,
           },
           undefined,
         ]
