@@ -39,7 +39,12 @@ const metrics = {
     pictureSpaceMargin: 80,
     candidatePictureOverflow: -20
   },
-  headerHeight: 40
+  headerHeight: 40,
+  optionSelector: {
+    width: 47,
+    height: 28,
+    circle: 26
+  }
 }
 
 export default metrics

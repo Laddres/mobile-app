@@ -13,9 +13,11 @@ import styles from './Styles/OptionsScreenStyle'
 import type { NavigationScreenProp } from 'react-navigation'
 import { SearchFiltersSelectors } from '../Selectors'
 import type { optionsType } from '../Redux/SearchFiltersRedux'
+import OptionSelector from '../Components/OptionSelector'
 
 type Props = {
   gender: ?string,
+  favorites: boolean,
   raceOrColor: ?string,
   stateInitials: ?string,
   fetchingState: ?boolean,
@@ -27,7 +29,8 @@ type Props = {
 type State = {
   selectedGender: string,
   selectedRaceOrColor: string,
-  selectedState: string
+  selectedState: string,
+  favorites: boolean
 }
 
 class OptionsScreen extends Component<Props, State> {
@@ -35,6 +38,7 @@ class OptionsScreen extends Component<Props, State> {
     super(props)
     const FALLBACK_SELECTED_STATE = 'SE'
     this.state = {
+      favorites: props.favorites,
       selectedGender: props.gender,
       selectedRaceOrColor: props.raceOrColor,
       selectedState: props.stateInitials || FALLBACK_SELECTED_STATE
@@ -44,6 +48,7 @@ class OptionsScreen extends Component<Props, State> {
   onSubmit = () => {
     const options = {
       state: this.state.selectedState,
+      favorites: this.state.favorites,
       gender: this.state.selectedGender,
       raceOrColor: this.state.selectedRaceOrColor
     }
@@ -64,7 +69,7 @@ class OptionsScreen extends Component<Props, State> {
               <Text style={styles.headerText}>FILTROS</Text>
             </View>
             <View style={styles.content}>
-              <View style={styles.pickerContainer}>
+              <View style={styles.optionContainer}>
                 <Text style={styles.title}>GÊNERO:</Text>
                 <Picker
                   style={styles.picker}
@@ -76,7 +81,7 @@ class OptionsScreen extends Component<Props, State> {
                   <Picker.Item label={'Feminino'} value={'feminino'} />
                 </Picker>
               </View>
-              <View style={styles.pickerContainer}>
+              <View style={styles.optionContainer}>
                 <Text style={styles.title}>RAÇA/COR:</Text>
                 <Picker
                   style={styles.picker}
@@ -91,7 +96,7 @@ class OptionsScreen extends Component<Props, State> {
                   <Picker.Item label={'Indígena'} value={'indígena'} />
                 </Picker>
               </View>
-              <View style={styles.pickerContainer}>
+              <View style={styles.optionContainer}>
                 <Text style={styles.title}>ESTADO:</Text>
                 <Picker
                   style={styles.picker}
@@ -102,6 +107,13 @@ class OptionsScreen extends Component<Props, State> {
                     <Picker.Item key={state.id} label={state.nome} value={state.sigla} />
                   ))}
                 </Picker>
+                <View style={[styles.optionContainer, styles.inlineOption]}>
+                  <Text style={styles.title}>EXIBIR APENAS CANDIDATOS FAVORITADOS:</Text>
+                  <OptionSelector
+                    selected={this.state.favorites}
+                    onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
+                  />
+                </View>
               </View>
             </View>
             <TouchableOpacity onPress={this.onSubmit} style={styles.buttonNextStep}>
@@ -116,6 +128,7 @@ class OptionsScreen extends Component<Props, State> {
 
 const mapStateToProps = state => {
   return {
+    favorites: SearchFiltersSelectors.getFavorites(state),
     stateInitials: SearchFiltersSelectors.getStateInitials(state),
     raceOrColor: SearchFiltersSelectors.getRaceOrColor(state),
     gender: SearchFiltersSelectors.getGender(state),

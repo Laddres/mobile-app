@@ -27,7 +27,7 @@ export default StyleSheet.create({
     fontSize: Fonts.size.small,
     fontWeight: Fonts.weight.medium
   },
-  pickerContainer: {
+  optionContainer: {
     marginVertical: Metrics.smallMargin
   },
   picker: {
@@ -47,5 +47,11 @@ export default StyleSheet.create({
     color: Colors.white,
     fontWeight: Fonts.weight.medium,
     fontSize: Fonts.size.medium
+  },
+  inlineOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginRight: Metrics.baseMargin
   }
 })
