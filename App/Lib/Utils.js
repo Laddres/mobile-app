@@ -199,11 +199,12 @@ export const generateSearchFilterKey = (options: optionsType) => {
 
 export const generateCandidatesQueryWithFilters = (options: optionsType) => {
   const query = { estado: options.state }
-  const defaultOption = 'todos'
-  if (options.gender !== defaultOption) {
+  const defaultGenderOption = 'todos'
+  const defaultRaceOrColorOption = 'todas'
+  if (options.gender !== defaultGenderOption) {
     query.genero = options.gender
   }
-  if (options.raceOrColor !== defaultOption) {
+  if (options.raceOrColor !== defaultRaceOrColorOption) {
     query.corRaca = options.raceOrColor
   }
   return query

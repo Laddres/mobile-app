@@ -88,7 +88,7 @@ class OptionsScreen extends Component<Props, State> {
                   selectedValue={this.state.selectedRaceOrColor}
                   onValueChange={item => this.setState({ selectedRaceOrColor: item })}
                 >
-                  <Picker.Item label={'Todos'} value={'todos'} />
+                  <Picker.Item label={'Todas'} value={'todas'} />
                   <Picker.Item label={'Branca'} value={'branca'} />
                   <Picker.Item label={'Preta'} value={'preta'} />
                   <Picker.Item label={'Parda'} value={'padra'} />

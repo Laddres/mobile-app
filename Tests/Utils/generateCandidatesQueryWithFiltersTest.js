@@ -7,12 +7,12 @@ describe('generateCandidatesQueryWithFilters', () => {
     expect(result).toEqual({ corRaca: 'preta', estado: 'SE', genero: 'feminino' })
   })
   test('with raceOrColor default', () => {
-    const options = { gender: 'feminino', state: 'SE', raceOrColor: 'todos' }
+    const options = { gender: 'feminino', state: 'SE', raceOrColor: 'todas' }
     const result = generateCandidatesQueryWithFilters(options)
     expect(result).toEqual({ genero: 'feminino', estado: 'SE' })
   })
   test('with gender default', () => {
-    const options = { gender: 'todos', state: 'SE', raceOrColor: 'todos' }
+    const options = { gender: 'todos', state: 'SE', raceOrColor: 'todas' }
     const result = generateCandidatesQueryWithFilters(options)
     expect(result).toEqual({ estado: 'SE' })
   })
