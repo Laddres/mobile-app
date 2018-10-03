@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react'
-import { Text, Picker, TouchableOpacity, View, ActivityIndicator } from 'react-native'
+import { ScrollView, Text, Picker, TouchableOpacity, View, ActivityIndicator } from 'react-native'
 import { connect } from 'react-redux'
 import _ from 'lodash'
 import { brazilianStates } from '../Lib/Utils'
@@ -60,7 +60,7 @@ class OptionsScreenAndroid extends Component<Props, State> {
   render () {
     const { fetchingState } = this.props
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={{ flex: 1 }}>
         {fetchingState ? (
           <ActivityIndicator size={'large'} color={Colors.text} />
         ) : (
@@ -121,7 +121,7 @@ class OptionsScreenAndroid extends Component<Props, State> {
             </TouchableOpacity>
           </View>
         )}
-      </View>
+      </ScrollView>
     )
   }
 }

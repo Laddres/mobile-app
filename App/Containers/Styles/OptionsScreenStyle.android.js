@@ -4,8 +4,9 @@ import { Colors, Fonts, Metrics } from '../../Themes/'
 export default StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'space-between',
     backgroundColor: Colors.background,
-    paddingHorizontal: Metrics.smallMargin
+    paddingHorizontal: Metrics.smallPadding
   },
   header: {
     justifyContent: 'center'
@@ -15,12 +16,10 @@ export default StyleSheet.create({
     fontSize: Fonts.size.h1,
     color: Colors.sectionTitle,
     lineHeight: Fonts.size.h1,
-    marginTop: Metrics.baseMargin,
-    marginBottom: Metrics.baseMargin
+    marginTop: Metrics.baseMargin
   },
   content: {
-    flex: 1,
-    marginTop: Metrics.doubleSection
+    paddingHorizontal: Metrics.regularPadding
   },
   title: {
     color: Colors.title,
