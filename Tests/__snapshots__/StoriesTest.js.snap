@@ -3074,6 +3074,7 @@ exports[`Storyshots SearchBar Default 1`] = `
       allowFontScaling={true}
       autoCorrect={false}
       editable={true}
+      eturnKeyType="search"
       placeholder="Você conhece o seu candidato?"
       placeholderTextColor="rgba(66, 66, 66, 0.45)"
       style={
