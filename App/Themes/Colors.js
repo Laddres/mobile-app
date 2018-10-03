@@ -11,6 +11,7 @@ const colors = {
   text: '#014E68',
   noContent: '#B0B0B0',
   separator: '#F3F6F7',
+  darkSeparator: '#EEEEEE',
   disabled: 'rgba(66, 66, 66, 0.45)',
   border: 'rgba(92,128,136,0.2)',
   selectedItem: '#25647C'
