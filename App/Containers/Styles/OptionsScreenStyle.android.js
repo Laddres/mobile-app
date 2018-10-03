@@ -11,11 +11,11 @@ export default StyleSheet.create({
     justifyContent: 'center'
   },
   headerText: {
-    fontWeight: 'bold',
+    fontWeight: Fonts.weight.bold,
     fontSize: Fonts.size.h1,
     color: Colors.sectionTitle,
     lineHeight: Fonts.size.h1,
-    marginTop: Metrics.smallMargin,
+    marginTop: Metrics.baseMargin,
     marginBottom: Metrics.baseMargin
   },
   content: {

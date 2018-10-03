@@ -33,7 +33,7 @@ type State = {
   favorites: boolean
 }
 
-class OptionsScreen extends Component<Props, State> {
+class OptionsScreenAndroid extends Component<Props, State> {
   constructor (props: Props) {
     super(props)
     const FALLBACK_SELECTED_STATE = 'SE'
@@ -144,4 +144,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(OptionsScreen)
+)(OptionsScreenAndroid)
