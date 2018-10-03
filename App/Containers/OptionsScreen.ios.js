@@ -21,7 +21,7 @@ import CandidatesActions from '../Redux/CandidatesRedux'
 // Styles
 import styles from './Styles/OptionsScreenStyle'
 import type { NavigationScreenProp } from 'react-navigation'
-import { SearchFiltersSelectors } from '../Selectors'
+import { SearchFiltersSelectors, StartupSelectors } from '../Selectors'
 import type { optionsType } from '../Redux/SearchFiltersRedux'
 import OptionSelector from '../Components/OptionSelector'
 import Separator from '../Components/Separator'
@@ -101,43 +101,53 @@ class OptionsScreen extends Component<Props, State> {
   }
 
   render () {
-    const { fetchingState } = this.props
+    const { fetchingState, isFirstTimeOpeningApp } = this.props
     return (
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer} centerContent>
         {fetchingState ? (
           <ActivityIndicator size={'large'} color={Colors.text} />
         ) : (
           <View style={styles.internalContainer}>
-            <View style={styles.header}>
-              <Text style={styles.headerText}>FILTROS</Text>
-            </View>
+            {!isFirstTimeOpeningApp && (
+              <View style={styles.header}>
+                <Text style={styles.headerText}>FILTROS</Text>
+              </View>
+            )}
             <View style={styles.content}>
-              <View style={[styles.optionContainer, styles.inlineOption]}>
-                <Text style={styles.title}>EXIBIR APENAS FAVORITOS</Text>
-                <OptionSelector
-                  selected={this.state.favorites}
-                  onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
-                />
-              </View>
-              <Separator color={Colors.darkSeparator} />
-              <View style={[styles.optionContainer, styles.inlineOption]}>
-                <Text style={styles.title}>GÊNERO</Text>
-                <TouchableOpacity onPress={this.showGendersOptions} style={styles.selectedChoiceButton}>
-                  <Text style={styles.selectedChoice}>{capitalize(this.state.selectedGender)}</Text>
-                  <Image source={Images.chevronDown} />
-                </TouchableOpacity>
-              </View>
-              <Separator color={Colors.darkSeparator} />
-              <View style={[styles.optionContainer, styles.inlineOption]}>
-                <Text style={styles.title}>RAÇA/COR</Text>
-                <TouchableOpacity onPress={this.showColorOrRaceOptions} style={styles.selectedChoiceButton}>
-                  <Text style={styles.selectedChoice}>{capitalize(this.state.selectedRaceOrColor)}</Text>
-                  <Image source={Images.chevronDown} />
-                </TouchableOpacity>
-              </View>
-              <Separator color={Colors.darkSeparator} />
+              {!isFirstTimeOpeningApp && (
+                <View>
+                  <View style={[styles.optionContainer, styles.inlineOption]}>
+                    <Text style={styles.title}>EXIBIR APENAS FAVORITOS</Text>
+                    <OptionSelector
+                      selected={this.state.favorites}
+                      onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
+                    />
+                  </View>
+                  <Separator color={Colors.darkSeparator} />
+                  <View style={[styles.optionContainer, styles.inlineOption]}>
+                    <Text style={styles.title}>GÊNERO</Text>
+                    <TouchableOpacity onPress={this.showGendersOptions} style={styles.selectedChoiceButton}>
+                      <Text style={styles.selectedChoice}>{capitalize(this.state.selectedGender)}</Text>
+                      <Image source={Images.chevronDown} />
+                    </TouchableOpacity>
+                  </View>
+                  <Separator color={Colors.darkSeparator} />
+                  <View style={[styles.optionContainer, styles.inlineOption]}>
+                    <Text style={styles.title}>RAÇA/COR</Text>
+                    <TouchableOpacity onPress={this.showColorOrRaceOptions} style={styles.selectedChoiceButton}>
+                      <Text style={styles.selectedChoice}>{capitalize(this.state.selectedRaceOrColor)}</Text>
+                      <Image source={Images.chevronDown} />
+                    </TouchableOpacity>
+                  </View>
+                  <Separator color={Colors.darkSeparator} />
+                </View>
+              )}
               <View style={styles.optionContainer}>
-                <Text style={styles.title}>ESTADO</Text>
+                {isFirstTimeOpeningApp ? (
+                  <Text style={[styles.title, styles.firstTime]}>SELECIONE SEU ESTADO</Text>
+                ) : (
+                  <Text style={styles.title}>ESTADO</Text>
+                )}
                 <Picker
                   style={styles.picker}
                   selectedValue={this.state.selectedState}
@@ -161,6 +171,7 @@ class OptionsScreen extends Component<Props, State> {
 
 const mapStateToProps = state => {
   return {
+    isFirstTimeOpeningApp: StartupSelectors.firstTimeOpeningApp(state),
     favorites: SearchFiltersSelectors.getFavorites(state),
     stateInitials: SearchFiltersSelectors.getStateInitials(state),
     raceOrColor: SearchFiltersSelectors.getRaceOrColor(state),

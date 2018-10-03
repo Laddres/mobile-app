@@ -31,6 +31,10 @@ export default StyleSheet.create({
     fontSize: Fonts.size.small,
     fontWeight: Fonts.weight.medium
   },
+  firstTime: {
+    marginBottom: Metrics.baseMargin,
+    textAlign: 'center'
+  },
   optionContainer: {
     marginVertical: Metrics.marginVertical
   },
