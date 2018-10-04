@@ -207,5 +207,8 @@ export const generateCandidatesQueryWithFilters = (options: optionsType) => {
   if (options.raceOrColor !== defaultRaceOrColorOption) {
     query.corRaca = options.raceOrColor
   }
+  if (options.firstCandidacy) {
+    query.primeiraCandidatura = true
+  }
   return query
 }

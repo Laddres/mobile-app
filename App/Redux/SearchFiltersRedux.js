@@ -21,7 +21,8 @@ export type optionsType = {
   state: string,
   gender: string,
   favorites: boolean,
-  raceOrColor: string
+  raceOrColor: string,
+  firstCandidacy: boolean
 }
 
 export type SearchFiltersState = Immutable<{
@@ -33,7 +34,7 @@ export type SearchFiltersState = Immutable<{
 /* ------------- Estado Inicial ------------- */
 
 export const INITIAL_STATE: SearchFiltersState = Immutable({
-  options: { gender: 'todos', state: null, raceOrColor: 'todas', favorites: false },
+  options: { gender: 'todos', state: null, raceOrColor: 'todas', favorites: false, firstCandidacy: false },
   fetching: null,
   error: null
 })

@@ -32,6 +32,7 @@ type Props = {
   raceOrColor: ?string,
   stateInitials: ?string,
   fetchingState: ?boolean,
+  firstCandidacy: boolean,
   setOptions: optionsType => mixed,
   getCandidates: string => mixed,
   navigation: NavigationScreenProp
@@ -41,7 +42,8 @@ type State = {
   selectedGender: string,
   selectedRaceOrColor: string,
   selectedState: string,
-  favorites: boolean
+  favorites: boolean,
+  firstCandidacy: boolean
 }
 
 class OptionsScreen extends Component<Props, State> {
@@ -52,6 +54,7 @@ class OptionsScreen extends Component<Props, State> {
     this.state = {
       favorites: props.favorites,
       selectedGender: props.gender,
+      firstCandidacy: props.firstCandidacy,
       selectedRaceOrColor: props.raceOrColor,
       selectedState: props.stateInitials || FALLBACK_SELECTED_STATE
     }
@@ -62,6 +65,7 @@ class OptionsScreen extends Component<Props, State> {
       state: this.state.selectedState,
       favorites: this.state.favorites,
       gender: this.state.selectedGender,
+      firstCandidacy: this.state.firstCandidacy,
       raceOrColor: this.state.selectedRaceOrColor
     }
     this.props.setOptions(options)
@@ -118,10 +122,18 @@ class OptionsScreen extends Component<Props, State> {
               {!this.isFirstTime && (
                 <View>
                   <View style={[styles.optionContainer, styles.inlineOption]}>
-                    <Text style={styles.title}>EXIBIR APENAS FAVORITOS</Text>
+                    <Text style={styles.title}>APENAS FAVORITOS</Text>
                     <OptionSelector
                       selected={this.state.favorites}
                       onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
+                    />
+                  </View>
+                  <Separator color={Colors.darkSeparator} />
+                  <View style={[styles.optionContainer, styles.inlineOption]}>
+                    <Text style={styles.title}>APENAS ESTREANTES</Text>
+                    <OptionSelector
+                      selected={this.state.firstCandidacy}
+                      onSelect={() => this.setState(prevState => ({ firstCandidacy: !prevState.firstCandidacy }))}
                     />
                   </View>
                   <Separator color={Colors.darkSeparator} />
@@ -174,6 +186,7 @@ const mapStateToProps = state => {
   return {
     favorites: SearchFiltersSelectors.getFavorites(state),
     stateInitials: SearchFiltersSelectors.getStateInitials(state),
+    firstCandidacy: SearchFiltersSelectors.getFirstCandidacy(state),
     raceOrColor: SearchFiltersSelectors.getRaceOrColor(state),
     gender: SearchFiltersSelectors.getGender(state),
     fetching: SearchFiltersSelectors.isFetching(state)

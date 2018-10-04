@@ -7,6 +7,7 @@ import { brazilianStates } from '../Lib/Utils'
 import { Colors } from '../Themes'
 import SearchFiltersActions from '../Redux/SearchFiltersRedux'
 import CandidatesActions from '../Redux/CandidatesRedux'
+import Separator from '../Components/Separator'
 
 // Styles
 import styles from './Styles/OptionsScreenStyle'
@@ -20,6 +21,7 @@ type Props = {
   favorites: boolean,
   raceOrColor: ?string,
   stateInitials: ?string,
+  firstCandidacy: boolean,
   fetchingState: ?boolean,
   setOptions: optionsType => mixed,
   getCandidates: string => mixed,
@@ -30,7 +32,8 @@ type State = {
   selectedGender: string,
   selectedRaceOrColor: string,
   selectedState: string,
-  favorites: boolean
+  favorites: boolean,
+  firstCandidacy: boolean
 }
 
 class OptionsScreenAndroid extends Component<Props, State> {
@@ -40,6 +43,7 @@ class OptionsScreenAndroid extends Component<Props, State> {
     this.state = {
       favorites: props.favorites,
       selectedGender: props.gender,
+      firstCandidacy: props.firstCandidacy,
       selectedRaceOrColor: props.raceOrColor,
       selectedState: props.stateInitials || FALLBACK_SELECTED_STATE
     }
@@ -50,7 +54,8 @@ class OptionsScreenAndroid extends Component<Props, State> {
       state: this.state.selectedState,
       favorites: this.state.favorites,
       gender: this.state.selectedGender,
-      raceOrColor: this.state.selectedRaceOrColor
+      raceOrColor: this.state.selectedRaceOrColor,
+      firstCandidacy: this.state.firstCandidacy
     }
     this.props.setOptions(options)
     this.props.getCandidates(options)
@@ -69,8 +74,24 @@ class OptionsScreenAndroid extends Component<Props, State> {
               <Text style={styles.headerText}>FILTROS</Text>
             </View>
             <View style={styles.content}>
+              <View style={[styles.optionContainer, styles.inlineOption]}>
+                <Text style={styles.title}>APENAS FAVORITOS</Text>
+                <OptionSelector
+                  selected={this.state.favorites}
+                  onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
+                />
+              </View>
+              <Separator color={Colors.darkSeparator} />
+              <View style={[styles.optionContainer, styles.inlineOption]}>
+                <Text style={styles.title}>APENAS ESTREANTES</Text>
+                <OptionSelector
+                  selected={this.state.firstCandidacy}
+                  onSelect={() => this.setState(prevState => ({ firstCandidacy: !prevState.firstCandidacy }))}
+                />
+              </View>
+              <Separator color={Colors.darkSeparator} />
               <View style={styles.optionContainer}>
-                <Text style={styles.title}>GÊNERO:</Text>
+                <Text style={styles.title}>GÊNERO</Text>
                 <Picker
                   style={styles.picker}
                   selectedValue={this.state.selectedGender}
@@ -81,8 +102,9 @@ class OptionsScreenAndroid extends Component<Props, State> {
                   <Picker.Item label={'Feminino'} value={'feminino'} />
                 </Picker>
               </View>
+              <Separator color={Colors.darkSeparator} />
               <View style={styles.optionContainer}>
-                <Text style={styles.title}>RAÇA/COR:</Text>
+                <Text style={styles.title}>RAÇA/COR</Text>
                 <Picker
                   style={styles.picker}
                   selectedValue={this.state.selectedRaceOrColor}
@@ -96,8 +118,9 @@ class OptionsScreenAndroid extends Component<Props, State> {
                   <Picker.Item label={'Indígena'} value={'indígena'} />
                 </Picker>
               </View>
+              <Separator color={Colors.darkSeparator} />
               <View style={styles.optionContainer}>
-                <Text style={styles.title}>ESTADO:</Text>
+                <Text style={styles.title}>ESTADO</Text>
                 <Picker
                   style={styles.picker}
                   selectedValue={this.state.selectedState}
@@ -107,13 +130,6 @@ class OptionsScreenAndroid extends Component<Props, State> {
                     <Picker.Item key={state.id} label={state.nome} value={state.sigla} />
                   ))}
                 </Picker>
-                <View style={[styles.optionContainer, styles.inlineOption]}>
-                  <Text style={styles.title}>EXIBIR APENAS CANDIDATOS FAVORITADOS:</Text>
-                  <OptionSelector
-                    selected={this.state.favorites}
-                    onSelect={() => this.setState(prevState => ({ favorites: !prevState.favorites }))}
-                  />
-                </View>
               </View>
             </View>
             <TouchableOpacity onPress={this.onSubmit} style={styles.buttonNextStep}>
@@ -130,6 +146,7 @@ const mapStateToProps = state => {
   return {
     favorites: SearchFiltersSelectors.getFavorites(state),
     stateInitials: SearchFiltersSelectors.getStateInitials(state),
+    firstCandidacy: SearchFiltersSelectors.getFirstCandidacy(state),
     raceOrColor: SearchFiltersSelectors.getRaceOrColor(state),
     gender: SearchFiltersSelectors.getGender(state),
     fetching: SearchFiltersSelectors.isFetching(state)
