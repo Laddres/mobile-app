@@ -41,11 +41,7 @@ class MainScreen extends Component<Props> {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <ImageButton
-            source={Images.menu}
-            style={styles.filtersButton}
-            onPress={() => navigate('StateSelectionScreen')}
-          />
+          <ImageButton source={Images.menu} style={styles.filtersButton} onPress={() => navigate('OptionsScreen')} />
           <View style={styles.verticalSeparator} />
           <SearchBar
             query={searchQuery}
@@ -64,6 +60,7 @@ class MainScreen extends Component<Props> {
           <FlatList
             bounces
             contentContainerStyle={styles.content}
+            style={styles.listContainer}
             data={Object.keys(candidates)}
             showsHorizontalScrollIndicator={false}
             keyExtractor={role => `${role}`}

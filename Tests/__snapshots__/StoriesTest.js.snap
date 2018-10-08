@@ -1892,6 +1892,94 @@ exports[`Storyshots LawsuitsCard without lawsuits 1`] = `
 </View>
 `;
 
+exports[`Storyshots OptionSelector Default 1`] = `
+<View
+  style={
+    Object {
+      "padding": 10,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "#ECEEF1",
+        "borderRadius": 23.5,
+        "height": 28,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 2,
+        "width": 47,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 13,
+          "height": 26,
+          "width": 26,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Storyshots OptionSelector Selected 1`] = `
+<View
+  style={
+    Object {
+      "padding": 10,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "#ECEEF1",
+        "borderRadius": 23.5,
+        "height": 28,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingHorizontal": 2,
+        "width": 47,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 13,
+          "height": 26,
+          "width": 26,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`Storyshots PerformanceItem Default 1`] = `
 <View
   style={
@@ -3076,14 +3164,14 @@ exports[`Storyshots SearchBar Default 1`] = `
       editable={true}
       placeholder="Você conhece o seu candidato?"
       placeholderTextColor="rgba(66, 66, 66, 0.45)"
+      returnKeyType="search"
       style={
         Array [
           Object {
             "color": "#424242",
+            "flex": 1,
             "fontSize": 15,
-            "height": 46,
-            "paddingLeft": 41,
-            "paddingRight": 14,
+            "paddingHorizontal": 15,
           },
           undefined,
         ]

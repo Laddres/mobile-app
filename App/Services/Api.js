@@ -12,7 +12,9 @@ const create = (baseURL = 'https://api.caueira.com.br/') => {
   })
 
   const getAccessToken = uniqueId => api.post(Config.ENDPOINT_GET_TOKEN, { uniqueId, secret: Config.APP_SECRET })
-  const getCandidates = stateInitials => api.get(`/candidatos?estado=${stateInitials}`)
+  const getCandidates = query => api.get(`/candidatos`, query)
+  const getCandidatesFavorites = (query, token) =>
+    api.get(`/candidatos/favoritos`, query, { headers: { 'x-access-token': token } })
   const getSummary = id => api.get(`/candidatos/${id}/resumo`)
   const getCandidateProfile = id => api.get(`/candidatos/${id}`)
   const getCandidacy = id => api.get(`/candidatos/${id}/candidaturas`)
@@ -29,6 +31,7 @@ const create = (baseURL = 'https://api.caueira.com.br/') => {
   return {
     getAccessToken,
     getCandidates,
+    getCandidatesFavorites,
     getSummary,
     getCandidateProfile,
     getCandidacy,
