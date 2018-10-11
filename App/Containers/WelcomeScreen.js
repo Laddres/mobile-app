@@ -14,7 +14,7 @@ import { SearchFiltersSelectors } from '../Selectors'
 type Props = {
   stateInitials: ?string,
   requestState: ({ [string]: number }) => mixed,
-  navigateForStateSelectionScreen: () => mixed
+  navigateForOptionsScreen: () => mixed
 }
 
 class WelcomeScreen extends Component<Props> {
@@ -94,7 +94,7 @@ class WelcomeScreen extends Component<Props> {
             dúvida, basta acessar o link fornecido e acompanhar cada caso individualmente.
           </Text>
         </View>
-        <TouchableOpacity onPress={this.props.navigateForStateSelectionScreen} style={styles.buttonNextStep}>
+        <TouchableOpacity onPress={this.props.navigateForOptionsScreen} style={styles.buttonNextStep}>
           <Text style={styles.buttonContent}>AVANÇAR</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -108,7 +108,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   requestState: coordinates => dispatch(SearchFiltersActions.searchFiltersRequestState(coordinates)),
-  navigateForStateSelectionScreen: () => dispatch(resetAction({ routeName: 'StateSelectionScreen' }))
+  navigateForOptionsScreen: () => dispatch(resetAction({ routeName: 'OptionsScreen' }))
 })
 
 export default connect(

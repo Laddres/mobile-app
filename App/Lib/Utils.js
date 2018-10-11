@@ -1,4 +1,5 @@
 import { Alert, Linking, PermissionsAndroid } from 'react-native'
+import type { optionsType } from '../Redux/SearchFiltersRedux'
 
 export const getImageHitSlop = (width, height) => {
   const clamp = (base, min, max) => Math.max(Math.min(base, max), min)
@@ -190,4 +191,24 @@ export const extractStateInitialsFromAddress = (address: string) => {
   }
   const stateInitials = members[1].substr(0, 2).toUpperCase()
   return stateInitials
+}
+
+export const generateSearchFilterKey = (options: optionsType) => {
+  return `${options.gender}.${options.raceOrColor}.${options.state}.${options.favorites}`.toUpperCase()
+}
+
+export const generateCandidatesQueryWithFilters = (options: optionsType) => {
+  const query = { estado: options.state }
+  const defaultGenderOption = 'todos'
+  const defaultRaceOrColorOption = 'todas'
+  if (options.gender !== defaultGenderOption) {
+    query.genero = options.gender
+  }
+  if (options.raceOrColor !== defaultRaceOrColorOption) {
+    query.corRaca = options.raceOrColor
+  }
+  if (options.firstCandidacy) {
+    query.primeiraCandidatura = true
+  }
+  return query
 }

@@ -2,7 +2,7 @@ import { createStackNavigator } from 'react-navigation'
 import ResumeScreen from '../Containers/ResumeScreen'
 import MainScreen from '../Containers/MainScreen'
 import WelcomeScreen from '../Containers/WelcomeScreen'
-import StateSelectionScreen from '../Containers/StateSelectionScreen'
+import OptionsScreen from '../Containers/OptionsScreen'
 import SplashScreen from '../Containers/SplashScreen'
 
 import styles from './Styles/NavigationStyles'
@@ -12,7 +12,7 @@ const PrimaryNav = createStackNavigator(
   {
     SplashScreen: { screen: SplashScreen },
     WelcomeScreen: { screen: WelcomeScreen },
-    StateSelectionScreen: { screen: StateSelectionScreen },
+    OptionsScreen: { screen: OptionsScreen },
     MainScreen: { screen: MainScreen },
     ResumeScreen: { screen: ResumeScreen }
   },
